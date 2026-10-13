@@ -3,209 +3,275 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inmobiliaria A&amp;D | Lotes en El Carmen de Apicalá y Silvania</title>
-<meta name="description" content="Lotes campestres y urbanos con escritura pública independiente y financiación hasta 36 meses. Inmobiliaria A&D, Fusagasugá.">
+<title>Inmobiliaria A&amp;D | Lotes, casas y arriendos en Tolima y Cundinamarca</title>
+<meta name="description" content="Lotes, casas y arriendos en El Carmen de Apicalá, Silvania y Fusagasugá. Financiación hasta 36 meses y escritura independiente.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = {
   theme: { extend: {
-    fontFamily: { serif: ['Fraunces','serif'], sans: ['Inter','sans-serif'] },
-    colors: { bosque:'#1f3d2e', musgo:'#4a6b55', arena:'#f6f1e7', tierra:'#b5703a', carbon:'#1d2420' }
+    fontFamily: { display: ['"Plus Jakarta Sans"','sans-serif'], sans: ['Inter','sans-serif'] },
+    colors: { marino:'#0a2a8f', azul:'#1d4ed8', cielo:'#e8f0ff', tinta:'#0f1b3d', suave:'#f5f8ff' }
   } }
 }
 </script>
 <style>
   html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', sans-serif; color:#1d2420; background:#fbf9f4; }
-  .ph { background: linear-gradient(135deg,#cfd9c9 0%,#a9bca7 55%,#8aa38a 100%); }
-  .ph2 { background: linear-gradient(135deg,#e6d9bf 0%,#d2bd96 100%); }
-  .ph3 { background: linear-gradient(135deg,#c9d5d0 0%,#9fb5ad 100%); }
+  body { font-family:'Inter',sans-serif; color:#0f1b3d; background:#fff; }
+  .ph1 { background: linear-gradient(135deg,#dbe7ff 0%,#9db8f5 100%); }
+  .ph2 { background: linear-gradient(135deg,#e6efff 0%,#b4c8f0 100%); }
+  .ph3 { background: linear-gradient(135deg,#d5e2f7 0%,#8fa9d9 100%); }
+  .tab-on { background:#0a2a8f; color:#fff; }
+  .card { transition: box-shadow .2s, transform .2s; }
+  .card:hover { box-shadow: 0 14px 30px -14px rgba(10,42,143,.35); transform: translateY(-2px); }
 </style>
 </head>
 <body class="antialiased">
 
-<!-- Barra superior -->
-<header class="sticky top-0 z-40 bg-[#fbf9f4]/95 backdrop-blur border-b border-black/5">
-  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-    <a href="#" class="flex items-center gap-2">
-      <span class="w-9 h-9 rounded-lg bg-bosque text-white grid place-items-center font-serif text-lg">A&amp;D</span>
-      <span class="font-serif text-lg text-bosque leading-none">Inmobiliaria<br><span class="text-xs font-sans text-musgo">Fusagasugá · Tolima</span></span>
+<!-- Franja superior -->
+<div class="bg-marino text-white text-sm">
+  <div class="max-w-6xl mx-auto px-5 h-10 flex items-center justify-between">
+    <span class="hidden sm:inline">Fusagasugá · Cundinamarca</span>
+    <div class="flex items-center gap-5 ml-auto">
+      <a href="https://wa.me/573023487290" class="hover:underline">WhatsApp 302 348 7290</a>
+    </div>
+  </div>
+</div>
+
+<!-- Encabezado -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-black/5">
+  <div class="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <span class="w-11 h-11 rounded-xl bg-marino text-white grid place-items-center font-display font-extrabold">A&amp;D</span>
+      <span class="font-display font-bold text-marino leading-tight text-lg">Inmobiliaria<br><span class="text-xs font-semibold text-azul tracking-wide">A&amp;D</span></span>
     </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm text-carbon/80">
-      <a href="#lotes" class="hover:text-bosque">Lotes</a>
-      <a href="#pago" class="hover:text-bosque">Formas de pago</a>
-      <a href="#zona" class="hover:text-bosque">La zona</a>
-      <a href="#preguntas" class="hover:text-bosque">Preguntas</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-tinta/80">
+      <a href="#inmuebles" class="hover:text-azul">Inmuebles</a>
+      <a href="#servicios" class="hover:text-azul">Servicios</a>
+      <a href="#pago" class="hover:text-azul">Financiación</a>
+      <a href="#nosotros" class="hover:text-azul">Nosotros</a>
+      <a href="#contacto" class="hover:text-azul">Contacto</a>
     </nav>
-    <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20los%20lotes" class="rounded-full bg-bosque text-white text-sm font-medium px-4 py-2 hover:bg-musgo transition">Escríbenos</a>
+    <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="rounded-lg bg-azul text-white text-sm font-semibold px-5 py-2.5 hover:bg-marino transition">Escríbenos</a>
   </div>
 </header>
 
 <!-- Portada -->
-<section class="relative">
-  <div class="ph h-[78vh] min-h-[520px] w-full flex items-end">
-    <!-- AQUÍ VA LA FOTO PRINCIPAL DEL LOTE (aérea o paisaje) -->
-    <div class="absolute inset-0 bg-gradient-to-t from-bosque/80 via-bosque/20 to-transparent"></div>
-    <div class="relative max-w-6xl mx-auto px-5 pb-14 w-full">
-      <p class="text-white/85 text-sm mb-3">El Carmen de Apicalá · Silvania · Tolima y Cundinamarca</p>
-      <h1 class="font-serif text-4xl md:text-6xl text-white max-w-3xl leading-[1.08]">Tu lote, con escritura propia y a tu ritmo.</h1>
-      <p class="text-white/90 mt-5 max-w-xl text-lg">Lotes urbanos y campestres desde $39 millones, con financiación hasta 36 meses y acompañamiento en todo el proceso.</p>
+<section class="relative bg-suave">
+  <div class="max-w-6xl mx-auto px-5 pt-14 pb-24 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="inline-block text-xs font-semibold tracking-wide text-azul bg-cielo rounded-full px-3 py-1">Lotes · Casas · Arriendos</p>
+      <h1 class="font-display font-extrabold text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.08] text-marino mt-5">Encuentra el inmueble ideal, con respaldo y a tu ritmo.</h1>
+      <p class="mt-5 text-lg text-tinta/70 max-w-lg">Proyectos de vivienda y lotes en El Carmen de Apicalá, Silvania y Fusagasugá, con escritura independiente y financiación hasta 36 meses.</p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20los%20lotes" class="rounded-full bg-white text-bosque font-medium px-6 py-3 hover:bg-arena transition">Hablar por WhatsApp</a>
-        <a href="#lotes" class="rounded-full border border-white/70 text-white font-medium px-6 py-3 hover:bg-white/10 transition">Ver los lotes</a>
+        <a href="#inmuebles" class="rounded-lg bg-azul text-white font-semibold px-6 py-3.5 hover:bg-marino transition">Ver inmuebles</a>
+        <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="rounded-lg border border-marino/25 text-marino font-semibold px-6 py-3.5 hover:bg-cielo transition">Hablar por WhatsApp</a>
+      </div>
+    </div>
+    <div class="relative">
+      <!-- AQUÍ VA LA FOTO PRINCIPAL -->
+      <div class="ph1 rounded-3xl h-80 lg:h-[420px] w-full"></div>
+      <div class="absolute -bottom-6 left-6 right-6 sm:right-auto sm:w-72 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-4">
+        <span class="w-12 h-12 rounded-xl bg-cielo text-azul grid place-items-center font-display font-bold">36</span>
+        <div><p class="font-semibold text-sm">Hasta 36 meses</p><p class="text-xs text-tinta/60">para pagar tu lote</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Datos rápidos -->
-<section class="bg-arena border-y border-black/5">
-  <div class="max-w-6xl mx-auto px-5 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-    <div><p class="font-serif text-3xl text-bosque">$39 M</p><p class="text-sm text-carbon/70 mt-1">Lotes desde</p></div>
-    <div><p class="font-serif text-3xl text-bosque">36 meses</p><p class="text-sm text-carbon/70 mt-1">Para pagar</p></div>
-    <div><p class="font-serif text-3xl text-bosque">$1 M</p><p class="text-sm text-carbon/70 mt-1">Para separar</p></div>
-    <div><p class="font-serif text-3xl text-bosque">100%</p><p class="text-sm text-carbon/70 mt-1">Escritura independiente</p></div>
+<!-- Buscador -->
+<section class="max-w-5xl mx-auto px-5 -mt-8 relative z-10">
+  <form class="bg-white rounded-2xl shadow-xl border border-black/5 p-5 grid md:grid-cols-4 gap-4" onsubmit="event.preventDefault();document.getElementById('inmuebles').scrollIntoView()">
+    <label class="text-xs font-semibold text-tinta/60">Negocio
+      <select class="mt-1 w-full border border-black/10 rounded-lg px-3 py-2.5 text-sm font-normal text-tinta"><option>Venta</option><option>Arriendo</option></select>
+    </label>
+    <label class="text-xs font-semibold text-tinta/60">Tipo
+      <select class="mt-1 w-full border border-black/10 rounded-lg px-3 py-2.5 text-sm font-normal text-tinta"><option>Lotes</option><option>Casas</option><option>Apartamentos</option></select>
+    </label>
+    <label class="text-xs font-semibold text-tinta/60">Ciudad
+      <select class="mt-1 w-full border border-black/10 rounded-lg px-3 py-2.5 text-sm font-normal text-tinta"><option>El Carmen de Apicalá</option><option>Silvania</option><option>Fusagasugá</option></select>
+    </label>
+    <button class="self-end rounded-lg bg-azul text-white font-semibold py-3 hover:bg-marino transition">Buscar</button>
+  </form>
+</section>
+
+<!-- Accesos -->
+<section class="max-w-6xl mx-auto px-5 mt-16 grid md:grid-cols-3 gap-5">
+  <a href="#inmuebles" class="card rounded-2xl bg-azul text-white p-7 flex gap-4">
+    <span class="text-3xl">&#127969;</span>
+    <div><p class="font-display font-bold text-xl">Inmuebles disponibles</p><p class="text-sm text-white/80 mt-1">Lotes, casas y arriendos con fotos y precios.</p></div>
+  </a>
+  <a href="#pago" class="card rounded-2xl bg-marino text-white p-7 flex gap-4">
+    <span class="text-3xl">&#128179;</span>
+    <div><p class="font-display font-bold text-xl">Financiación</p><p class="text-sm text-white/80 mt-1">Separa con $1 millón y paga hasta en 36 meses.</p></div>
+  </a>
+  <a href="https://wa.me/573023487290?text=Quiero%20agendar%20una%20visita" class="card rounded-2xl bg-azul text-white p-7 flex gap-4">
+    <span class="text-3xl">&#128197;</span>
+    <div><p class="font-display font-bold text-xl">Agenda tu visita</p><p class="text-sm text-white/80 mt-1">Te acompañamos a conocer el inmueble.</p></div>
+  </a>
+</section>
+
+<!-- Inmuebles -->
+<section id="inmuebles" class="max-w-6xl mx-auto px-5 py-20">
+  <div class="flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <h2 class="font-display font-extrabold text-3xl md:text-4xl text-marino">Inmuebles destacados</h2>
+      <p class="mt-2 text-tinta/65">Proyectos y lotes disponibles para ti.</p>
+    </div>
+    <div class="flex gap-2 text-sm font-semibold" id="tabs">
+      <button data-f="todos" class="tab-on rounded-lg px-4 py-2 bg-cielo text-marino">Todos</button>
+      <button data-f="urbano" class="rounded-lg px-4 py-2 bg-cielo text-marino">Urbanos</button>
+      <button data-f="campestre" class="rounded-lg px-4 py-2 bg-cielo text-marino">Campestres</button>
+    </div>
+  </div>
+
+  <div class="mt-10 grid md:grid-cols-3 gap-6" id="grid">
+
+    <article data-t="urbano" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
+      <div class="ph1 h-52 relative"><span class="absolute top-3 left-3 bg-marino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
+      <div class="p-6 flex flex-col flex-1">
+        <p class="text-xs font-semibold text-azul">EL CARMEN DE APICALÁ · TOLIMA</p>
+        <h3 class="font-display font-bold text-xl mt-1 text-marino">Urbanización La Colina</h3>
+        <p class="font-display font-extrabold text-2xl mt-3">Desde $39.000.000</p>
+        <div class="mt-3 flex gap-4 text-sm text-tinta/70"><span>Desde 72 m²</span><span>Piscinas</span><span>Zonas verdes</span></div>
+        <p class="mt-3 text-sm text-tinta/65">Vías pavimentadas, alcantarillado y alumbrado. A 3 minutos del centro.</p>
+        <a href="https://wa.me/573023487290?text=Me%20interesa%20La%20Colina" class="mt-5 text-center rounded-lg border border-azul text-azul font-semibold py-2.5 hover:bg-azul hover:text-white transition">Ver detalles</a>
+      </div>
+    </article>
+
+    <article data-t="campestre" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
+      <div class="ph2 h-52 relative"><span class="absolute top-3 left-3 bg-marino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
+      <div class="p-6 flex flex-col flex-1">
+        <p class="text-xs font-semibold text-azul">A 20 MIN DE EL CARMEN DE APICALÁ</p>
+        <h3 class="font-display font-bold text-xl mt-1 text-marino">Aquaviva</h3>
+        <p class="font-display font-extrabold text-2xl mt-3">Desde $98.000.000</p>
+        <div class="mt-3 flex gap-4 text-sm text-tinta/70"><span>1.000 m²</span><span>Jardín botánico</span></div>
+        <p class="mt-3 text-sm text-tinta/65">Tres zonas a elegir: Luxury, Extra y Oasis. Hasta 36 meses sin intereses.</p>
+        <a href="https://wa.me/573023487290?text=Me%20interesa%20Aquaviva" class="mt-5 text-center rounded-lg border border-azul text-azul font-semibold py-2.5 hover:bg-azul hover:text-white transition">Ver detalles</a>
+      </div>
+    </article>
+
+    <article data-t="campestre" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
+      <div class="ph3 h-52 relative"><span class="absolute top-3 left-3 bg-marino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
+      <div class="p-6 flex flex-col flex-1">
+        <p class="text-xs font-semibold text-azul">SILVANIA · EL RETIRO</p>
+        <h3 class="font-display font-bold text-xl mt-1 text-marino">Lote campestre en Silvania</h3>
+        <p class="font-display font-extrabold text-2xl mt-3">$150.000.000</p>
+        <div class="mt-3 flex gap-4 text-sm text-tinta/70"><span>1.295 m²</span><span>Negociable</span></div>
+        <p class="mt-3 text-sm text-tinta/65">Carretera hasta el lote, energía y acueducto cerca, árboles frutales.</p>
+        <a href="https://wa.me/573023487290?text=Me%20interesa%20el%20lote%20en%20Silvania" class="mt-5 text-center rounded-lg border border-azul text-azul font-semibold py-2.5 hover:bg-azul hover:text-white transition">Ver detalles</a>
+      </div>
+    </article>
+
   </div>
 </section>
 
-<!-- Lotes -->
-<section id="lotes" class="max-w-6xl mx-auto px-5 py-20">
-  <h2 class="font-serif text-3xl md:text-4xl text-bosque">Proyectos disponibles</h2>
-  <p class="mt-3 text-carbon/70 max-w-xl">Tres opciones según lo que busques: vivir cerca del pueblo, tener tu finca o invertir con valorización.</p>
-
-  <div class="mt-10 grid md:grid-cols-3 gap-6">
-
-    <!-- Lote urbano -->
-    <article class="bg-white rounded-2xl overflow-hidden border border-black/5 shadow-sm flex flex-col">
-      <div class="ph h-52 relative">
-        <span class="absolute top-3 left-3 bg-white text-bosque text-xs font-medium px-3 py-1 rounded-full">Lote urbano</span>
+<!-- Servicios -->
+<section id="servicios" class="bg-suave">
+  <div class="max-w-6xl mx-auto px-5 py-20">
+    <div class="text-center max-w-2xl mx-auto">
+      <h2 class="font-display font-extrabold text-3xl md:text-4xl text-marino">Servicios</h2>
+      <p class="mt-3 text-tinta/65">Te acompañamos antes, durante y después de tu compra.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="card bg-white rounded-2xl p-7 text-center border border-black/5">
+        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-azul grid place-items-center text-2xl">&#127969;</span>
+        <h3 class="font-display font-bold text-lg mt-4 text-marino">Venta</h3>
+        <p class="text-sm text-tinta/65 mt-2">Promocionamos tu inmueble y te acompañamos hasta la escritura.</p>
       </div>
-      <div class="p-6 flex flex-col flex-1">
-        <h3 class="font-serif text-2xl text-bosque">Urbanización La Colina</h3>
-        <p class="text-sm text-musgo mt-1">El Carmen de Apicalá · a 3 min del centro</p>
-        <p class="mt-4 text-3xl font-serif text-carbon">Desde $39 millones</p>
-        <p class="text-sm text-carbon/60">Lotes desde 72 m²</p>
-        <ul class="mt-4 space-y-2 text-sm text-carbon/80">
-          <li>Vías pavimentadas, alcantarillado y alumbrado</li>
-          <li>Piscina para adultos y para niños</li>
-          <li>Zonas verdes y bahías de parqueo</li>
-          <li>Servicios públicos hasta la entrada del lote</li>
-        </ul>
-        <p class="mt-4 text-sm text-carbon/70">Separas con $1 millón. Hasta 36 meses para pagar.</p>
-        <a href="https://wa.me/573023487290?text=Hola%2C%20me%20interesa%20el%20lote%20urbano%20en%20El%20Carmen%20de%20Apical%C3%A1" class="mt-6 text-center rounded-full bg-bosque text-white font-medium py-3 hover:bg-musgo transition">Quiero información</a>
+      <div class="card bg-white rounded-2xl p-7 text-center border border-black/5">
+        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-azul grid place-items-center text-2xl">&#128273;</span>
+        <h3 class="font-display font-bold text-lg mt-4 text-marino">Arriendo</h3>
+        <p class="text-sm text-tinta/65 mt-2">Encontramos inquilino y administramos el proceso por ti.</p>
       </div>
-    </article>
-
-    <!-- Aquaviva -->
-    <article class="bg-white rounded-2xl overflow-hidden border border-black/5 shadow-sm flex flex-col">
-      <div class="ph3 h-52 relative">
-        <span class="absolute top-3 left-3 bg-white text-bosque text-xs font-medium px-3 py-1 rounded-full">Lote campestre</span>
+      <div class="card bg-white rounded-2xl p-7 text-center border border-black/5">
+        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-azul grid place-items-center text-2xl">&#128296;</span>
+        <h3 class="font-display font-bold text-lg mt-4 text-marino">Remodelaciones</h3>
+        <p class="text-sm text-tinta/65 mt-2">Arreglos y mejoras para dejar tu inmueble listo.</p>
       </div>
-      <div class="p-6 flex flex-col flex-1">
-        <h3 class="font-serif text-2xl text-bosque">Aquaviva</h3>
-        <p class="text-sm text-musgo mt-1">A 20 min de El Carmen de Apicalá</p>
-        <p class="mt-4 text-3xl font-serif text-carbon">Desde $98 millones</p>
-        <p class="text-sm text-carbon/60">Lotes de 1.000 m²</p>
-        <ul class="mt-4 space-y-2 text-sm text-carbon/80">
-          <li>Único con jardín botánico</li>
-          <li>Tres zonas a elegir: Luxury, Extra y Oasis</li>
-          <li>Escritura pública independiente</li>
-        </ul>
-        <p class="mt-4 text-sm text-carbon/70">Separas con $1 millón y $10 millones de cuota inicial. Hasta 36 meses sin intereses.</p>
-        <a href="https://wa.me/573023487290?text=Hola%2C%20me%20interesa%20Aquaviva" class="mt-6 text-center rounded-full bg-bosque text-white font-medium py-3 hover:bg-musgo transition">Quiero información</a>
+      <div class="card bg-white rounded-2xl p-7 text-center border border-black/5">
+        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-azul grid place-items-center text-2xl">&#129529;</span>
+        <h3 class="font-display font-bold text-lg mt-4 text-marino">Lavado de cortinas</h3>
+        <p class="text-sm text-tinta/65 mt-2">Limpieza profesional para tu hogar o inmueble en arriendo.</p>
       </div>
-    </article>
-
-    <!-- Silvania -->
-    <article class="bg-white rounded-2xl overflow-hidden border border-black/5 shadow-sm flex flex-col">
-      <div class="ph2 h-52 relative">
-        <span class="absolute top-3 left-3 bg-white text-bosque text-xs font-medium px-3 py-1 rounded-full">Lote campestre</span>
-      </div>
-      <div class="p-6 flex flex-col flex-1">
-        <h3 class="font-serif text-2xl text-bosque">Lote en Silvania</h3>
-        <p class="text-sm text-musgo mt-1">El Retiro · a 15 min del centro</p>
-        <p class="mt-4 text-3xl font-serif text-carbon">$150 millones</p>
-        <p class="text-sm text-carbon/60">1.295 m² · precio negociable</p>
-        <ul class="mt-4 space-y-2 text-sm text-carbon/80">
-          <li>Carretera de ingreso hasta el lote</li>
-          <li>Energía y acueducto cerca del predio</li>
-          <li>Árboles frutales: naranja, limón, aguacate y más</li>
-          <li>Documentos al día, listo para escriturar</li>
-        </ul>
-        <a href="https://wa.me/573023487290?text=Hola%2C%20me%20interesa%20el%20lote%20en%20Silvania" class="mt-auto pt-6"><span class="block text-center rounded-full bg-bosque text-white font-medium py-3 hover:bg-musgo transition">Quiero información</span></a>
-      </div>
-    </article>
-
+    </div>
   </div>
 </section>
 
-<!-- Formas de pago -->
-<section id="pago" class="bg-bosque text-white">
+<!-- Financiación -->
+<section id="pago" class="bg-marino text-white">
   <div class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-12 items-center">
     <div>
-      <h2 class="font-serif text-3xl md:text-4xl">Paga a tu ritmo, sin complicaciones</h2>
-      <p class="mt-4 text-white/80 max-w-md">Separas tu lote hoy y organizas el resto en cuotas. Te explicamos cada paso antes de firmar.</p>
+      <h2 class="font-display font-extrabold text-3xl md:text-4xl">Paga a tu ritmo, sin complicaciones</h2>
+      <p class="mt-4 text-white/75 max-w-md">Separas tu lote hoy y organizas el resto en cuotas. Te explicamos cada paso antes de firmar.</p>
+      <a href="https://wa.me/573023487290?text=Quiero%20conocer%20las%20formas%20de%20pago" class="inline-block mt-7 rounded-lg bg-white text-marino font-semibold px-6 py-3 hover:bg-cielo transition">Consultar formas de pago</a>
     </div>
     <ol class="space-y-5">
-      <li class="flex gap-4"><span class="w-10 h-10 rounded-full bg-white/15 grid place-items-center font-serif shrink-0">1</span><div><p class="font-medium">Separas con $1 millón</p><p class="text-sm text-white/70">Apartas tu lote desde hoy.</p></div></li>
-      <li class="flex gap-4"><span class="w-10 h-10 rounded-full bg-white/15 grid place-items-center font-serif shrink-0">2</span><div><p class="font-medium">Firmas la promesa de compraventa</p><p class="text-sm text-white/70">Con tu cuota inicial.</p></div></li>
-      <li class="flex gap-4"><span class="w-10 h-10 rounded-full bg-white/15 grid place-items-center font-serif shrink-0">3</span><div><p class="font-medium">Pagas hasta en 36 meses</p><p class="text-sm text-white/70">Cuotas fijas, sin sorpresas.</p></div></li>
-      <li class="flex gap-4"><span class="w-10 h-10 rounded-full bg-white/15 grid place-items-center font-serif shrink-0">4</span><div><p class="font-medium">Escritura pública independiente</p><p class="text-sm text-white/70">Tu lote con título propio, registrado a tu nombre.</p></div></li>
+      <li class="flex gap-4"><span class="w-10 h-10 rounded-full bg-white/15 grid place-items-center font-display font-bold shrink-0">1</span><div><p class="font-semibold">Separas con $1 millón</p><p class="text-sm text-white/65">Apartas tu lote desde hoy.</p></div></li>
+      <li class="flex gap-4"><span class="w-10 h-10 rounded-full bg-white/15 grid place-items-center font-display font-bold shrink-0">2</span><div><p class="font-semibold">Firmas la promesa de compraventa</p><p class="text-sm text-white/65">Con tu cuota inicial.</p></div></li>
+      <li class="flex gap-4"><span class="w-10 h-10 rounded-full bg-white/15 grid place-items-center font-display font-bold shrink-0">3</span><div><p class="font-semibold">Pagas hasta en 36 meses</p><p class="text-sm text-white/65">Cuotas fijas, sin sorpresas.</p></div></li>
+      <li class="flex gap-4"><span class="w-10 h-10 rounded-full bg-white/15 grid place-items-center font-display font-bold shrink-0">4</span><div><p class="font-semibold">Escritura pública independiente</p><p class="text-sm text-white/65">Título propio, registrado a tu nombre.</p></div></li>
     </ol>
   </div>
 </section>
 
-<!-- Zona -->
-<section id="zona" class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-12 items-center">
-  <div class="ph3 rounded-2xl h-80 md:h-[420px] flex items-center justify-center text-bosque/60 text-sm">
-    <!-- AQUÍ VA EL MAPA O FOTO AÉREA -->
-    Mapa / foto aérea de la zona
-  </div>
+<!-- Nosotros -->
+<section id="nosotros" class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-12 items-center">
+  <div class="ph2 rounded-3xl h-80 flex items-center justify-center text-marino/50 text-sm">Foto de Deisy o del equipo</div>
   <div>
-    <h2 class="font-serif text-3xl md:text-4xl text-bosque">Una zona que crece</h2>
-    <p class="mt-4 text-carbon/75">El Carmen de Apicalá es uno de los destinos más buscados del Tolima por su clima cálido, su cercanía a Bogotá y su valorización constante.</p>
-    <ul class="mt-6 space-y-3 text-carbon/80">
-      <li class="flex gap-3"><span class="text-tierra">●</span>A pocos minutos del centro, comercio y salud</li>
-      <li class="flex gap-3"><span class="text-tierra">●</span>Clima cálido para vivir o para descansar</li>
-      <li class="flex gap-3"><span class="text-tierra">●</span>Ideal para vivir, construir o invertir</li>
+    <h2 class="font-display font-extrabold text-3xl md:text-4xl text-marino">Quiénes somos</h2>
+    <p class="mt-4 text-tinta/70">Somos una inmobiliaria con sede en Fusagasugá. Te acompañamos a encontrar tu lote, tu casa o tu arriendo, con información clara y trato cercano.</p>
+    <ul class="mt-6 space-y-3 text-tinta/80">
+      <li class="flex gap-3"><span class="text-azul font-bold">&#10003;</span>Información clara de cada inmueble</li>
+      <li class="flex gap-3"><span class="text-azul font-bold">&#10003;</span>Acompañamiento en el proceso de compra</li>
+      <li class="flex gap-3"><span class="text-azul font-bold">&#10003;</span>Escrituras independientes y documentos al día</li>
     </ul>
   </div>
 </section>
 
 <!-- Preguntas -->
-<section id="preguntas" class="bg-arena border-t border-black/5">
+<section class="bg-suave">
   <div class="max-w-3xl mx-auto px-5 py-20">
-    <h2 class="font-serif text-3xl md:text-4xl text-bosque text-center">Preguntas frecuentes</h2>
+    <h2 class="font-display font-extrabold text-3xl text-marino text-center">Preguntas frecuentes</h2>
     <div class="mt-10 divide-y divide-black/10">
-      <details class="py-5 group"><summary class="cursor-pointer font-medium flex justify-between">¿Cada lote tiene su propia escritura?<span class="text-tierra group-open:rotate-45 transition">+</span></summary><p class="mt-3 text-carbon/75 text-sm">Sí. Cada lote cuenta con escritura pública independiente y título propio, que sirve para crédito, construir, vender o heredar.</p></details>
-      <details class="py-5 group"><summary class="cursor-pointer font-medium flex justify-between">¿Cuánto necesito para separar?<span class="text-tierra group-open:rotate-45 transition">+</span></summary><p class="mt-3 text-carbon/75 text-sm">Desde $1 millón de pesos puedes apartar tu lote.</p></details>
-      <details class="py-5 group"><summary class="cursor-pointer font-medium flex justify-between">¿Puedo pagar en cuotas?<span class="text-tierra group-open:rotate-45 transition">+</span></summary><p class="mt-3 text-carbon/75 text-sm">Sí, hasta 36 meses. En Aquaviva es sin intereses; en el lote urbano te confirmamos las condiciones por WhatsApp.</p></details>
-      <details class="py-5 group"><summary class="cursor-pointer font-medium flex justify-between">¿Puedo visitar el lote antes de decidir?<span class="text-tierra group-open:rotate-45 transition">+</span></summary><p class="mt-3 text-carbon/75 text-sm">Claro. Escríbenos y coordinamos una visita.</p></details>
-      <details class="py-5 group"><summary class="cursor-pointer font-medium flex justify-between">¿Tienen otros inmuebles?<span class="text-tierra group-open:rotate-45 transition">+</span></summary><p class="mt-3 text-carbon/75 text-sm">Sí, también tenemos casas, fincas y arriendos en Fusagasugá y alrededores. Pregúntanos por WhatsApp.</p></details>
+      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Cada lote tiene su propia escritura?<span class="text-azul group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Sí. Cada lote cuenta con escritura pública independiente y título propio.</p></details>
+      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Cuánto necesito para separar?<span class="text-azul group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Desde $1 millón de pesos puedes apartar tu lote.</p></details>
+      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Puedo pagar en cuotas?<span class="text-azul group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Sí, hasta 36 meses. En Aquaviva es sin intereses; en los demás proyectos te confirmamos las condiciones por WhatsApp.</p></details>
+      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Puedo visitar antes de decidir?<span class="text-azul group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Claro. Escríbenos y coordinamos una visita.</p></details>
     </div>
   </div>
 </section>
 
 <!-- Contacto -->
-<section class="max-w-6xl mx-auto px-5 py-20 text-center">
-  <h2 class="font-serif text-3xl md:text-5xl text-bosque max-w-2xl mx-auto">¿Te cuento cuáles lotes siguen disponibles?</h2>
-  <p class="mt-4 text-carbon/70">Escríbele a Deisy y recibe la información completa, fotos y ubicación.</p>
-  <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20los%20lotes" class="inline-block mt-8 rounded-full bg-bosque text-white font-medium px-8 py-4 hover:bg-musgo transition">Escribir por WhatsApp</a>
-  <p class="mt-4 text-sm text-carbon/60">+57 302 348 7290</p>
+<section id="contacto" class="max-w-6xl mx-auto px-5 py-20">
+  <div class="rounded-3xl bg-azul text-white px-8 py-14 text-center">
+    <h2 class="font-display font-extrabold text-3xl md:text-4xl max-w-2xl mx-auto">¿Te cuento cuáles inmuebles siguen disponibles?</h2>
+    <p class="mt-3 text-white/80">Escríbenos y recibe información completa, fotos y ubicación.</p>
+    <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="inline-block mt-8 rounded-lg bg-white text-marino font-semibold px-8 py-4 hover:bg-cielo transition">Escribir por WhatsApp</a>
+    <p class="mt-4 text-sm text-white/70">+57 302 348 7290</p>
+  </div>
 </section>
 
-<footer class="bg-bosque text-white/80">
+<footer class="bg-tinta text-white/70">
   <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row justify-between gap-3 text-sm">
     <p>Inmobiliaria A&amp;D · Fusagasugá, Cundinamarca</p>
     <p>© 2026 Inmobiliaria A&amp;D. Precios y disponibilidad sujetos a confirmación.</p>
   </div>
 </footer>
 
-<!-- Botón flotante -->
-<a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20los%20lotes" aria-label="WhatsApp" class="fixed bottom-5 right-5 z-50 rounded-full bg-[#25D366] text-white font-medium px-5 py-3 shadow-lg hover:brightness-95 transition">WhatsApp</a>
+<a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" aria-label="WhatsApp" class="fixed bottom-5 right-5 z-50 rounded-full bg-[#25D366] text-white font-semibold px-5 py-3 shadow-lg hover:brightness-95 transition">WhatsApp</a>
 
+<script>
+  const tabs = document.querySelectorAll('#tabs button');
+  const cards = document.querySelectorAll('#grid article');
+  tabs.forEach(b => b.addEventListener('click', () => {
+    tabs.forEach(x => x.classList.remove('tab-on'));
+    b.classList.add('tab-on');
+    const f = b.dataset.f;
+    cards.forEach(c => { c.style.display = (f === 'todos' || c.dataset.t === f) ? '' : 'none'; });
+  }));
+</script>
 </body>
 </html>
