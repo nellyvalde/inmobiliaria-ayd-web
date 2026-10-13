@@ -13,25 +13,25 @@
 tailwind.config = {
   theme: { extend: {
     fontFamily: { display: ['"Plus Jakarta Sans"','sans-serif'], sans: ['Inter','sans-serif'] },
-    colors: { marino:'#0a2a8f', azul:'#1d4ed8', cielo:'#e8f0ff', tinta:'#0f1b3d', suave:'#f5f8ff' }
+    colors: { vino:'#8b0f1f', rojo:'#c8102e', cielo:'#fdecee', tinta:'#26171a', suave:'#fff6f6' }
   } }
 }
 </script>
 <style>
   html { scroll-behavior: smooth; }
-  body { font-family:'Inter',sans-serif; color:#0f1b3d; background:#fff; }
-  .ph1 { background: linear-gradient(135deg,#dbe7ff 0%,#9db8f5 100%); }
-  .ph2 { background: linear-gradient(135deg,#e6efff 0%,#b4c8f0 100%); }
-  .ph3 { background: linear-gradient(135deg,#d5e2f7 0%,#8fa9d9 100%); }
-  .tab-on { background:#0a2a8f; color:#fff; }
+  body { font-family:'Inter',sans-serif; color:#26171a; background:#fff; }
+  .ph1 { background: linear-gradient(135deg,#fde3e5 0%,#f0a3ab 100%); }
+  .ph2 { background: linear-gradient(135deg,#fff0f1 0%,#f3bcc2 100%); }
+  .ph3 { background: linear-gradient(135deg,#f6dfe1 0%,#e59aa3 100%); }
+  .tab-on { background:#8b0f1f; color:#fff; }
   .card { transition: box-shadow .2s, transform .2s; }
-  .card:hover { box-shadow: 0 14px 30px -14px rgba(10,42,143,.35); transform: translateY(-2px); }
+  .card:hover { box-shadow: 0 14px 30px -14px rgba(139,15,31,.35); transform: translateY(-2px); }
 </style>
 </head>
 <body class="antialiased">
 
 <!-- Franja superior -->
-<div class="bg-marino text-white text-sm">
+<div class="bg-vino text-white text-sm">
   <div class="max-w-6xl mx-auto px-5 h-10 flex items-center justify-between">
     <span class="hidden sm:inline">Fusagasugá · Cundinamarca</span>
     <div class="flex items-center gap-5 ml-auto">
@@ -44,17 +44,17 @@ tailwind.config = {
 <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-black/5">
   <div class="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between">
     <a href="#" class="flex items-center gap-3">
-      <span class="w-11 h-11 rounded-xl bg-marino text-white grid place-items-center font-display font-extrabold">A&amp;D</span>
-      <span class="font-display font-bold text-marino leading-tight text-lg">Inmobiliaria<br><span class="text-xs font-semibold text-azul tracking-wide">A&amp;D</span></span>
+      <span class="w-11 h-11 rounded-xl bg-vino text-white grid place-items-center font-display font-extrabold">A&amp;D</span>
+      <span class="font-display font-bold text-vino leading-tight text-lg">Inmobiliaria<br><span class="text-xs font-semibold text-rojo tracking-wide">A&amp;D</span></span>
     </a>
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-tinta/80">
-      <a href="#inmuebles" class="hover:text-azul">Inmuebles</a>
-      <a href="#servicios" class="hover:text-azul">Servicios</a>
-      <a href="#pago" class="hover:text-azul">Financiación</a>
-      <a href="#nosotros" class="hover:text-azul">Nosotros</a>
-      <a href="#contacto" class="hover:text-azul">Contacto</a>
+      <a href="#inmuebles" class="hover:text-rojo">Inmuebles</a>
+      <a href="#servicios" class="hover:text-rojo">Servicios</a>
+      <a href="#pago" class="hover:text-rojo">Financiación</a>
+      <a href="#nosotros" class="hover:text-rojo">Nosotros</a>
+      <a href="#contacto" class="hover:text-rojo">Contacto</a>
     </nav>
-    <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="rounded-lg bg-azul text-white text-sm font-semibold px-5 py-2.5 hover:bg-marino transition">Escríbenos</a>
+    <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="rounded-lg bg-rojo text-white text-sm font-semibold px-5 py-2.5 hover:bg-vino transition">Escríbenos</a>
   </div>
 </header>
 
@@ -62,19 +62,19 @@ tailwind.config = {
 <section class="relative bg-suave">
   <div class="max-w-6xl mx-auto px-5 pt-14 pb-24 grid lg:grid-cols-2 gap-12 items-center">
     <div>
-      <p class="inline-block text-xs font-semibold tracking-wide text-azul bg-cielo rounded-full px-3 py-1">Lotes · Casas · Arriendos</p>
-      <h1 class="font-display font-extrabold text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.08] text-marino mt-5">Encuentra el inmueble ideal, con respaldo y a tu ritmo.</h1>
+      <p class="inline-block text-xs font-semibold tracking-wide text-rojo bg-cielo rounded-full px-3 py-1">Lotes · Casas · Arriendos</p>
+      <h1 class="font-display font-extrabold text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.08] text-vino mt-5">Encuentra el inmueble ideal, con respaldo y a tu ritmo.</h1>
       <p class="mt-5 text-lg text-tinta/70 max-w-lg">Proyectos de vivienda y lotes en El Carmen de Apicalá, Silvania y Fusagasugá, con escritura independiente y financiación hasta 36 meses.</p>
       <div class="mt-8 flex flex-wrap gap-3">
-        <a href="#inmuebles" class="rounded-lg bg-azul text-white font-semibold px-6 py-3.5 hover:bg-marino transition">Ver inmuebles</a>
-        <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="rounded-lg border border-marino/25 text-marino font-semibold px-6 py-3.5 hover:bg-cielo transition">Hablar por WhatsApp</a>
+        <a href="#inmuebles" class="rounded-lg bg-rojo text-white font-semibold px-6 py-3.5 hover:bg-vino transition">Ver inmuebles</a>
+        <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="rounded-lg border border-vino/25 text-vino font-semibold px-6 py-3.5 hover:bg-cielo transition">Hablar por WhatsApp</a>
       </div>
     </div>
     <div class="relative">
       <!-- AQUÍ VA LA FOTO PRINCIPAL -->
       <div class="ph1 rounded-3xl h-80 lg:h-[420px] w-full"></div>
       <div class="absolute -bottom-6 left-6 right-6 sm:right-auto sm:w-72 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-4">
-        <span class="w-12 h-12 rounded-xl bg-cielo text-azul grid place-items-center font-display font-bold">36</span>
+        <span class="w-12 h-12 rounded-xl bg-cielo text-rojo grid place-items-center font-display font-bold">36</span>
         <div><p class="font-semibold text-sm">Hasta 36 meses</p><p class="text-xs text-tinta/60">para pagar tu lote</p></div>
       </div>
     </div>
@@ -93,21 +93,21 @@ tailwind.config = {
     <label class="text-xs font-semibold text-tinta/60">Ciudad
       <select class="mt-1 w-full border border-black/10 rounded-lg px-3 py-2.5 text-sm font-normal text-tinta"><option>El Carmen de Apicalá</option><option>Silvania</option><option>Fusagasugá</option></select>
     </label>
-    <button class="self-end rounded-lg bg-azul text-white font-semibold py-3 hover:bg-marino transition">Buscar</button>
+    <button class="self-end rounded-lg bg-rojo text-white font-semibold py-3 hover:bg-vino transition">Buscar</button>
   </form>
 </section>
 
 <!-- Accesos -->
 <section class="max-w-6xl mx-auto px-5 mt-16 grid md:grid-cols-3 gap-5">
-  <a href="#inmuebles" class="card rounded-2xl bg-azul text-white p-7 flex gap-4">
+  <a href="#inmuebles" class="card rounded-2xl bg-rojo text-white p-7 flex gap-4">
     <span class="text-3xl">&#127969;</span>
     <div><p class="font-display font-bold text-xl">Inmuebles disponibles</p><p class="text-sm text-white/80 mt-1">Lotes, casas y arriendos con fotos y precios.</p></div>
   </a>
-  <a href="#pago" class="card rounded-2xl bg-marino text-white p-7 flex gap-4">
+  <a href="#pago" class="card rounded-2xl bg-vino text-white p-7 flex gap-4">
     <span class="text-3xl">&#128179;</span>
     <div><p class="font-display font-bold text-xl">Financiación</p><p class="text-sm text-white/80 mt-1">Separa con $1 millón y paga hasta en 36 meses.</p></div>
   </a>
-  <a href="https://wa.me/573023487290?text=Quiero%20agendar%20una%20visita" class="card rounded-2xl bg-azul text-white p-7 flex gap-4">
+  <a href="https://wa.me/573023487290?text=Quiero%20agendar%20una%20visita" class="card rounded-2xl bg-rojo text-white p-7 flex gap-4">
     <span class="text-3xl">&#128197;</span>
     <div><p class="font-display font-bold text-xl">Agenda tu visita</p><p class="text-sm text-white/80 mt-1">Te acompañamos a conocer el inmueble.</p></div>
   </a>
@@ -117,51 +117,51 @@ tailwind.config = {
 <section id="inmuebles" class="max-w-6xl mx-auto px-5 py-20">
   <div class="flex flex-wrap items-end justify-between gap-4">
     <div>
-      <h2 class="font-display font-extrabold text-3xl md:text-4xl text-marino">Inmuebles destacados</h2>
+      <h2 class="font-display font-extrabold text-3xl md:text-4xl text-vino">Inmuebles destacados</h2>
       <p class="mt-2 text-tinta/65">Proyectos y lotes disponibles para ti.</p>
     </div>
     <div class="flex gap-2 text-sm font-semibold" id="tabs">
-      <button data-f="todos" class="tab-on rounded-lg px-4 py-2 bg-cielo text-marino">Todos</button>
-      <button data-f="urbano" class="rounded-lg px-4 py-2 bg-cielo text-marino">Urbanos</button>
-      <button data-f="campestre" class="rounded-lg px-4 py-2 bg-cielo text-marino">Campestres</button>
+      <button data-f="todos" class="tab-on rounded-lg px-4 py-2 bg-cielo text-vino">Todos</button>
+      <button data-f="urbano" class="rounded-lg px-4 py-2 bg-cielo text-vino">Urbanos</button>
+      <button data-f="campestre" class="rounded-lg px-4 py-2 bg-cielo text-vino">Campestres</button>
     </div>
   </div>
 
   <div class="mt-10 grid md:grid-cols-3 gap-6" id="grid">
 
     <article data-t="urbano" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
-      <div class="ph1 h-52 relative"><span class="absolute top-3 left-3 bg-marino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
+      <div class="ph1 h-52 relative"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
       <div class="p-6 flex flex-col flex-1">
-        <p class="text-xs font-semibold text-azul">EL CARMEN DE APICALÁ · TOLIMA</p>
-        <h3 class="font-display font-bold text-xl mt-1 text-marino">Urbanización La Colina</h3>
+        <p class="text-xs font-semibold text-rojo">EL CARMEN DE APICALÁ · TOLIMA</p>
+        <h3 class="font-display font-bold text-xl mt-1 text-vino">Urbanización La Colina</h3>
         <p class="font-display font-extrabold text-2xl mt-3">Desde $39.000.000</p>
         <div class="mt-3 flex gap-4 text-sm text-tinta/70"><span>Desde 72 m²</span><span>Piscinas</span><span>Zonas verdes</span></div>
         <p class="mt-3 text-sm text-tinta/65">Vías pavimentadas, alcantarillado y alumbrado. A 3 minutos del centro.</p>
-        <a href="https://wa.me/573023487290?text=Me%20interesa%20La%20Colina" class="mt-5 text-center rounded-lg border border-azul text-azul font-semibold py-2.5 hover:bg-azul hover:text-white transition">Ver detalles</a>
+        <a href="https://wa.me/573023487290?text=Me%20interesa%20La%20Colina" class="mt-5 text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</a>
       </div>
     </article>
 
     <article data-t="campestre" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
-      <div class="ph2 h-52 relative"><span class="absolute top-3 left-3 bg-marino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
+      <div class="ph2 h-52 relative"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
       <div class="p-6 flex flex-col flex-1">
-        <p class="text-xs font-semibold text-azul">A 20 MIN DE EL CARMEN DE APICALÁ</p>
-        <h3 class="font-display font-bold text-xl mt-1 text-marino">Aquaviva</h3>
+        <p class="text-xs font-semibold text-rojo">A 20 MIN DE EL CARMEN DE APICALÁ</p>
+        <h3 class="font-display font-bold text-xl mt-1 text-vino">Aquaviva</h3>
         <p class="font-display font-extrabold text-2xl mt-3">Desde $98.000.000</p>
         <div class="mt-3 flex gap-4 text-sm text-tinta/70"><span>1.000 m²</span><span>Jardín botánico</span></div>
         <p class="mt-3 text-sm text-tinta/65">Tres zonas a elegir: Luxury, Extra y Oasis. Hasta 36 meses sin intereses.</p>
-        <a href="https://wa.me/573023487290?text=Me%20interesa%20Aquaviva" class="mt-5 text-center rounded-lg border border-azul text-azul font-semibold py-2.5 hover:bg-azul hover:text-white transition">Ver detalles</a>
+        <a href="https://wa.me/573023487290?text=Me%20interesa%20Aquaviva" class="mt-5 text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</a>
       </div>
     </article>
 
     <article data-t="campestre" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
-      <div class="ph3 h-52 relative"><span class="absolute top-3 left-3 bg-marino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
+      <div class="ph3 h-52 relative"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
       <div class="p-6 flex flex-col flex-1">
-        <p class="text-xs font-semibold text-azul">SILVANIA · EL RETIRO</p>
-        <h3 class="font-display font-bold text-xl mt-1 text-marino">Lote campestre en Silvania</h3>
+        <p class="text-xs font-semibold text-rojo">SILVANIA · EL RETIRO</p>
+        <h3 class="font-display font-bold text-xl mt-1 text-vino">Lote campestre en Silvania</h3>
         <p class="font-display font-extrabold text-2xl mt-3">$150.000.000</p>
         <div class="mt-3 flex gap-4 text-sm text-tinta/70"><span>1.295 m²</span><span>Negociable</span></div>
         <p class="mt-3 text-sm text-tinta/65">Carretera hasta el lote, energía y acueducto cerca, árboles frutales.</p>
-        <a href="https://wa.me/573023487290?text=Me%20interesa%20el%20lote%20en%20Silvania" class="mt-5 text-center rounded-lg border border-azul text-azul font-semibold py-2.5 hover:bg-azul hover:text-white transition">Ver detalles</a>
+        <a href="https://wa.me/573023487290?text=Me%20interesa%20el%20lote%20en%20Silvania" class="mt-5 text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</a>
       </div>
     </article>
 
@@ -172,28 +172,28 @@ tailwind.config = {
 <section id="servicios" class="bg-suave">
   <div class="max-w-6xl mx-auto px-5 py-20">
     <div class="text-center max-w-2xl mx-auto">
-      <h2 class="font-display font-extrabold text-3xl md:text-4xl text-marino">Servicios</h2>
+      <h2 class="font-display font-extrabold text-3xl md:text-4xl text-vino">Servicios</h2>
       <p class="mt-3 text-tinta/65">Te acompañamos antes, durante y después de tu compra.</p>
     </div>
     <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
       <div class="card bg-white rounded-2xl p-7 text-center border border-black/5">
-        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-azul grid place-items-center text-2xl">&#127969;</span>
-        <h3 class="font-display font-bold text-lg mt-4 text-marino">Venta</h3>
+        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-rojo grid place-items-center text-2xl">&#127969;</span>
+        <h3 class="font-display font-bold text-lg mt-4 text-vino">Venta</h3>
         <p class="text-sm text-tinta/65 mt-2">Promocionamos tu inmueble y te acompañamos hasta la escritura.</p>
       </div>
       <div class="card bg-white rounded-2xl p-7 text-center border border-black/5">
-        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-azul grid place-items-center text-2xl">&#128273;</span>
-        <h3 class="font-display font-bold text-lg mt-4 text-marino">Arriendo</h3>
+        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-rojo grid place-items-center text-2xl">&#128273;</span>
+        <h3 class="font-display font-bold text-lg mt-4 text-vino">Arriendo</h3>
         <p class="text-sm text-tinta/65 mt-2">Encontramos inquilino y administramos el proceso por ti.</p>
       </div>
       <div class="card bg-white rounded-2xl p-7 text-center border border-black/5">
-        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-azul grid place-items-center text-2xl">&#128296;</span>
-        <h3 class="font-display font-bold text-lg mt-4 text-marino">Remodelaciones</h3>
+        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-rojo grid place-items-center text-2xl">&#128296;</span>
+        <h3 class="font-display font-bold text-lg mt-4 text-vino">Remodelaciones</h3>
         <p class="text-sm text-tinta/65 mt-2">Arreglos y mejoras para dejar tu inmueble listo.</p>
       </div>
       <div class="card bg-white rounded-2xl p-7 text-center border border-black/5">
-        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-azul grid place-items-center text-2xl">&#129529;</span>
-        <h3 class="font-display font-bold text-lg mt-4 text-marino">Lavado de cortinas</h3>
+        <span class="w-14 h-14 mx-auto rounded-2xl bg-cielo text-rojo grid place-items-center text-2xl">&#129529;</span>
+        <h3 class="font-display font-bold text-lg mt-4 text-vino">Lavado de cortinas</h3>
         <p class="text-sm text-tinta/65 mt-2">Limpieza profesional para tu hogar o inmueble en arriendo.</p>
       </div>
     </div>
@@ -201,12 +201,12 @@ tailwind.config = {
 </section>
 
 <!-- Financiación -->
-<section id="pago" class="bg-marino text-white">
+<section id="pago" class="bg-vino text-white">
   <div class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-12 items-center">
     <div>
       <h2 class="font-display font-extrabold text-3xl md:text-4xl">Paga a tu ritmo, sin complicaciones</h2>
       <p class="mt-4 text-white/75 max-w-md">Separas tu lote hoy y organizas el resto en cuotas. Te explicamos cada paso antes de firmar.</p>
-      <a href="https://wa.me/573023487290?text=Quiero%20conocer%20las%20formas%20de%20pago" class="inline-block mt-7 rounded-lg bg-white text-marino font-semibold px-6 py-3 hover:bg-cielo transition">Consultar formas de pago</a>
+      <a href="https://wa.me/573023487290?text=Quiero%20conocer%20las%20formas%20de%20pago" class="inline-block mt-7 rounded-lg bg-white text-vino font-semibold px-6 py-3 hover:bg-cielo transition">Consultar formas de pago</a>
     </div>
     <ol class="space-y-5">
       <li class="flex gap-4"><span class="w-10 h-10 rounded-full bg-white/15 grid place-items-center font-display font-bold shrink-0">1</span><div><p class="font-semibold">Separas con $1 millón</p><p class="text-sm text-white/65">Apartas tu lote desde hoy.</p></div></li>
@@ -219,14 +219,14 @@ tailwind.config = {
 
 <!-- Nosotros -->
 <section id="nosotros" class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-12 items-center">
-  <div class="ph2 rounded-3xl h-80 flex items-center justify-center text-marino/50 text-sm">Foto de Deisy o del equipo</div>
+  <div class="ph2 rounded-3xl h-80 flex items-center justify-center text-vino/50 text-sm">Foto de Deisy o del equipo</div>
   <div>
-    <h2 class="font-display font-extrabold text-3xl md:text-4xl text-marino">Quiénes somos</h2>
+    <h2 class="font-display font-extrabold text-3xl md:text-4xl text-vino">Quiénes somos</h2>
     <p class="mt-4 text-tinta/70">Somos una inmobiliaria con sede en Fusagasugá. Te acompañamos a encontrar tu lote, tu casa o tu arriendo, con información clara y trato cercano.</p>
     <ul class="mt-6 space-y-3 text-tinta/80">
-      <li class="flex gap-3"><span class="text-azul font-bold">&#10003;</span>Información clara de cada inmueble</li>
-      <li class="flex gap-3"><span class="text-azul font-bold">&#10003;</span>Acompañamiento en el proceso de compra</li>
-      <li class="flex gap-3"><span class="text-azul font-bold">&#10003;</span>Escrituras independientes y documentos al día</li>
+      <li class="flex gap-3"><span class="text-rojo font-bold">&#10003;</span>Información clara de cada inmueble</li>
+      <li class="flex gap-3"><span class="text-rojo font-bold">&#10003;</span>Acompañamiento en el proceso de compra</li>
+      <li class="flex gap-3"><span class="text-rojo font-bold">&#10003;</span>Escrituras independientes y documentos al día</li>
     </ul>
   </div>
 </section>
@@ -234,22 +234,22 @@ tailwind.config = {
 <!-- Preguntas -->
 <section class="bg-suave">
   <div class="max-w-3xl mx-auto px-5 py-20">
-    <h2 class="font-display font-extrabold text-3xl text-marino text-center">Preguntas frecuentes</h2>
+    <h2 class="font-display font-extrabold text-3xl text-vino text-center">Preguntas frecuentes</h2>
     <div class="mt-10 divide-y divide-black/10">
-      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Cada lote tiene su propia escritura?<span class="text-azul group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Sí. Cada lote cuenta con escritura pública independiente y título propio.</p></details>
-      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Cuánto necesito para separar?<span class="text-azul group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Desde $1 millón de pesos puedes apartar tu lote.</p></details>
-      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Puedo pagar en cuotas?<span class="text-azul group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Sí, hasta 36 meses. En Aquaviva es sin intereses; en los demás proyectos te confirmamos las condiciones por WhatsApp.</p></details>
-      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Puedo visitar antes de decidir?<span class="text-azul group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Claro. Escríbenos y coordinamos una visita.</p></details>
+      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Cada lote tiene su propia escritura?<span class="text-rojo group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Sí. Cada lote cuenta con escritura pública independiente y título propio.</p></details>
+      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Cuánto necesito para separar?<span class="text-rojo group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Desde $1 millón de pesos puedes apartar tu lote.</p></details>
+      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Puedo pagar en cuotas?<span class="text-rojo group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Sí, hasta 36 meses. En Aquaviva es sin intereses; en los demás proyectos te confirmamos las condiciones por WhatsApp.</p></details>
+      <details class="py-5 group"><summary class="cursor-pointer font-semibold flex justify-between">¿Puedo visitar antes de decidir?<span class="text-rojo group-open:rotate-45 transition text-xl leading-none">+</span></summary><p class="mt-3 text-tinta/70 text-sm">Claro. Escríbenos y coordinamos una visita.</p></details>
     </div>
   </div>
 </section>
 
 <!-- Contacto -->
 <section id="contacto" class="max-w-6xl mx-auto px-5 py-20">
-  <div class="rounded-3xl bg-azul text-white px-8 py-14 text-center">
+  <div class="rounded-3xl bg-rojo text-white px-8 py-14 text-center">
     <h2 class="font-display font-extrabold text-3xl md:text-4xl max-w-2xl mx-auto">¿Te cuento cuáles inmuebles siguen disponibles?</h2>
     <p class="mt-3 text-white/80">Escríbenos y recibe información completa, fotos y ubicación.</p>
-    <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="inline-block mt-8 rounded-lg bg-white text-marino font-semibold px-8 py-4 hover:bg-cielo transition">Escribir por WhatsApp</a>
+    <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="inline-block mt-8 rounded-lg bg-white text-vino font-semibold px-8 py-4 hover:bg-cielo transition">Escribir por WhatsApp</a>
     <p class="mt-4 text-sm text-white/70">+57 302 348 7290</p>
   </div>
 </section>
