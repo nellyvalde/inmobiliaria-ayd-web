@@ -86,10 +86,10 @@ def hero(items):
         href = f'inmueble/{cod}.html' if it.get('detalle') else wa(it['whatsapp_texto'])
         out.append(f'''      <article class="hslide absolute inset-0{' is-active' if k == 0 else ''}" data-src="{base}{e(pt['video'])}" data-start="{pt.get('inicio', 0)}" data-end="{pt.get('fin', 15)}">
         <video muted playsinline preload="none" poster="{base}{e(poster)}" class="w-full h-full object-cover"></video>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
-        <div class="absolute left-5 right-5 bottom-14 text-white">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/75 via-black/15 to-transparent"></div>
+        <div class="absolute left-5 right-5 top-5 text-white">
           <p class="text-xs font-semibold uppercase tracking-wide text-white/80">Cód. {cod} · {e(pt.get('lugar', it['ubicacion_corta']))}</p>
-          <h3 class="mt-1 font-display font-extrabold text-2xl md:text-3xl leading-tight">{e(pt.get('titulo', it['titulo']))}</h3>
+          <h3 class="mt-1 font-display font-extrabold text-xl md:text-2xl leading-tight">{e(pt.get('titulo', it['titulo']))}</h3>
           <p class="mt-1 text-sm text-white/90">{e(pt.get('linea', ''))}</p>
           <a href="{e(href)}" class="inline-block mt-3 rounded-lg bg-white text-vino text-sm font-semibold px-4 py-2 hover:bg-cielo transition">Ver {'proyecto' if it['categoria'] == 'proyecto' else 'inmueble'}</a>
         </div>

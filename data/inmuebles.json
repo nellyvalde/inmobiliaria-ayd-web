@@ -117,7 +117,7 @@
       "video1.mp4"
     ],
     "portada": {
-      "video": "video1.mp4",
+      "video": "hero.mp4",
       "inicio": 0,
       "fin": 15,
       "lugar": "A 20 min de El Carmen de Apicalá",
@@ -281,7 +281,7 @@
       }
     ],
     "portada": {
-      "video": "video.mp4",
+      "video": "hero.mp4",
       "inicio": 0,
       "fin": 15,
       "lugar": "Zona de expansión urbana · A 5 min del aeropuerto",
