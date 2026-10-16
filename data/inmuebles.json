@@ -39,33 +39,83 @@
     "codigo": 102,
     "categoria": "proyecto",
     "negocio": "Venta",
-    "titulo": "Aquaviva",
-    "tipo": "Lote campestre (proyecto)",
-    "ubicacion_corta": "A 20 min de El Carmen de Apicalá",
-    "referencia": "A 20 minutos de El Carmen de Apicalá (Tolima)",
-    "area_texto": "1.000 m²",
-    "precio_texto": "Desde $98.000.000",
-    "precio_nota": "",
+    "titulo": "Acquaviva Campestre",
+    "tipo": "Lotes campestres (proyecto)",
+    "ubicacion_corta": "A 20 min de El Carmen de Apicalá · Tolima",
+    "referencia": "Naturaleza, lujo y tranquilidad, a 20 minutos de El Carmen de Apicalá (Tolima)",
+    "area_texto": "Desde 1.000 m²",
+    "precio_texto": "Desde $100.000.000",
+    "precio_nota": "Separa con $1.000.000",
     "separacion": "$1.000.000",
-    "financiacion": "Hasta 36 meses sin intereses; cuota inicial $10.000.000",
+    "financiacion": "Directa y sin intereses; sin estudios crediticios ni fiadores (hasta 36 meses; cuota inicial $10.000.000, según publicación anterior)",
     "chips": [
-      "1.000 m²",
-      "Jardín botánico"
+      "Lotes desde 1.000 m²",
+      "Piscinas y zonas comunes",
+      "Libre construcción"
     ],
-    "resumen": "Tres zonas a elegir: Luxury, Extra y Oasis. Hasta 36 meses sin intereses.",
+    "resumen": "Vías pavimentadas, acueducto, energía y zonas comunes. Separa con $1.000.000 y financia sin intereses.",
     "servicios": [
-      "Único con jardín botánico",
-      "Zona Luxury: vida y servicios",
-      "Zona Extra: familia y diversión",
-      "Zona Oasis: paz y privacidad"
+      "Vías pavimentadas y sardineles",
+      "Red de acueducto",
+      "Energía eléctrica",
+      "Parque biosaludable",
+      "Parque infantil",
+      "Piscina olímpica y piscina para adultos y niños",
+      "Cancha de voleibol playa",
+      "Sendero ecológico",
+      "Cuarto de visualización",
+      "Área de laundry",
+      "Área de administración",
+      "Sistema de alistamiento",
+      "Zona de alta valorización",
+      "Libre construcción"
     ],
     "documentos": "Promesa de compraventa; escritura pública independiente",
-    "estado": "Por confirmar",
-    "fecha": "2026-09-16",
-    "whatsapp_texto": "Hola, me interesa el inmueble 102 (Aquaviva)",
-    "detalle": false,
-    "ph": "ph2",
-    "por_confirmar": "Nombre exacto (AQCUAVIVA o AQUAVIVA), precio por zona, lotes disponibles, si la cuota inicial incluye la separación."
+    "estado": "Disponible",
+    "fecha": "2026-10-16",
+    "whatsapp_texto": "Hola, me interesa el inmueble 102 (Acquaviva Campestre)",
+    "detalle": true,
+    "por_confirmar": "Nombre exacto (Acquaviva / Acqua Viva); precio por zona (Luxury, Extra, Oasis); lotes disponibles; meses de financiación y cuota inicial; fotos reales; segundo video (52 MB, muy pesado para la página).",
+    "descripcion": [
+      "Lotes campestres desde 1.000 m² en un entorno natural privilegiado, con todas las comodidades: naturaleza, lujo y tranquilidad, a 20 minutos de El Carmen de Apicalá (Tolima).",
+      "Un proyecto pensado para ti y tu familia, con vías pavimentadas, servicios y amplias zonas comunes. Puedes elegir entre tres zonas: Luxury (vida y servicios), Extra (familia y diversión) y Oasis (paz y privacidad).",
+      "Es una zona de excelente valorización y de libre construcción."
+    ],
+    "servicios_titulo": "Servicios y zonas comunes",
+    "condiciones": [
+      "Lotes desde 1.000 m²",
+      "Precios desde $100 millones",
+      "Separa solo con $1.000.000",
+      "Financiación directa y sin intereses",
+      "Sin estudios crediticios ni fiadores"
+    ],
+    "ubicacion_puntos": [
+      "A 20 minutos de El Carmen de Apicalá (Tolima)",
+      "Tres zonas a elegir: Luxury, Extra y Oasis"
+    ],
+    "datos_extra": [
+      {
+        "t": "Separación",
+        "v": "$1.000.000",
+        "x": "Separa tu lote"
+      },
+      {
+        "t": "Financiación",
+        "v": "Directa, sin intereses",
+        "x": "Sin estudios crediticios ni fiadores"
+      }
+    ],
+    "foto_portada": "assets/inmuebles/102/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Acquaviva Campestre: imagen ilustrativa del proyecto"
+      }
+    ],
+    "mapas": [],
+    "videos": [
+      "video1.mp4"
+    ]
   },
   {
     "codigo": 103,

@@ -140,7 +140,7 @@ def detalle(it, partes):
     for d in it.get('datos_extra', []):
         datos += dato(d['t'], d['v'], d.get('x', ''))
     if it.get('permuta'):
-        datos += dato('Permuta', 'Sí', 'En parte de pago, por propiedad en Fusagasugá')
+        datos += dato('Permuta', 'Sí', it['permuta'])
 
     cols = 'lg:grid-cols-5' if datos.count('rounded-2xl bg-suave') >= 5 else 'lg:grid-cols-4'
     desc = ''.join(f'<p class="mt-3 text-tinta/75">{e(p)}</p>' for p in it.get('descripcion', []))
@@ -150,14 +150,36 @@ def detalle(it, partes):
           <figcaption class="mt-2 text-sm text-tinta/65">{e(m['texto'])}</figcaption></figure>'''
         for m in mapas)
 
+    videos = it.get('videos') or ([it['video']] if it.get('video') else [])
     video = ''
-    if it.get('video'):
+    if videos:
+        vids = ''.join(
+            f'''<video class="w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="{base}cover.jpg">
+        <source src="{base}{e(v)}" type="video/mp4">
+      </video>''' for v in videos)
         video = f'''<section class="mt-14">
-      <h2 class="font-display font-extrabold text-2xl text-vino">Video</h2>
-      <video class="mt-4 w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="{base}cover.jpg">
-        <source src="{base}{e(it['video'])}" type="video/mp4">
-      </video>
+      <h2 class="font-display font-extrabold text-2xl text-vino">{'Videos' if len(videos) > 1 else 'Video'}</h2>
+      <div class="mt-4 grid gap-5 {'md:grid-cols-2' if len(videos) > 1 else ''}">{vids}</div>
     </section>'''
+
+    mapas_sec = ''
+    if mapas:
+        mapas_sec = f'''<section class="mt-14">
+    <h2 class="font-display font-extrabold text-2xl text-vino">Mapa y ubicación</h2>
+    <div class="mt-4 grid md:grid-cols-3 gap-5">{mapas_html}</div>
+  </section>'''
+
+    listas = ''.join([
+        lista(it.get('servicios_titulo', 'Servicios'), it.get('servicios')),
+        lista('Incluye', it.get('incluye')),
+        lista('Condiciones', it.get('condiciones')),
+        lista('Ubicación', it.get('ubicacion_puntos')),
+    ])
+    una_foto = len(fotos) == 1
+    grid_gal = '' if una_foto else 'lg:grid-cols-[1fr_300px]'
+    main_aspect = 'p-3' if una_foto else 'aspect-[4/3]'
+    img_cls = 'max-h-[78vh] w-auto mx-auto rounded-xl' if una_foto else 'w-full h-full object-contain'
+    thumbs_html = '' if una_foto else f'<div class="grid grid-cols-4 lg:grid-cols-3 gap-2 content-start max-h-[520px] overflow-y-auto pr-1" id="thumbs">{thumbs}</div>'
 
     wa_link = wa(it['whatsapp_texto'])
     titulo_pag = f'Cód. {cod} · {it["titulo"]} | Inmobiliaria A&amp;D'
@@ -184,12 +206,12 @@ def detalle(it, partes):
     <a href="{wa_link}" class="rounded-lg bg-rojo text-white font-semibold px-6 py-3.5 hover:bg-vino transition">Consultar por WhatsApp</a>
   </div>
 
-  <section class="mt-8 grid lg:grid-cols-[1fr_300px] gap-4">
-    <button type="button" id="main" class="relative rounded-2xl overflow-hidden bg-black/5 aspect-[4/3] w-full">
-      <img id="mainimg" src="{base}{fotos[0]['f']}" alt="{e(fotos[0]['alt'])}" class="w-full h-full object-contain">
+  <section class="mt-8 grid {grid_gal} gap-4">
+    <button type="button" id="main" class="relative rounded-2xl overflow-hidden bg-black/5 {main_aspect} w-full">
+      <img id="mainimg" src="{base}{fotos[0]['f']}" alt="{e(fotos[0]['alt'])}" class="{img_cls}">
       <span id="counter" class="absolute bottom-3 right-3 bg-black/60 text-white text-xs px-3 py-1 rounded-full"></span>
     </button>
-    <div class="grid grid-cols-4 lg:grid-cols-3 gap-2 content-start max-h-[520px] overflow-y-auto pr-1" id="thumbs">{thumbs}</div>
+    {thumbs_html}
   </section>
 
   <section class="mt-10 grid sm:grid-cols-2 {cols} gap-4">
@@ -201,16 +223,11 @@ def detalle(it, partes):
     {desc}
   </section>
 
-  <section class="mt-10 grid md:grid-cols-3 gap-6">
-    {lista('Servicios', it.get('servicios'))}
-    {lista('Incluye', it.get('incluye'))}
-    {lista('Ubicación', it.get('ubicacion_puntos'))}
+  <section class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {listas}
   </section>
 
-  <section class="mt-14">
-    <h2 class="font-display font-extrabold text-2xl text-vino">Mapa y ubicación</h2>
-    <div class="mt-4 grid md:grid-cols-3 gap-5">{mapas_html}</div>
-  </section>
+  {mapas_sec}
 
   {video}
 
