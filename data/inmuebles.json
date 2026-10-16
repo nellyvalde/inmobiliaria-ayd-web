@@ -12,9 +12,21 @@
     "precio_nota": "Precio de lanzamiento (confirmar vigencia)",
     "separacion": "$1.000.000",
     "financiacion": "Hasta 36 meses (confirmar si hay intereses)",
-    "chips": ["Desde 72 m²", "Piscinas", "Zonas verdes"],
+    "chips": [
+      "Desde 72 m²",
+      "Piscinas",
+      "Zonas verdes"
+    ],
     "resumen": "Vías pavimentadas, alcantarillado y alumbrado. A 3 minutos del centro.",
-    "servicios": ["Vías pavimentadas", "Alcantarillado público", "Alumbrado público", "Zonas verdes", "Piscina para adultos y para niños", "Servicios públicos hasta la entrada del lote", "Bahías de parqueo"],
+    "servicios": [
+      "Vías pavimentadas",
+      "Alcantarillado público",
+      "Alumbrado público",
+      "Zonas verdes",
+      "Piscina para adultos y para niños",
+      "Servicios públicos hasta la entrada del lote",
+      "Bahías de parqueo"
+    ],
     "documentos": "Escritura pública independiente",
     "estado": "Por confirmar",
     "fecha": "2026-09-12",
@@ -36,9 +48,17 @@
     "precio_nota": "",
     "separacion": "$1.000.000",
     "financiacion": "Hasta 36 meses sin intereses; cuota inicial $10.000.000",
-    "chips": ["1.000 m²", "Jardín botánico"],
+    "chips": [
+      "1.000 m²",
+      "Jardín botánico"
+    ],
     "resumen": "Tres zonas a elegir: Luxury, Extra y Oasis. Hasta 36 meses sin intereses.",
-    "servicios": ["Único con jardín botánico", "Zona Luxury: vida y servicios", "Zona Extra: familia y diversión", "Zona Oasis: paz y privacidad"],
+    "servicios": [
+      "Único con jardín botánico",
+      "Zona Luxury: vida y servicios",
+      "Zona Extra: familia y diversión",
+      "Zona Oasis: paz y privacidad"
+    ],
     "documentos": "Promesa de compraventa; escritura pública independiente",
     "estado": "Por confirmar",
     "fecha": "2026-09-16",
@@ -60,9 +80,16 @@
     "precio_nota": "Negociable",
     "separacion": "",
     "financiacion": "",
-    "chips": ["1.295 m²", "Negociable"],
+    "chips": [
+      "1.295 m²",
+      "Negociable"
+    ],
     "resumen": "Carretera hasta el lote, energía y acueducto cerca, árboles frutales.",
-    "servicios": ["Carretera de ingreso hasta el lote", "Energía y acueducto cerca del predio", "Árboles frutales: naranja, limón, guayaba, banano, plátano, aguacate y breva"],
+    "servicios": [
+      "Carretera de ingreso hasta el lote",
+      "Energía y acueducto cerca del predio",
+      "Árboles frutales: naranja, limón, guayaba, banano, plátano, aguacate y breva"
+    ],
     "documentos": "Documentos al día, listo para escriturar",
     "estado": "Por confirmar",
     "fecha": "2026-09-26",
@@ -75,8 +102,8 @@
     "codigo": 104,
     "categoria": "lote",
     "negocio": "Venta",
-    "titulo": "Lote de 16.000 m² con casa",
-    "tipo": "Lote con casa",
+    "titulo": "Lote de 16.000 m² con proyecto de negocio",
+    "tipo": "Lote con casa y proyecto de negocio",
     "ubicacion_corta": "Zona de expansión urbana · A 15 min de Girardot",
     "referencia": "A una cuadra de la variante Melgar–Ibagué, a 5 minutos del aeropuerto y a 15 minutos de Girardot",
     "area_texto": "16.000 m²",
@@ -88,14 +115,23 @@
     "permuta": "Recibe permuta en parte de pago por propiedad en Fusagasugá",
     "separacion": "",
     "financiacion": "",
-    "chips": ["16.000 m²", "Casa 3 hab.", "Recibe permuta"],
-    "resumen": "Zona de expansión urbana, con agua propia, gas y luz. A 5 minutos del aeropuerto.",
+    "chips": [
+      "16.000 m²",
+      "Jacuzzis incluidos",
+      "Casa 3 hab.",
+      "Recibe permuta"
+    ],
+    "resumen": "Casa en madera estilo viejo oeste, jacuzzis y estanques incluidos. Agua propia, gas y luz. A 5 minutos del aeropuerto.",
     "descripcion": [
       "Lote de 16.000 m² en zona de expansión urbana, a una cuadra de la variante Melgar–Ibagué, a 5 minutos del aeropuerto y a 15 minutos de Girardot.",
-      "Cuenta con todos los servicios y una casa austera de 3 habitaciones con zona húmeda. Al costado ya hay un predio recién adquirido por una urbanizadora que está interviniéndolo para construir, lo que muestra el crecimiento de la zona."
+      "Es un proyecto de negocio: incluye la casa en madera con ambientación estilo viejo oeste, los jacuzzis de madera, estanques y zonas cubiertas, además de una casa austera de 3 habitaciones.",
+      "Cuenta con todos los servicios: agua propia de 2 pozos profundos, gas domiciliario y energía 110 V y 220 V. Al costado, un predio recién adquirido por una urbanizadora ya está siendo intervenido para construir."
     ],
-    "servicios": ["Agua propia: 2 pozos profundos", "Gas domiciliario", "Energía 110 V y 220 V"],
-    "casa": ["Casa austera", "3 habitaciones", "Zona húmeda"],
+    "servicios": [
+      "Agua propia: 2 pozos profundos",
+      "Gas domiciliario",
+      "Energía 110 V y 220 V"
+    ],
     "ubicacion_puntos": [
       "Zona de expansión urbana",
       "A 5 minutos del aeropuerto",
@@ -106,29 +142,88 @@
     "documentos": "",
     "estado": "Disponible",
     "fecha": "2026-10-16",
-    "whatsapp_texto": "Hola, me interesa el inmueble 104 (lote de 16.000 m² con casa)",
+    "whatsapp_texto": "Hola, me interesa el inmueble 104 (lote de 16.000 m² con proyecto de negocio)",
     "detalle": true,
     "foto_portada": "assets/inmuebles/104/cover.jpg",
     "fotos": [
-      {"f": "01.jpg", "alt": "Vista del lote"},
-      {"f": "02.jpg", "alt": "Terreno despejado"},
-      {"f": "03.jpg", "alt": "Frente de la casa"},
-      {"f": "04.jpg", "alt": "Cerramiento y portón de entrada"},
-      {"f": "05.jpg", "alt": "Interior de la casa"},
-      {"f": "06.jpg", "alt": "Habitación"},
-      {"f": "07.jpg", "alt": "Patio con árboles"},
-      {"f": "08.jpg", "alt": "Zona cubierta"},
-      {"f": "09.jpg", "alt": "Zona cubierta con cocina"},
-      {"f": "10.jpg", "alt": "Instalaciones del predio"},
-      {"f": "11.jpg", "alt": "Zona húmeda"},
-      {"f": "12.jpg", "alt": "Estanques"}
+      {
+        "f": "01.jpg",
+        "alt": "Casa en madera estilo viejo oeste"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Jacuzzis de madera"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Vista del lote"
+      },
+      {
+        "f": "04.jpg",
+        "alt": "Terreno despejado"
+      },
+      {
+        "f": "05.jpg",
+        "alt": "Estanques"
+      },
+      {
+        "f": "06.jpg",
+        "alt": "Frente de la casa"
+      },
+      {
+        "f": "07.jpg",
+        "alt": "Cerramiento y portón de entrada"
+      },
+      {
+        "f": "08.jpg",
+        "alt": "Interior de la casa"
+      },
+      {
+        "f": "09.jpg",
+        "alt": "Habitación"
+      },
+      {
+        "f": "10.jpg",
+        "alt": "Patio con árboles"
+      },
+      {
+        "f": "11.jpg",
+        "alt": "Zona cubierta"
+      },
+      {
+        "f": "12.jpg",
+        "alt": "Zona cubierta con cocina"
+      }
     ],
     "mapas": [
-      {"f": "mapa1.jpg", "texto": "El lote (marcado en rojo) junto a la vía férrea nacional."},
-      {"f": "mapa2.jpg", "texto": "Ubicación general, cerca de Girardot, Ricaurte y el aeropuerto."},
-      {"f": "mapa3.jpg", "texto": "En rojo, el lote; en amarillo, el predio vecino adquirido por una urbanizadora."}
+      {
+        "f": "mapa1.jpg",
+        "texto": "El lote (marcado en rojo) junto a la vía férrea nacional."
+      },
+      {
+        "f": "mapa2.jpg",
+        "texto": "Ubicación general, cerca de Girardot, Ricaurte y el aeropuerto."
+      },
+      {
+        "f": "mapa3.jpg",
+        "texto": "En rojo, el lote; en amarillo, el predio vecino adquirido por una urbanizadora."
+      }
     ],
     "video": "video.mp4",
-    "por_confirmar": "Municipio exacto; si el negocio/instalaciones de las fotos 10-12 hacen parte de la venta; medidas de la casa; escritura y documentos."
+    "por_confirmar": "Municipio exacto; medidas de la casa; si el negocio está en operación; escritura y documentos.",
+    "incluye": [
+      "Casa en madera estilo viejo oeste (saloon)",
+      "Zona húmeda con jacuzzis de madera",
+      "Estanques",
+      "Zonas cubiertas",
+      "Casa austera de 3 habitaciones"
+    ],
+    "datos_extra": [
+      {
+        "t": "Incluye",
+        "v": "Proyecto de negocio",
+        "x": "Casa en madera, jacuzzis y estanques"
+      }
+    ]
   }
 ]

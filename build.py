@@ -137,8 +137,8 @@ def detalle(it, partes):
     datos += dato('Precio', it['precio_texto'], it.get('precio_nota', ''))
     if it.get('valor_total_aprox'):
         datos += dato('Valor aproximado', it['valor_total_aprox'], f'{it["area_texto"]} × {it["precio_texto"].replace(" por m²", "")}')
-    if it.get('casa'):
-        datos += dato('Casa', '3 habitaciones', 'Con zona húmeda')
+    for d in it.get('datos_extra', []):
+        datos += dato(d['t'], d['v'], d.get('x', ''))
     if it.get('permuta'):
         datos += dato('Permuta', 'Sí', 'En parte de pago, por propiedad en Fusagasugá')
 
@@ -202,7 +202,7 @@ def detalle(it, partes):
 
   <section class="mt-10 grid md:grid-cols-3 gap-6">
     {lista('Servicios', it.get('servicios'))}
-    {lista('La casa', it.get('casa'))}
+    {lista('Incluye', it.get('incluye'))}
     {lista('Ubicación', it.get('ubicacion_puntos'))}
   </section>
 
@@ -279,7 +279,7 @@ def excel(items, ruta):
     ws.title = 'Inventario'
     cols = ['Código', 'Negocio', 'Tipo', 'Título', 'Ubicación', 'Referencia de ubicación', 'Área', 'Precio',
             'Nota de precio', 'Valor total aprox.', 'Permuta', 'Separación', 'Financiación', 'Servicios',
-            'La casa', 'Documentos / legal', 'Descripción', 'Estado', 'Fecha', 'Fotos', 'Video',
+            'Incluye', 'Documentos / legal', 'Descripción', 'Estado', 'Fecha', 'Fotos', 'Video',
             'Enlace en la página', 'Por confirmar con Deisy']
     ws.append(cols)
     for it in items:
@@ -287,7 +287,7 @@ def excel(items, ruta):
             it['codigo'], it['negocio'], it.get('tipo', ''), it['titulo'], it['ubicacion_corta'], it['referencia'],
             it['area_texto'], it['precio_texto'], it.get('precio_nota', ''), it.get('valor_total_aprox', ''),
             it.get('permuta', ''), it.get('separacion', ''), it.get('financiacion', ''),
-            '; '.join(it.get('servicios', [])), '; '.join(it.get('casa', [])), it.get('documentos', ''),
+            '; '.join(it.get('servicios', [])), '; '.join(it.get('incluye', [])), it.get('documentos', ''),
             ' '.join(it.get('descripcion', [])) or it.get('resumen', ''), it.get('estado', ''), it.get('fecha', ''),
             len(it.get('fotos', [])), 'Sí' if it.get('video') else '',
             f'https://inmobiliariaayd.online/inmueble/{it["codigo"]}.html' if it.get('detalle') else 'Solo tarjeta (WhatsApp)',
