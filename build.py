@@ -180,14 +180,15 @@ def detalle(it, partes):
           <figcaption class="mt-2 text-sm text-tinta/65">{e(m['texto'])}</figcaption></figure>'''
         for m in mapas)
 
+    poster_img = fotos[0]['f'] if fotos else 'cover.jpg'
     videos = it.get('videos') or ([it['video']] if it.get('video') else [])
     video = ''
     if videos:
         vids = ''.join(
-            f'''<video class="w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="{base}cover.jpg">
+            f'''<video class="w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="{base}{poster_img}">
         <source src="{base}{e(v)}" type="video/mp4">
       </video>''' for v in videos)
-        video = f'''<section class="mt-14">
+        video = f'''<section class="mt-10">
       <h2 class="font-display font-extrabold text-2xl text-vino">{'Videos' if len(videos) > 1 else 'Video'}</h2>
       <div class="mt-4 grid gap-5 {'md:grid-cols-2' if len(videos) > 1 else ''}">{vids}</div>
     </section>'''
@@ -248,6 +249,8 @@ def detalle(it, partes):
     {datos}
   </section>
 
+  {video}
+
   <section class="mt-10">
     <h2 class="font-display font-extrabold text-2xl text-vino">Descripción</h2>
     {desc}
@@ -258,8 +261,6 @@ def detalle(it, partes):
   </section>
 
   {mapas_sec}
-
-  {video}
 
   <section class="mt-14 rounded-3xl bg-rojo text-white px-8 py-12 text-center">
     <h2 class="font-display font-extrabold text-3xl max-w-2xl mx-auto">¿Te interesa el inmueble {cod}?</h2>
