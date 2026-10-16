@@ -3,37 +3,97 @@
     "codigo": 101,
     "categoria": "proyecto",
     "negocio": "Venta",
-    "titulo": "Urbanización La Colina",
-    "tipo": "Lote urbano (proyecto)",
-    "ubicacion_corta": "El Carmen de Apicalá · Tolima",
-    "referencia": "A 3 minutos del centro de El Carmen de Apicalá",
+    "titulo": "La Colina · Lotes urbanos",
+    "tipo": "Lotes urbanos (proyecto)",
+    "ubicacion_corta": "Carmen de Apicalá · Tolima",
+    "referencia": "A 3 minutos del parque principal de Carmen de Apicalá, Tolima",
     "area_texto": "Desde 72 m²",
     "precio_texto": "Desde $39.000.000",
-    "precio_nota": "Precio de lanzamiento (confirmar vigencia)",
+    "precio_nota": "Separa con $1.000.000",
     "separacion": "$1.000.000",
-    "financiacion": "Hasta 36 meses (confirmar si hay intereses)",
+    "financiacion": "Hasta 24 meses sin interés; sin fiadores ni estudios crediticios",
     "chips": [
       "Desde 72 m²",
       "Piscinas",
-      "Zonas verdes"
+      "Libre construcción"
     ],
-    "resumen": "Vías pavimentadas, alcantarillado y alumbrado. A 3 minutos del centro.",
+    "resumen": "Lotes urbanos a 3 minutos del parque principal, con servicios, piscinas y zonas comunes. Financiación hasta 24 meses sin interés.",
     "servicios": [
-      "Vías pavimentadas",
-      "Alcantarillado público",
-      "Alumbrado público",
-      "Zonas verdes",
-      "Piscina para adultos y para niños",
-      "Servicios públicos hasta la entrada del lote",
-      "Bahías de parqueo"
+      "Energía eléctrica",
+      "Red de acueducto y alcantarillado",
+      "Vías con sello asfáltico y excelentes vías de acceso",
+      "Piscina para adultos y niños",
+      "Kiosco",
+      "Parque biosaludable",
+      "Bahías de parqueo",
+      "Libre construcción",
+      "Zona de alta valorización"
     ],
-    "documentos": "Escritura pública independiente",
-    "estado": "Por confirmar",
-    "fecha": "2026-09-12",
-    "whatsapp_texto": "Hola, me interesa el inmueble 101 (Urbanización La Colina)",
-    "detalle": false,
-    "ph": "ph1",
-    "por_confirmar": "Nombre exacto del proyecto, precio según tamaño, cuota inicial, lotes disponibles, intereses."
+    "documentos": "Escrituración inmediata",
+    "estado": "Disponible",
+    "fecha": "2026-10-16",
+    "whatsapp_texto": "Hola, me interesa el inmueble 101 (La Colina, lotes urbanos)",
+    "detalle": true,
+    "por_confirmar": "Meses de financiación (texto actual: 24 meses sin interés; flyers: 12 meses; antes: 36); precio según tamaño; \"Fase 3\" y nombre exacto; fotos reales; vigencia del precio de lanzamiento; qué es \"sello asfáltico\".",
+    "descripcion": [
+      "Lotes urbanos desde 72 m² en Carmen de Apicalá, Tolima, a solo 3 minutos del parque principal, con escrituración inmediata.",
+      "Un proyecto con servicios y zonas comunes: energía, acueducto y alcantarillado, vías con sello asfáltico, piscina para adultos y niños, kiosco, parque biosaludable y bahías de parqueo.",
+      "Son lotes de libre construcción, en una zona de alta valorización. Puedes separar con solo $1.000.000 y financiar hasta 24 meses sin interés, sin fiadores ni estudios crediticios."
+    ],
+    "servicios_titulo": "Servicios y zonas comunes",
+    "condiciones": [
+      "Separa solo con $1.000.000",
+      "Escrituración inmediata",
+      "Fácil financiación hasta 24 meses sin interés",
+      "Sin fiadores ni estudios crediticios"
+    ],
+    "ubicacion_puntos": [
+      "A 3 minutos del parque principal de Carmen de Apicalá",
+      "Tolima",
+      "Zona de alta valorización"
+    ],
+    "datos_extra": [
+      {
+        "t": "Separación",
+        "v": "$1.000.000",
+        "x": "Separa tu lote"
+      },
+      {
+        "t": "Financiación",
+        "v": "Hasta 24 meses",
+        "x": "Sin interés, sin fiadores ni estudios crediticios"
+      }
+    ],
+    "incluye": [],
+    "foto_portada": "assets/inmuebles/101/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Vista aérea de los lotes y la piscina"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Vías del proyecto"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Terreno del proyecto"
+      },
+      {
+        "f": "04.jpg",
+        "alt": "Vía de acceso"
+      }
+    ],
+    "mapas": [],
+    "video": "video.mp4",
+    "portada": {
+      "video": "hero.mp4",
+      "inicio": 0,
+      "fin": 15,
+      "lugar": "A 3 min del parque principal · Carmen de Apicalá",
+      "titulo": "La Colina · Lotes urbanos",
+      "linea": "Desde 72 m² · Desde $39 millones · Separa con $1.000.000"
+    }
   },
   {
     "codigo": 102,
