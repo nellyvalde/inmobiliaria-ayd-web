@@ -121,51 +121,69 @@ tailwind.config = {
       <h2 class="font-display font-extrabold text-3xl md:text-4xl text-vino">Inmuebles destacados</h2>
       <p class="mt-2 text-tinta/65">Proyectos y lotes disponibles para ti.</p>
     </div>
-    <div class="flex gap-2 text-sm font-semibold" id="tabs">
+    <div class="flex flex-wrap gap-2 text-sm font-semibold" id="tabs">
+      <!-- TABS:START -->
       <button data-f="todos" class="tab-on rounded-lg px-4 py-2 bg-cielo text-vino">Todos</button>
-      <button data-f="urbano" class="rounded-lg px-4 py-2 bg-cielo text-vino">Urbanos</button>
-      <button data-f="campestre" class="rounded-lg px-4 py-2 bg-cielo text-vino">Campestres</button>
+      <button data-f="proyecto" class="rounded-lg px-4 py-2 bg-cielo text-vino">Proyectos</button>
+      <button data-f="lote" class="rounded-lg px-4 py-2 bg-cielo text-vino">Lotes</button>
+    <!-- TABS:END -->
     </div>
   </div>
 
   <div class="mt-10 grid md:grid-cols-3 gap-6" id="grid">
-
-    <article data-t="urbano" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
-      <div class="ph1 h-52 relative"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
+    <!-- CARDS:START -->
+    <article data-t="proyecto" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
+      <div class="ph1 h-52 relative"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span><span class="absolute top-3 right-3 bg-white/95 text-vino text-xs font-bold px-2.5 py-1 rounded-md">Cód. 101</span></div>
       <div class="p-6 flex flex-col flex-1">
-        <p class="text-xs font-semibold text-rojo">EL CARMEN DE APICALÁ · TOLIMA</p>
+        <p class="text-xs font-semibold text-rojo uppercase">El Carmen de Apicalá · Tolima</p>
         <h3 class="font-display font-bold text-xl mt-1 text-vino">Urbanización La Colina</h3>
         <p class="font-display font-extrabold text-2xl mt-3">Desde $39.000.000</p>
-        <div class="mt-3 flex gap-4 text-sm text-tinta/70"><span>Desde 72 m²</span><span>Piscinas</span><span>Zonas verdes</span></div>
+        <p class="text-sm text-tinta/60">Precio de lanzamiento (confirmar vigencia)</p>
+        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-tinta/70"><span>Desde 72 m²</span><span>Piscinas</span><span>Zonas verdes</span></div>
         <p class="mt-3 text-sm text-tinta/65">Vías pavimentadas, alcantarillado y alumbrado. A 3 minutos del centro.</p>
-        <a href="https://wa.me/573023487290?text=Me%20interesa%20La%20Colina" class="mt-5 text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</a>
+        <a href="https://wa.me/573023487290?text=Hola%2C%20me%20interesa%20el%20inmueble%20101%20%28Urbanizaci%C3%B3n%20La%20Colina%29" class="mt-auto pt-5"><span class="block text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</span></a>
       </div>
     </article>
 
-    <article data-t="campestre" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
-      <div class="ph2 h-52 relative"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
+    <article data-t="proyecto" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
+      <div class="ph2 h-52 relative"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span><span class="absolute top-3 right-3 bg-white/95 text-vino text-xs font-bold px-2.5 py-1 rounded-md">Cód. 102</span></div>
       <div class="p-6 flex flex-col flex-1">
-        <p class="text-xs font-semibold text-rojo">A 20 MIN DE EL CARMEN DE APICALÁ</p>
+        <p class="text-xs font-semibold text-rojo uppercase">A 20 min de El Carmen de Apicalá</p>
         <h3 class="font-display font-bold text-xl mt-1 text-vino">Aquaviva</h3>
         <p class="font-display font-extrabold text-2xl mt-3">Desde $98.000.000</p>
-        <div class="mt-3 flex gap-4 text-sm text-tinta/70"><span>1.000 m²</span><span>Jardín botánico</span></div>
+        
+        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-tinta/70"><span>1.000 m²</span><span>Jardín botánico</span></div>
         <p class="mt-3 text-sm text-tinta/65">Tres zonas a elegir: Luxury, Extra y Oasis. Hasta 36 meses sin intereses.</p>
-        <a href="https://wa.me/573023487290?text=Me%20interesa%20Aquaviva" class="mt-5 text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</a>
+        <a href="https://wa.me/573023487290?text=Hola%2C%20me%20interesa%20el%20inmueble%20102%20%28Aquaviva%29" class="mt-auto pt-5"><span class="block text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</span></a>
       </div>
     </article>
 
-    <article data-t="campestre" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
-      <div class="ph3 h-52 relative"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span></div>
+    <article data-t="lote" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
+      <div class="ph3 h-52 relative"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span><span class="absolute top-3 right-3 bg-white/95 text-vino text-xs font-bold px-2.5 py-1 rounded-md">Cód. 103</span></div>
       <div class="p-6 flex flex-col flex-1">
-        <p class="text-xs font-semibold text-rojo">SILVANIA · EL RETIRO</p>
+        <p class="text-xs font-semibold text-rojo uppercase">Silvania · El Retiro</p>
         <h3 class="font-display font-bold text-xl mt-1 text-vino">Lote campestre en Silvania</h3>
         <p class="font-display font-extrabold text-2xl mt-3">$150.000.000</p>
-        <div class="mt-3 flex gap-4 text-sm text-tinta/70"><span>1.295 m²</span><span>Negociable</span></div>
+        <p class="text-sm text-tinta/60">Negociable</p>
+        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-tinta/70"><span>1.295 m²</span><span>Negociable</span></div>
         <p class="mt-3 text-sm text-tinta/65">Carretera hasta el lote, energía y acueducto cerca, árboles frutales.</p>
-        <a href="https://wa.me/573023487290?text=Me%20interesa%20el%20lote%20en%20Silvania" class="mt-5 text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</a>
+        <a href="https://wa.me/573023487290?text=Hola%2C%20me%20interesa%20el%20inmueble%20103%20%28lote%20en%20Silvania%29" class="mt-auto pt-5"><span class="block text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</span></a>
       </div>
     </article>
 
+    <article data-t="lote" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
+      <div class="h-52 relative"><img src="assets/inmuebles/104/cover.jpg" alt="Lote de 16.000 m² con casa" loading="lazy" class="w-full h-full object-cover"><span class="absolute top-3 left-3 bg-vino text-white text-xs font-semibold px-3 py-1 rounded-md">VENTA</span><span class="absolute top-3 right-3 bg-white/95 text-vino text-xs font-bold px-2.5 py-1 rounded-md">Cód. 104</span></div>
+      <div class="p-6 flex flex-col flex-1">
+        <p class="text-xs font-semibold text-rojo uppercase">Zona de expansión urbana · A 15 min de Girardot</p>
+        <h3 class="font-display font-bold text-xl mt-1 text-vino">Lote de 16.000 m² con casa</h3>
+        <p class="font-display font-extrabold text-2xl mt-3">$70.000 por m²</p>
+        <p class="text-sm text-tinta/60">Negociable</p>
+        <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-tinta/70"><span>16.000 m²</span><span>Casa 3 hab.</span><span>Recibe permuta</span></div>
+        <p class="mt-3 text-sm text-tinta/65">Zona de expansión urbana, con agua propia, gas y luz. A 5 minutos del aeropuerto.</p>
+        <a href="inmueble/104.html" class="mt-auto pt-5"><span class="block text-center rounded-lg border border-rojo text-rojo font-semibold py-2.5 hover:bg-rojo hover:text-white transition">Ver detalles</span></a>
+      </div>
+    </article>
+    <!-- CARDS:END -->
   </div>
 </section>
 
