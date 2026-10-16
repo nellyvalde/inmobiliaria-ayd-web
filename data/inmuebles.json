@@ -340,5 +340,104 @@
         "x": "Casa en madera, jacuzzis y estanques"
       }
     ]
+  },
+  {
+    "codigo": 105,
+    "categoria": "proyecto",
+    "negocio": "Venta",
+    "titulo": "Rincón del Palmar · Urbanización",
+    "tipo": "Lotes urbanos y comerciales (proyecto)",
+    "ubicacion_corta": "Carmen de Apicalá · Tolima",
+    "referencia": "A 3 minutos del parque principal de Carmen de Apicalá, Tolima",
+    "area_texto": "Desde 72 m²",
+    "precio_texto": "Desde $39.000.000",
+    "precio_nota": "Separa con $1.000.000",
+    "separacion": "$1.000.000",
+    "financiacion": "Directa hasta 36 meses sin intereses; sin estudios crediticios ni fiadores",
+    "chips": [
+      "Desde 72 m²",
+      "Zona comercial",
+      "Piscina familiar"
+    ],
+    "resumen": "Urbanización con zona comercial dentro del proyecto, parques y piscina familiar. Financiación directa hasta 36 meses sin intereses.",
+    "descripcion": [
+      "Rincón del Palmar es una urbanización a solo 3 minutos del parque principal de Carmen de Apicalá, Tolima, con alta proyección de valorización, diseño moderno y funcional, y un entorno seguro y organizado.",
+      "Cuenta con servicios y zonas comunes pensados para vivir tranquilo: parque biosaludable, parque infantil, sendero ecológico y piscina familiar, además de una zona comercial dentro del proyecto.",
+      "Los lotes son de libre construcción, desde 72 m². Puedes separar con solo $1.000.000 y financiar directamente hasta 36 meses sin intereses, sin estudios crediticios ni fiadores.",
+      "Las imágenes de la zona comercial son ilustrativas y pueden variar según el desarrollo final del proyecto."
+    ],
+    "servicios_titulo": "Servicios y zonas comunes",
+    "servicios": [
+      "Libre construcción",
+      "Red de acueducto y alcantarillado",
+      "Excelentes vías de acceso y vías con sello asfáltico",
+      "Bahías de parqueo",
+      "Parque biosaludable",
+      "Zona de alta valorización",
+      "Energía eléctrica",
+      "Parque infantil",
+      "Sendero ecológico",
+      "Piscina familiar",
+      "Zona comercial dentro del proyecto"
+    ],
+    "condiciones": [
+      "Lotes desde 72 m²",
+      "Precios desde $39 millones",
+      "Financiación directa hasta 36 meses sin intereses",
+      "Sin estudios crediticios ni fiadores",
+      "Separa solo con $1.000.000"
+    ],
+    "ubicacion_puntos": [
+      "A 3 minutos del parque principal de Carmen de Apicalá",
+      "Ubicación estratégica",
+      "Vida tranquila"
+    ],
+    "datos_extra": [
+      {
+        "t": "Separación",
+        "v": "$1.000.000",
+        "x": "Separa tu lote"
+      },
+      {
+        "t": "Financiación",
+        "v": "Hasta 36 meses",
+        "x": "Sin intereses, sin fiadores ni estudios crediticios"
+      }
+    ],
+    "incluye": [],
+    "documentos": "",
+    "estado": "Disponible",
+    "fecha": "2026-10-16",
+    "whatsapp_texto": "Hola, me interesa el inmueble 105 (Rincón del Palmar)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/105/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Zona comercial del proyecto (imagen ilustrativa)"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Plazoleta de comidas (imagen ilustrativa)"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Locales comerciales y estacionamiento (imagen ilustrativa)"
+      }
+    ],
+    "mapas": [],
+    "videos": [
+      "video.mp4",
+      "video2.mp4"
+    ],
+    "portada": {
+      "video": "hero.mp4",
+      "inicio": 0,
+      "fin": 15,
+      "lugar": "A 3 min del parque principal · Carmen de Apicalá",
+      "titulo": "Rincón del Palmar · Urbanización",
+      "linea": "Desde 72 m² · Desde $39 millones · Zona comercial (imagen ilustrativa)"
+    },
+    "por_confirmar": "Si es el mismo proyecto o una fase de La Colina (mismo precio, 72 m² y ubicación, pero 24 vs 36 meses); precio y tamaño de los lotes comerciales (el video dice desde 54 m²); fotos reales del proyecto; todas las imágenes publicadas son ilustrativas."
   }
 ]
