@@ -190,7 +190,7 @@ def detalle(it, partes):
       </video>''' for v in videos)
         video = f'''<section class="mt-10">
       <h2 class="font-display font-extrabold text-2xl text-vino">{'Videos' if len(videos) > 1 else 'Video'}</h2>
-      <div class="mt-4 grid gap-5 {'md:grid-cols-2' if len(videos) > 1 else ''}">{vids}</div>
+      <div class="mt-4 grid gap-5 {'md:grid-cols-3' if len(videos) > 2 else ('md:grid-cols-2' if len(videos) > 1 else '')}">{vids}</div>
     </section>'''
 
     mapas_sec = ''
@@ -202,7 +202,9 @@ def detalle(it, partes):
 
     listas = ''.join([
         lista(it.get('servicios_titulo', 'Servicios'), it.get('servicios')),
+        lista('Tipologías y precios', it.get('tipologias')),
         lista('Incluye', it.get('incluye')),
+        lista('Razones para elegirnos', it.get('razones')),
         lista('Condiciones', it.get('condiciones')),
         lista('Ubicación', it.get('ubicacion_puntos')),
     ])
