@@ -439,5 +439,102 @@
       "linea": "Desde 72 m² · Desde $39 millones · Zona comercial (imagen ilustrativa)"
     },
     "por_confirmar": "Precio y tamaño de los lotes comerciales (el video dice desde 54 m²); fotos reales del proyecto; las imágenes publicadas son ilustrativas. Confirmado: es un proyecto distinto a La Colina."
+  },
+  {
+    "codigo": 106,
+    "categoria": "proyecto",
+    "negocio": "Venta",
+    "titulo": "Santorini · Lotes campestres",
+    "tipo": "Lotes campestres (proyecto)",
+    "ubicacion_corta": "Carmen de Apicalá · Tolima",
+    "referencia": "A 3 minutos del parque principal de Carmen de Apicalá, Tolima",
+    "area_texto": "Desde 1.000 m²",
+    "precio_texto": "Desde $78.000.000",
+    "precio_nota": "Separa con $1.000.000",
+    "separacion": "$1.000.000",
+    "financiacion": "Hasta 36 meses sin interés",
+    "chips": [
+      "Lotes desde 1.000 m²",
+      "Biopiscina natural",
+      "Reserva natural"
+    ],
+    "resumen": "El proyecto de lotes campestres más cercano al pueblo, con zona de resort, jardines temáticos y senderos ecológicos.",
+    "descripcion": [
+      "Santorini es el proyecto de lotes campestres más cercano al pueblo: está a solo 3 minutos del parque principal de Carmen de Apicalá, Tolima.",
+      "Combina una zona de acceso con mall comercial, zona de parqueo y carga para vehículos eléctricos; una zona húmeda con biopiscina natural; una zona de resort con piscina para adultos y niños y espacios para eventos; y jardines temáticos y senderos ecológicos con reserva natural, quebradas y nacederos de agua propia.",
+      "Además tiene zonas de parque con espacios recreativos para toda la familia y zonas de esparcimiento con áreas de descanso, hamacas y zonas para picnics.",
+      "Los lotes son desde 1.000 m². Puedes separar con solo $1.000.000 y financiar hasta 36 meses sin interés. Las imágenes y el plano son ilustrativos y pueden variar según el desarrollo final del proyecto."
+    ],
+    "servicios_titulo": "Áreas y beneficios del proyecto",
+    "servicios": [
+      "Zona de acceso: mall comercial, zona de parqueo y carga para vehículos eléctricos",
+      "Zona húmeda: biopiscina natural diseñada con ciclo de oasis",
+      "Zona de resort: piscina para adultos y niños, espacios para eventos",
+      "Jardines temáticos y senderos ecológicos: reserva natural, quebradas y nacederos de agua propia",
+      "Zonas de parque: espacios recreativos para toda la familia",
+      "Zonas de esparcimiento: áreas de descanso, hamacas y zonas para picnics"
+    ],
+    "condiciones": [
+      "Lotes desde 1.000 m²",
+      "Financiación hasta 36 meses sin interés",
+      "Separa con solo $1.000.000"
+    ],
+    "ubicacion_puntos": [
+      "A 3 minutos del parque principal de Carmen de Apicalá",
+      "El proyecto de lotes campestres más cercano al pueblo"
+    ],
+    "datos_extra": [
+      {
+        "t": "Separación",
+        "v": "$1.000.000",
+        "x": "Separa tu lote"
+      },
+      {
+        "t": "Financiación",
+        "v": "Hasta 36 meses",
+        "x": "Sin interés"
+      }
+    ],
+    "incluye": [],
+    "documentos": "",
+    "estado": "Disponible",
+    "fecha": "2026-10-16",
+    "whatsapp_texto": "Hola, me interesa el inmueble 106 (Santorini, lotes campestres)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/106/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Vista aérea del terreno de Santorini"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Carmen de Apicalá, a 3 minutos del proyecto"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Vista aérea de los lotes campestres"
+      }
+    ],
+    "mapas": [
+      {
+        "f": "plano.jpg",
+        "texto": "Plano general del proyecto (ilustrativo).",
+        "aspect": "object-contain max-h-[560px]"
+      }
+    ],
+    "videos": [
+      "video.mp4",
+      "video2.mp4"
+    ],
+    "portada": {
+      "video": "hero.mp4",
+      "inicio": 0,
+      "fin": 15,
+      "lugar": "A 3 min del parque principal · Carmen de Apicalá",
+      "titulo": "Santorini · Lotes campestres",
+      "linea": "Desde 1.000 m² · Desde $78 millones · Separa con $1.000.000"
+    },
+    "por_confirmar": "Precio: el video dice \"desde $78 millones (próximamente $88 millones)\"; confirmar el precio vigente y si el plazo es 36 meses; el plano trae datos extra (mall con 6 locales, 5 suites de lujo, salón para 100 personas, 40 hectáreas de conservación) que no están en el texto y no se publicaron; los videos mezclan imágenes de stock (columpio, piscinas con toboganes) que no son del proyecto; fotos reales del proyecto."
   }
 ]

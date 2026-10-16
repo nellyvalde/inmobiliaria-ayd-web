@@ -176,7 +176,7 @@ def detalle(it, partes):
     desc = ''.join(f'<p class="mt-3 text-tinta/75">{e(p)}</p>' for p in it.get('descripcion', []))
 
     mapas_html = ''.join(
-        f'''<figure><button type="button" class="zoom block w-full rounded-2xl overflow-hidden border border-black/10 bg-black/5" data-src="{base}{e(m['f'])}" data-alt="{e(m['texto'])}"><img src="{base}{e(m['f'])}" alt="{e(m['texto'])}" loading="lazy" class="w-full aspect-[3/4] object-cover"></button>
+        f'''<figure><button type="button" class="zoom block w-full rounded-2xl overflow-hidden border border-black/10 bg-black/5" data-src="{base}{e(m['f'])}" data-alt="{e(m['texto'])}"><img src="{base}{e(m['f'])}" alt="{e(m['texto'])}" loading="lazy" class="w-full {m.get('aspect', 'aspect-[3/4] object-cover')}"></button>
           <figcaption class="mt-2 text-sm text-tinta/65">{e(m['texto'])}</figcaption></figure>'''
         for m in mapas)
 
@@ -196,7 +196,7 @@ def detalle(it, partes):
     if mapas:
         mapas_sec = f'''<section class="mt-14">
     <h2 class="font-display font-extrabold text-2xl text-vino">Mapa y ubicación</h2>
-    <div class="mt-4 grid md:grid-cols-3 gap-5">{mapas_html}</div>
+    <div class="mt-4 grid {'md:grid-cols-3' if len(mapas) > 1 else ''} gap-5">{mapas_html}</div>
   </section>'''
 
     listas = ''.join([
