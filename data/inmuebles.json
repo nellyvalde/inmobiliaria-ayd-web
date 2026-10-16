@@ -124,7 +124,7 @@
     "resumen": "Casa en madera estilo viejo oeste, jacuzzis y estanques incluidos. Agua propia, gas y luz. A 5 minutos del aeropuerto.",
     "descripcion": [
       "Lote de 16.000 m² en zona de expansión urbana, a una cuadra de la variante Melgar–Ibagué, a 5 minutos del aeropuerto y a 15 minutos de Girardot.",
-      "Es un proyecto de negocio: incluye la casa en madera con ambientación estilo viejo oeste, los jacuzzis de madera, estanques y zonas cubiertas, además de una casa austera de 3 habitaciones.",
+      "Es un proyecto de negocio: incluye la casa en madera con ambientación estilo viejo oeste, que tiene 3 habitaciones en su interior, los jacuzzis de madera, estanques y zonas cubiertas.",
       "Cuenta con todos los servicios: agua propia de 2 pozos profundos, gas domiciliario y energía 110 V y 220 V. Al costado, un predio recién adquirido por una urbanizadora ya está siendo intervenido para construir."
     ],
     "servicios": [
@@ -168,7 +168,7 @@
       },
       {
         "f": "06.jpg",
-        "alt": "Frente de la casa"
+        "alt": "Construcción del predio"
       },
       {
         "f": "07.jpg",
@@ -176,7 +176,7 @@
       },
       {
         "f": "08.jpg",
-        "alt": "Interior de la casa"
+        "alt": "Pasillo interior"
       },
       {
         "f": "09.jpg",
@@ -210,13 +210,12 @@
       }
     ],
     "video": "video.mp4",
-    "por_confirmar": "Municipio exacto; medidas de la casa; si el negocio está en operación; escritura y documentos.",
+    "por_confirmar": "Municipio exacto; medidas de la casa; si el negocio está en operación; escritura y documentos; a qué parte del predio corresponden las fotos de construcción en bloque (06, 08, 09, 11, 12).",
     "incluye": [
-      "Casa en madera estilo viejo oeste (saloon)",
+      "Casa en madera estilo viejo oeste, con 3 habitaciones",
       "Zona húmeda con jacuzzis de madera",
       "Estanques",
-      "Zonas cubiertas",
-      "Casa austera de 3 habitaciones"
+      "Zonas cubiertas"
     ],
     "datos_extra": [
       {
