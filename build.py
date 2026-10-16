@@ -72,8 +72,38 @@ def tarjeta(it):
 '''
 
 
+def hero(items):
+    """Carrusel de videos de la portada: una diapositiva por inmueble que tenga 'portada'."""
+    slides = [i for i in items if i.get('portada')]
+    if not slides:
+        return '      <div class="ph1 rounded-3xl h-80 lg:h-[420px] w-full"></div>'
+    out = []
+    for k, it in enumerate(slides):
+        pt = it['portada']
+        cod = it['codigo']
+        base = f'assets/inmuebles/{cod}/'
+        poster = pt.get('poster', 'cover.jpg')
+        href = f'inmueble/{cod}.html' if it.get('detalle') else wa(it['whatsapp_texto'])
+        out.append(f'''      <article class="hslide absolute inset-0{' is-active' if k == 0 else ''}" data-src="{base}{e(pt['video'])}" data-start="{pt.get('inicio', 0)}" data-end="{pt.get('fin', 15)}">
+        <video muted playsinline preload="none" poster="{base}{e(poster)}" class="w-full h-full object-cover"></video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
+        <div class="absolute left-5 right-5 bottom-14 text-white">
+          <p class="text-xs font-semibold uppercase tracking-wide text-white/80">Cód. {cod} · {e(pt.get('lugar', it['ubicacion_corta']))}</p>
+          <h3 class="mt-1 font-display font-extrabold text-2xl md:text-3xl leading-tight">{e(pt.get('titulo', it['titulo']))}</h3>
+          <p class="mt-1 text-sm text-white/90">{e(pt.get('linea', ''))}</p>
+          <a href="{e(href)}" class="inline-block mt-3 rounded-lg bg-white text-vino text-sm font-semibold px-4 py-2 hover:bg-cielo transition">Ver {'proyecto' if it['categoria'] == 'proyecto' else 'inmueble'}</a>
+        </div>
+      </article>''')
+    return f'''      <div id="hero" class="relative rounded-3xl overflow-hidden h-80 lg:h-[420px] w-full bg-vino" role="region" aria-roledescription="carrusel" aria-label="Proyectos destacados">
+{chr(10).join(out)}
+        <div id="hdots" class="absolute bottom-5 left-5 flex items-center gap-2"></div>
+        <button type="button" id="hpause" class="absolute bottom-3 right-4 h-9 w-9 rounded-full bg-black/40 text-white text-xs hover:bg-black/60" aria-label="Pausar">❚❚</button>
+      </div>'''
+
+
 def inicio(items):
     s = leer('index.html')
+    s = reemplazar(s, '<!-- HERO:START -->', '<!-- HERO:END -->', hero(items))
     cats = []
     for it in items:
         if it['categoria'] not in cats:

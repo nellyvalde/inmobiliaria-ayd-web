@@ -25,6 +25,8 @@ tailwind.config = {
   .ph2 { background: linear-gradient(135deg,#fff0f1 0%,#f3bcc2 100%); }
   .ph3 { background: linear-gradient(135deg,#f6dfe1 0%,#e59aa3 100%); }
   .tab-on { background:#8b0f1f; color:#fff; }
+  .hslide { opacity:0; pointer-events:none; transition: opacity .7s ease; }
+  .hslide.is-active { opacity:1; pointer-events:auto; }
   .card { transition: box-shadow .2s, transform .2s; }
   .card:hover { box-shadow: 0 14px 30px -14px rgba(139,15,31,.35); transform: translateY(-2px); }
 </style>

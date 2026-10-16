@@ -25,6 +25,8 @@ tailwind.config = {
   .ph2 { background: linear-gradient(135deg,#fff0f1 0%,#f3bcc2 100%); }
   .ph3 { background: linear-gradient(135deg,#f6dfe1 0%,#e59aa3 100%); }
   .tab-on { background:#8b0f1f; color:#fff; }
+  .hslide { opacity:0; pointer-events:none; transition: opacity .7s ease; }
+  .hslide.is-active { opacity:1; pointer-events:auto; }
   .card { transition: box-shadow .2s, transform .2s; }
   .card:hover { box-shadow: 0 14px 30px -14px rgba(139,15,31,.35); transform: translateY(-2px); }
 </style>
@@ -72,12 +74,32 @@ tailwind.config = {
       </div>
     </div>
     <div class="relative">
-      <!-- AQUÍ VA LA FOTO PRINCIPAL -->
-      <div class="ph1 rounded-3xl h-80 lg:h-[420px] w-full"></div>
-      <div class="absolute -bottom-6 left-6 right-6 sm:right-auto sm:w-72 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-4">
-        <span class="w-12 h-12 rounded-xl bg-cielo text-rojo grid place-items-center font-display font-bold">36</span>
-        <div><p class="font-semibold text-sm">Hasta 36 meses</p><p class="text-xs text-tinta/60">para pagar tu lote</p></div>
+      <!-- HERO:START -->
+      <div id="hero" class="relative rounded-3xl overflow-hidden h-80 lg:h-[420px] w-full bg-vino" role="region" aria-roledescription="carrusel" aria-label="Proyectos destacados">
+      <article class="hslide absolute inset-0 is-active" data-src="assets/inmuebles/102/video1.mp4" data-start="0" data-end="15">
+        <video muted playsinline preload="none" poster="assets/inmuebles/102/cover.jpg" class="w-full h-full object-cover"></video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
+        <div class="absolute left-5 right-5 bottom-14 text-white">
+          <p class="text-xs font-semibold uppercase tracking-wide text-white/80">Cód. 102 · A 20 min de El Carmen de Apicalá</p>
+          <h3 class="mt-1 font-display font-extrabold text-2xl md:text-3xl leading-tight">Acqua Viva · Lotes campestres</h3>
+          <p class="mt-1 text-sm text-white/90">Desde 1.000 m² · Desde $100 millones · Separa con $1.000.000</p>
+          <a href="inmueble/102.html" class="inline-block mt-3 rounded-lg bg-white text-vino text-sm font-semibold px-4 py-2 hover:bg-cielo transition">Ver proyecto</a>
+        </div>
+      </article>
+      <article class="hslide absolute inset-0" data-src="assets/inmuebles/104/video.mp4" data-start="0" data-end="15">
+        <video muted playsinline preload="none" poster="assets/inmuebles/104/cover.jpg" class="w-full h-full object-cover"></video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
+        <div class="absolute left-5 right-5 bottom-14 text-white">
+          <p class="text-xs font-semibold uppercase tracking-wide text-white/80">Cód. 104 · Zona de expansión urbana · A 5 min del aeropuerto</p>
+          <h3 class="mt-1 font-display font-extrabold text-2xl md:text-3xl leading-tight">Lote de 16.000 m² con casa</h3>
+          <p class="mt-1 text-sm text-white/90">Casa en madera, jacuzzis y estanques · $1.200.000.000 negociable</p>
+          <a href="inmueble/104.html" class="inline-block mt-3 rounded-lg bg-white text-vino text-sm font-semibold px-4 py-2 hover:bg-cielo transition">Ver inmueble</a>
+        </div>
+      </article>
+        <div id="hdots" class="absolute bottom-5 left-5 flex items-center gap-2"></div>
+        <button type="button" id="hpause" class="absolute bottom-3 right-4 h-9 w-9 rounded-full bg-black/40 text-white text-xs hover:bg-black/60" aria-label="Pausar">❚❚</button>
       </div>
+    <!-- HERO:END -->
     </div>
   </div>
 </section>
@@ -333,5 +355,6 @@ tailwind.config = {
     cards.forEach(c => { c.style.display = (f === 'todos' || c.dataset.t === f) ? '' : 'none'; });
   }));
 </script>
+<script src="hero.js" defer></script>
 </body>
 </html>
