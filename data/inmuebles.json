@@ -504,6 +504,10 @@
     "foto_portada": "assets/inmuebles/106/cover.jpg",
     "fotos": [
       {
+        "f": "plano.jpg",
+        "alt": "Plano general del proyecto Santorini (ilustrativo)"
+      },
+      {
         "f": "01.jpg",
         "alt": "Vista aérea del terreno de Santorini"
       },
@@ -516,13 +520,7 @@
         "alt": "Vista aérea de los lotes campestres"
       }
     ],
-    "mapas": [
-      {
-        "f": "plano.jpg",
-        "texto": "Plano general del proyecto (ilustrativo).",
-        "aspect": "object-contain max-h-[560px]"
-      }
-    ],
+    "mapas": [],
     "videos": [
       "video.mp4",
       "video2.mp4"
@@ -535,7 +533,8 @@
       "titulo": "Santorini · Lotes campestres",
       "linea": "Desde 1.000 m² · Desde $78 millones · Separa con $1.000.000"
     },
-    "por_confirmar": "Precio: el video dice \"desde $78 millones (próximamente $88 millones)\"; confirmar el precio vigente y si el plazo es 36 meses; el plano trae datos extra (mall con 6 locales, 5 suites de lujo, salón para 100 personas, 40 hectáreas de conservación) que no están en el texto y no se publicaron; los videos mezclan imágenes de stock (columpio, piscinas con toboganes) que no son del proyecto; fotos reales del proyecto."
+    "por_confirmar": "Precio: el video dice \"desde $78 millones (próximamente $88 millones)\"; confirmar el precio vigente y si el plazo es 36 meses; el plano trae datos extra (mall con 6 locales, 5 suites de lujo, salón para 100 personas, 40 hectáreas de conservación) que no están en el texto y no se publicaron; los videos mezclan imágenes de stock (columpio, piscinas con toboganes) que no son del proyecto; fotos reales del proyecto.",
+    "poster": "01.jpg"
   },
   {
     "codigo": 107,

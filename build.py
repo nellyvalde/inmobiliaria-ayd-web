@@ -180,7 +180,7 @@ def detalle(it, partes):
           <figcaption class="mt-2 text-sm text-tinta/65">{e(m['texto'])}</figcaption></figure>'''
         for m in mapas)
 
-    poster_img = fotos[0]['f'] if fotos else 'cover.jpg'
+    poster_img = it.get('poster') or (fotos[0]['f'] if fotos else 'cover.jpg')
     videos = it.get('videos') or ([it['video']] if it.get('video') else [])
     video = ''
     if videos:
