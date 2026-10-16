@@ -723,5 +723,111 @@
       "linea": "Apartaestudios desde 56 m² · Desde $99 millones · Separa con $2.000.000"
     },
     "por_confirmar": "Fecha de entrega y estado de obra (los videos dicen \"muy pronto\" / \"llega\"); ubicación exacta; planos y fotos o renders reales (los videos son material publicitario con imágenes de stock); si los precios son de lanzamiento; metros y precio de locales y oficinas; \"NO VIS\"."
+  },
+  {
+    "codigo": 109,
+    "categoria": "proyecto",
+    "negocio": "Venta",
+    "titulo": "Mirador Santo Domingo · Lotes",
+    "tipo": "Urbanización de lotes (proyecto)",
+    "ubicacion_corta": "Carmen de Apicalá · Vía El Paso · Tolima",
+    "referencia": "A 5 minutos de Carmen de Apicalá, saliendo por la vía El Paso",
+    "area_texto": "Desde 72 m²",
+    "precio_texto": "Desde $45.000.000",
+    "precio_nota": "Separa con $1.000.000",
+    "separacion": "$1.000.000",
+    "financiacion": "Hasta 36 meses",
+    "chips": [
+      "Desde 72 m²",
+      "Zona social con vista panorámica",
+      "Libre construcción"
+    ],
+    "resumen": "Urbanización de lotes a 5 minutos de Carmen de Apicalá, con parque biosaludable, dog park y zona social con vista panorámica.",
+    "descripcion": [
+      "\"El espacio que siempre soñaste, creado para disfrutar una vida hecha para ti.\"",
+      "Mirador Santo Domingo es una urbanización de lotes a solo 5 minutos de Carmen de Apicalá, saliendo por la vía El Paso, con ubicación estratégica y una vida tranquila.",
+      "Cuenta con servicios y zonas comunes como parque infantil, parque biosaludable, dog park, zona laundry, bahías de parqueo y una zona social con vista panorámica. Los lotes son de libre construcción, desde 72 m², en una zona de alta valorización.",
+      "Puedes separar con solo $1.000.000 y financiar hasta 36 meses."
+    ],
+    "servicios_titulo": "Servicios y zonas comunes",
+    "servicios": [
+      "Libre construcción",
+      "Energía eléctrica",
+      "Red de acueducto y alcantarillado",
+      "Vías con sello asfáltico y excelentes vías de acceso",
+      "Parque infantil",
+      "Bahías de parqueo",
+      "Zona Laundry",
+      "Parque biosaludable",
+      "Dog park",
+      "Zona de alta valorización",
+      "Zona social con vista panorámica"
+    ],
+    "condiciones": [
+      "Lotes desde 72 m²",
+      "Precios desde $45 millones",
+      "Separa solo con $1.000.000",
+      "Financiación hasta 36 meses"
+    ],
+    "razones": [
+      "Ubicación estratégica",
+      "Vida tranquila",
+      "Futuro y valorización"
+    ],
+    "ubicacion_puntos": [
+      "A 5 minutos de Carmen de Apicalá",
+      "Saliendo por la vía El Paso"
+    ],
+    "datos_extra": [
+      {
+        "t": "Separación",
+        "v": "$1.000.000",
+        "x": "Separa tu lote"
+      },
+      {
+        "t": "Financiación",
+        "v": "Hasta 36 meses",
+        "x": "Consulta las condiciones"
+      }
+    ],
+    "incluye": [],
+    "documentos": "",
+    "estado": "Disponible",
+    "fecha": "2026-10-16",
+    "whatsapp_texto": "Hola, me interesa el inmueble 109 (Mirador Santo Domingo, lotes)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/109/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Vista aérea de los lotes"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Lotes y vías del proyecto"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Vista aérea del terreno"
+      },
+      {
+        "f": "04.jpg",
+        "alt": "Vía de acceso y lotes"
+      }
+    ],
+    "mapas": [],
+    "videos": [
+      "video.mp4",
+      "video2.mp4"
+    ],
+    "portada": {
+      "video": "hero.mp4",
+      "inicio": 0,
+      "fin": 15,
+      "lugar": "A 5 min de Carmen de Apicalá · Vía El Paso",
+      "titulo": "Mirador Santo Domingo · Lotes",
+      "linea": "Desde 72 m² · Desde $45 millones · Separa con $1.000.000"
+    },
+    "por_confirmar": "Nombre: el texto dice \"Mirador Santo Domingo\" y los flyers \"Santo Domingo Reservado\" / \"Sector Luxury\"; precio: el texto dice desde $45 millones y un flyer dice $41 millones; financiación sin intereses o no; los flyers hablan de vista al lago y gimnasio 24 horas, que no están en el texto y no se publicaron; los flyers usan fotos de stock y no se publicaron; el video de la promo trae imágenes de stock; fotos reales de las zonas comunes."
   }
 ]
