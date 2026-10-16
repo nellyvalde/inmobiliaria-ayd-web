@@ -142,6 +142,7 @@ def detalle(it, partes):
     if it.get('permuta'):
         datos += dato('Permuta', 'Sí', 'En parte de pago, por propiedad en Fusagasugá')
 
+    cols = 'lg:grid-cols-5' if datos.count('rounded-2xl bg-suave') >= 5 else 'lg:grid-cols-4'
     desc = ''.join(f'<p class="mt-3 text-tinta/75">{e(p)}</p>' for p in it.get('descripcion', []))
 
     mapas_html = ''.join(
@@ -191,7 +192,7 @@ def detalle(it, partes):
     <div class="grid grid-cols-4 lg:grid-cols-3 gap-2 content-start max-h-[520px] overflow-y-auto pr-1" id="thumbs">{thumbs}</div>
   </section>
 
-  <section class="mt-10 grid sm:grid-cols-3 lg:grid-cols-5 gap-4">
+  <section class="mt-10 grid sm:grid-cols-2 {cols} gap-4">
     {datos}
   </section>
 
