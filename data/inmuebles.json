@@ -536,5 +536,80 @@
       "linea": "Desde 1.000 m² · Desde $78 millones · Separa con $1.000.000"
     },
     "por_confirmar": "Precio: el video dice \"desde $78 millones (próximamente $88 millones)\"; confirmar el precio vigente y si el plazo es 36 meses; el plano trae datos extra (mall con 6 locales, 5 suites de lujo, salón para 100 personas, 40 hectáreas de conservación) que no están en el texto y no se publicaron; los videos mezclan imágenes de stock (columpio, piscinas con toboganes) que no son del proyecto; fotos reales del proyecto."
+  },
+  {
+    "codigo": 107,
+    "categoria": "lote",
+    "negocio": "Venta",
+    "titulo": "Lote en Vereda La Despensa, San Bernardo",
+    "tipo": "Lote con cultivo",
+    "ubicacion_corta": "Vereda La Despensa · San Bernardo · Cundinamarca",
+    "referencia": "Vereda La Despensa, a 10 minutos del pueblo de San Bernardo, Cundinamarca",
+    "area_texto": "1.300 m²",
+    "precio_texto": "$95.000.000",
+    "precio_nota": "Negociable",
+    "separacion": "",
+    "financiacion": "",
+    "chips": [
+      "1.300 m²",
+      "Cultivo establecido",
+      "Negociable"
+    ],
+    "resumen": "Terreno productivo con cultivo establecido y árboles frutales, a 10 minutos del pueblo. Acueducto y energía instalados.",
+    "descripcion": [
+      "Lote de 1.300 m² en la vereda La Despensa, a solo 10 minutos del pueblo de San Bernardo, Cundinamarca.",
+      "Es un terreno productivo con cultivo establecido y árboles frutales: tomate de árbol, plátano y aguacate. Cuenta con una cochera para cerdos, acueducto y energía eléctrica instalados, y papeles y documentos al día."
+    ],
+    "servicios_titulo": "Lo que encontrarás aquí",
+    "servicios": [
+      "Terreno productivo con cultivo establecido",
+      "Árboles frutales: tomate de árbol, plátano y aguacate",
+      "Cochera para cerdos",
+      "Acueducto y energía eléctrica instalados",
+      "Papeles y documentos al día"
+    ],
+    "ubicacion_puntos": [
+      "Vereda La Despensa",
+      "A 10 minutos del pueblo de San Bernardo, Cundinamarca"
+    ],
+    "datos_extra": [
+      {
+        "t": "Ubicación",
+        "v": "San Bernardo",
+        "x": "Vereda La Despensa, Cundinamarca"
+      },
+      {
+        "t": "Documentos",
+        "v": "Al día",
+        "x": "Papeles y documentos al día"
+      }
+    ],
+    "incluye": [],
+    "documentos": "Papeles y documentos al día",
+    "estado": "Disponible",
+    "fecha": "2026-10-16",
+    "whatsapp_texto": "Hola, me interesa el inmueble 107 (lote en vereda La Despensa, San Bernardo)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/107/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Panorámica del terreno"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Cultivo de plátano en el predio"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Terreno y árboles frutales"
+      }
+    ],
+    "mapas": [],
+    "videos": [
+      "video.mp4",
+      "video2.mp4"
+    ],
+    "por_confirmar": "Formas de pago; ubicación exacta o mapa; qué hay construido (la cochera y el cobertizo); documentos y escritura."
   }
 ]
