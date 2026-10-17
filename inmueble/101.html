@@ -81,10 +81,10 @@ tailwind.config = {
 
   <section class="mt-8 grid lg:grid-cols-[1fr_300px] gap-4">
     <button type="button" id="main" class="relative rounded-2xl overflow-hidden bg-black/5 aspect-[4/3] w-full">
-      <img id="mainimg" src="../assets/inmuebles/101/01.jpg" alt="Vista aérea de los lotes y la piscina" class="w-full h-full object-contain">
+      <img id="mainimg" src="../assets/inmuebles/101/01.jpg?v=d9b17a38" alt="Vista aérea de los lotes y la piscina" class="w-full h-full object-contain">
       <span id="counter" class="absolute bottom-3 right-3 bg-black/60 text-white text-xs px-3 py-1 rounded-full"></span>
     </button>
-    <div class="grid grid-cols-4 lg:grid-cols-3 gap-2 content-start max-h-[520px] overflow-y-auto pr-1" id="thumbs"><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="0"><img src="../assets/inmuebles/101/01.jpg" alt="Vista aérea de los lotes y la piscina" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="1"><img src="../assets/inmuebles/101/02.jpg" alt="Vías del proyecto" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="2"><img src="../assets/inmuebles/101/03.jpg" alt="Terreno del proyecto" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="3"><img src="../assets/inmuebles/101/04.jpg" alt="Vía de acceso" loading="lazy" class="w-full h-full object-cover"></button></div>
+    <div class="grid grid-cols-4 lg:grid-cols-3 gap-2 content-start max-h-[520px] overflow-y-auto pr-1" id="thumbs"><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="0"><img src="../assets/inmuebles/101/01.jpg?v=d9b17a38" alt="Vista aérea de los lotes y la piscina" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="1"><img src="../assets/inmuebles/101/02.jpg?v=2c7dfd9d" alt="Vías del proyecto" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="2"><img src="../assets/inmuebles/101/03.jpg?v=7a0899c5" alt="Terreno del proyecto" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="3"><img src="../assets/inmuebles/101/04.jpg?v=e4f95070" alt="Vía de acceso" loading="lazy" class="w-full h-full object-cover"></button></div>
   </section>
 
   <section class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -109,8 +109,8 @@ tailwind.config = {
 
   <section class="mt-10">
       <h2 class="font-display font-extrabold text-2xl text-vino">Video</h2>
-      <div class="mt-4 grid gap-5 "><video class="w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="../assets/inmuebles/101/01.jpg">
-        <source src="../assets/inmuebles/101/video.mp4" type="video/mp4">
+      <div class="mt-4 grid gap-5 "><video class="w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="../assets/inmuebles/101/01.jpg?v=d9b17a38">
+        <source src="../assets/inmuebles/101/video.mp4?v=d76e17fa" type="video/mp4">
       </video></div>
     </section>
 
@@ -159,7 +159,7 @@ tailwind.config = {
 </div>
 
 <script>
-const G = [{"src": "../assets/inmuebles/101/01.jpg", "alt": "Vista aérea de los lotes y la piscina"}, {"src": "../assets/inmuebles/101/02.jpg", "alt": "Vías del proyecto"}, {"src": "../assets/inmuebles/101/03.jpg", "alt": "Terreno del proyecto"}, {"src": "../assets/inmuebles/101/04.jpg", "alt": "Vía de acceso"}];
+const G = [{"src": "../assets/inmuebles/101/01.jpg?v=d9b17a38", "alt": "Vista aérea de los lotes y la piscina"}, {"src": "../assets/inmuebles/101/02.jpg?v=2c7dfd9d", "alt": "Vías del proyecto"}, {"src": "../assets/inmuebles/101/03.jpg?v=7a0899c5", "alt": "Terreno del proyecto"}, {"src": "../assets/inmuebles/101/04.jpg?v=e4f95070", "alt": "Vía de acceso"}];
 let cur = 0, lista = G, lbOpen = false;
 const mainimg = document.getElementById('mainimg'), counter = document.getElementById('counter');
 const thumbs = document.querySelectorAll('.thumb');

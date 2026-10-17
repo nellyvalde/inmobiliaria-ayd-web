@@ -81,10 +81,10 @@ tailwind.config = {
 
   <section class="mt-8 grid lg:grid-cols-[1fr_300px] gap-4">
     <button type="button" id="main" class="relative rounded-2xl overflow-hidden bg-black/5 aspect-[4/3] w-full">
-      <img id="mainimg" src="../assets/inmuebles/109/01.jpg" alt="Vista aérea de los lotes" class="w-full h-full object-contain">
+      <img id="mainimg" src="../assets/inmuebles/109/01.jpg?v=29826cad" alt="Vista aérea de los lotes" class="w-full h-full object-contain">
       <span id="counter" class="absolute bottom-3 right-3 bg-black/60 text-white text-xs px-3 py-1 rounded-full"></span>
     </button>
-    <div class="grid grid-cols-4 lg:grid-cols-3 gap-2 content-start max-h-[520px] overflow-y-auto pr-1" id="thumbs"><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="0"><img src="../assets/inmuebles/109/01.jpg" alt="Vista aérea de los lotes" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="1"><img src="../assets/inmuebles/109/02.jpg" alt="Lotes y vías del proyecto" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="2"><img src="../assets/inmuebles/109/03.jpg" alt="Vista aérea del terreno" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="3"><img src="../assets/inmuebles/109/04.jpg" alt="Vía de acceso y lotes" loading="lazy" class="w-full h-full object-cover"></button></div>
+    <div class="grid grid-cols-4 lg:grid-cols-3 gap-2 content-start max-h-[520px] overflow-y-auto pr-1" id="thumbs"><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="0"><img src="../assets/inmuebles/109/01.jpg?v=29826cad" alt="Vista aérea de los lotes" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="1"><img src="../assets/inmuebles/109/02.jpg?v=c82aea00" alt="Lotes y vías del proyecto" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="2"><img src="../assets/inmuebles/109/03.jpg?v=42344409" alt="Vista aérea del terreno" loading="lazy" class="w-full h-full object-cover"></button><button type="button" class="thumb rounded-lg overflow-hidden border-2 border-transparent aspect-[4/3] bg-black/5" data-i="3"><img src="../assets/inmuebles/109/04.jpg?v=ab1a4693" alt="Vía de acceso y lotes" loading="lazy" class="w-full h-full object-cover"></button></div>
   </section>
 
   <section class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -109,10 +109,10 @@ tailwind.config = {
 
   <section class="mt-10">
       <h2 class="font-display font-extrabold text-2xl text-vino">Videos</h2>
-      <div class="mt-4 grid gap-5 md:grid-cols-2"><video class="w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="../assets/inmuebles/109/01.jpg">
-        <source src="../assets/inmuebles/109/video.mp4" type="video/mp4">
-      </video><video class="w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="../assets/inmuebles/109/01.jpg">
-        <source src="../assets/inmuebles/109/video2.mp4" type="video/mp4">
+      <div class="mt-4 grid gap-5 md:grid-cols-2"><video class="w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="../assets/inmuebles/109/01.jpg?v=29826cad">
+        <source src="../assets/inmuebles/109/video.mp4?v=83a58419" type="video/mp4">
+      </video><video class="w-full max-h-[70vh] rounded-2xl bg-black" controls preload="metadata" playsinline poster="../assets/inmuebles/109/01.jpg?v=29826cad">
+        <source src="../assets/inmuebles/109/video2.mp4?v=3d72e1ef" type="video/mp4">
       </video></div>
     </section>
 
@@ -164,7 +164,7 @@ tailwind.config = {
 </div>
 
 <script>
-const G = [{"src": "../assets/inmuebles/109/01.jpg", "alt": "Vista aérea de los lotes"}, {"src": "../assets/inmuebles/109/02.jpg", "alt": "Lotes y vías del proyecto"}, {"src": "../assets/inmuebles/109/03.jpg", "alt": "Vista aérea del terreno"}, {"src": "../assets/inmuebles/109/04.jpg", "alt": "Vía de acceso y lotes"}];
+const G = [{"src": "../assets/inmuebles/109/01.jpg?v=29826cad", "alt": "Vista aérea de los lotes"}, {"src": "../assets/inmuebles/109/02.jpg?v=c82aea00", "alt": "Lotes y vías del proyecto"}, {"src": "../assets/inmuebles/109/03.jpg?v=42344409", "alt": "Vista aérea del terreno"}, {"src": "../assets/inmuebles/109/04.jpg?v=ab1a4693", "alt": "Vía de acceso y lotes"}];
 let cur = 0, lista = G, lbOpen = false;
 const mainimg = document.getElementById('mainimg'), counter = document.getElementById('counter');
 const thumbs = document.querySelectorAll('.thumb');

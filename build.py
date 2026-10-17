@@ -28,7 +28,26 @@ def leer(p):
         return f.read()
 
 
+def _versionar(s):
+    """Agrega ?v=<hash> a imágenes y videos para que el navegador no use una copia vieja guardada."""
+    import hashlib
+    import re
+
+    def rep(m):
+        ruta = m.group(1)
+        f = os.path.join(ROOT, ruta.replace('/', os.sep))
+        if not os.path.exists(f):
+            return m.group(0)
+        with open(f, 'rb') as fh:
+            h = hashlib.md5(fh.read()).hexdigest()[:8]
+        return f'{ruta}?v={h}'
+    patron = r"(assets/inmuebles/[^\"'\s?<>]+\.(?:jpg|png|mp4))(?:\?v=[0-9a-f]+)?"
+    return re.sub(patron, rep, s)
+
+
 def escribir(p, s):
+    if p.endswith('.html'):
+        s = _versionar(s)
     full = os.path.join(ROOT, p)
     os.makedirs(os.path.dirname(full), exist_ok=True)
     with open(full, 'w', encoding='utf-8', newline='\n') as f:
