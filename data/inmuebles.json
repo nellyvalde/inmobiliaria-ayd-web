@@ -2005,5 +2005,72 @@
     ],
     "mapas": [],
     "por_confirmar": "Ubicación (ciudad, vereda y nombre del condominio): el texto no la dice; escrituras y documentos; forma de pago; administración. Se difuminó la placa del carro del parqueadero."
+  },
+  {
+    "codigo": 119,
+    "categoria": "lote",
+    "negocio": "Venta",
+    "titulo": "Lote en Barrio Mandalay, Fusagasugá",
+    "tipo": "Lote urbano",
+    "ubicacion_corta": "Barrio Mandalay · Fusagasugá",
+    "referencia": "Barrio Mandalay, Fusagasugá, Cundinamarca",
+    "area_texto": "1.800 m²",
+    "precio_texto": "$295.000.000",
+    "precio_nota": "Negociable",
+    "separacion": "",
+    "financiacion": "",
+    "chips": [
+      "1.800 m²",
+      "Negociable",
+      "Fusagasugá"
+    ],
+    "resumen": "Lote de 1.800 m² en el barrio Mandalay, ideal para construir el proyecto que siempre has soñado.",
+    "descripcion": [
+      "Lote de 1.800 m² en el barrio Mandalay, en Fusagasugá.",
+      "Ideal para construir el proyecto que siempre has soñado, en una excelente ubicación."
+    ],
+    "servicios": [],
+    "condiciones": [
+      "Precio: $295 millones",
+      "Precio negociable"
+    ],
+    "ubicacion_puntos": [
+      "Barrio Mandalay",
+      "Fusagasugá, Cundinamarca"
+    ],
+    "datos_extra": [
+      {
+        "t": "Ubicación",
+        "v": "Mandalay",
+        "x": "Fusagasugá, Cundinamarca"
+      }
+    ],
+    "incluye": [],
+    "documentos": "",
+    "estado": "Disponible",
+    "fecha": "2026-10-17",
+    "whatsapp_texto": "Hola, me interesa el inmueble 119 (lote en barrio Mandalay, Fusagasugá)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/119/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Lote con vista al barrio"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Lote y calle de acceso"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Terreno del lote"
+      },
+      {
+        "f": "04.jpg",
+        "alt": "Terreno y escalera del sector"
+      }
+    ],
+    "mapas": [],
+    "por_confirmar": "Servicios públicos, escrituras y documentos; forma de pago; ubicación exacta o mapa; el terreno tiene pendiente (se ve en las fotos). En la foto 04 se recortó el borde derecho donde aparecían personas."
   }
 ]
