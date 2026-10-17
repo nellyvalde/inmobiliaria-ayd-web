@@ -1770,11 +1770,11 @@
       "Lote 140 m²",
       "280 m² construidos",
       "2 pisos",
-      "Estrato 4"
+      "3 habitaciones"
     ],
-    "resumen": "Casa de 2 pisos en conjunto cerrado con piscina, salón de eventos y parqueadero propio, cerca de Unicentro y del centro de Girardot.",
+    "resumen": "Casa de 2 pisos y 3 habitaciones en conjunto cerrado con piscina, salón de eventos y parqueadero propio, cerca de Unicentro y del centro de Girardot.",
     "descripcion": [
-      "Casa en venta en el Condominio Parque Central, en Girardot: lote de 140 m², 280 m² construidos, 2 pisos y estrato 4. Está lista para habitar, ideal para descanso o vivienda permanente.",
+      "Casa en venta en el Condominio Parque Central, en Girardot: lote de 140 m², 280 m² construidos, 2 pisos, 3 habitaciones y estrato 4. Está lista para habitar, ideal para descanso o vivienda permanente.",
       "Queda en una zona residencial tranquila y segura, cerca de todo: a 5 minutos del Puente Girardot–Ricaurte, a 3 minutos del Centro Comercial Unicentro Girardot y a 5 minutos del centro de Girardot, con bancos, farmacias, supermercados y restaurantes.",
       "El conjunto es cerrado y ofrece piscina para adultos y piscina infantil, salón de eventos y áreas sociales, parqueadero propio y parqueaderos de visitantes, y zonas verdes. La administración cuesta $280.000 al mes."
     ],
@@ -1812,9 +1812,14 @@
     ],
     "datos_extra": [
       {
+        "t": "Habitaciones",
+        "v": "3",
+        "x": "2 pisos · Estrato 4"
+      },
+      {
         "t": "Lote",
         "v": "140 m²",
-        "x": "2 pisos · Estrato 4"
+        "x": "280 m² construidos"
       },
       {
         "t": "Administración",
@@ -1863,6 +1868,6 @@
       }
     ],
     "mapas": [],
-    "por_confirmar": "Si son 3 o 4 habitaciones (el texto dice alcoba principal en el primer piso y 3 habitaciones en el segundo, con \"baño privado en alcoba principal\" en el segundo); dirección o ubicación exacta del condominio; forma de pago y si es negociable; la foto de las escaleras con una persona sentada no se publicó; se difuminó la placa del carro en la fachada."
+    "por_confirmar": "Habitaciones: confirmado que son 3 (el texto menciona además una alcoba principal con baño en el primer piso); dirección o ubicación exacta del condominio; forma de pago y si es negociable; la foto de las escaleras con una persona sentada no se publicó; se difuminó la placa del carro en la fachada."
   }
 ]
