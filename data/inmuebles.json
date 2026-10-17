@@ -1752,5 +1752,117 @@
     ],
     "video": "video.mp4",
     "por_confirmar": "Qué torre y piso son; incluye parqueadero o no; separación; el plano publicado es el del catálogo de 73,99 m² construidos (apto 206-706); entrega en 42 meses (algunos tipos dicen 36); la cuota inicial: $20.000.000 + 42 × $1.650.000 = $89.300.000 y el 30% de $297.574.200 es $89.272.260 (cuadra); el video de YouTube que mencionaste no se publicó (solo el link); el video del 110 es general del proyecto."
+  },
+  {
+    "codigo": 117,
+    "categoria": "casa",
+    "negocio": "Venta",
+    "titulo": "Casa en Condominio Parque Central, Girardot",
+    "tipo": "Casa de 2 pisos en conjunto cerrado",
+    "ubicacion_corta": "Girardot · Cundinamarca",
+    "referencia": "Condominio Parque Central, Girardot, a 5 minutos del Puente Girardot–Ricaurte",
+    "area_texto": "280 m² construidos",
+    "precio_texto": "$260.000.000",
+    "precio_nota": "Lote de 140 m² · Estrato 4",
+    "separacion": "",
+    "financiacion": "",
+    "chips": [
+      "Lote 140 m²",
+      "280 m² construidos",
+      "2 pisos",
+      "Estrato 4"
+    ],
+    "resumen": "Casa de 2 pisos en conjunto cerrado con piscina, salón de eventos y parqueadero propio, cerca de Unicentro y del centro de Girardot.",
+    "descripcion": [
+      "Casa en venta en el Condominio Parque Central, en Girardot: lote de 140 m², 280 m² construidos, 2 pisos y estrato 4. Está lista para habitar, ideal para descanso o vivienda permanente.",
+      "Queda en una zona residencial tranquila y segura, cerca de todo: a 5 minutos del Puente Girardot–Ricaurte, a 3 minutos del Centro Comercial Unicentro Girardot y a 5 minutos del centro de Girardot, con bancos, farmacias, supermercados y restaurantes.",
+      "El conjunto es cerrado y ofrece piscina para adultos y piscina infantil, salón de eventos y áreas sociales, parqueadero propio y parqueaderos de visitantes, y zonas verdes. La administración cuesta $280.000 al mes."
+    ],
+    "incluye_titulo": "Distribución de la casa",
+    "incluye": [
+      "Primer piso: sala, comedor y cocina integral",
+      "Primer piso: alcoba principal con baño",
+      "Primer piso: baño social y patio de ropas amplio",
+      "Segundo piso: 3 habitaciones amplias",
+      "Segundo piso: baño privado en la alcoba principal",
+      "Segundo piso: 2 balcones con excelente vista",
+      "Espacios luminosos y frescos"
+    ],
+    "servicios_titulo": "El conjunto ofrece",
+    "servicios": [
+      "Piscina para adultos y piscina infantil",
+      "Salón de eventos y áreas sociales",
+      "Parqueadero propio y parqueaderos de visitantes",
+      "Zonas verdes",
+      "Conjunto cerrado y seguro"
+    ],
+    "condiciones": [
+      "Precio: $260.000.000",
+      "Administración: $280.000 al mes",
+      "Escrituras en regla",
+      "Disponible para visita inmediata"
+    ],
+    "ubicacion_puntos": [
+      "A 5 minutos del Puente Girardot–Ricaurte",
+      "A 3 minutos del Centro Comercial Unicentro Girardot",
+      "A 5 minutos del centro de Girardot",
+      "A 10 minutos del parque principal y la Alcaldía",
+      "Cerca de vías principales, con acceso rápido a la autopista hacia Bogotá",
+      "Zona residencial tranquila y segura"
+    ],
+    "datos_extra": [
+      {
+        "t": "Lote",
+        "v": "140 m²",
+        "x": "2 pisos · Estrato 4"
+      },
+      {
+        "t": "Administración",
+        "v": "$280.000",
+        "x": "Al mes"
+      }
+    ],
+    "documentos": "Escrituras en regla",
+    "estado": "Disponible",
+    "fecha": "2026-10-17",
+    "whatsapp_texto": "Hola, me interesa el inmueble 117 (casa en Condominio Parque Central, Girardot)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/117/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Fachada de la casa"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Sala y escalera"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Sala y comedor"
+      },
+      {
+        "f": "04.jpg",
+        "alt": "Pasillo y cocina"
+      },
+      {
+        "f": "05.jpg",
+        "alt": "Patio de ropas"
+      },
+      {
+        "f": "06.jpg",
+        "alt": "Balcón y terraza"
+      },
+      {
+        "f": "07.jpg",
+        "alt": "Parque infantil del conjunto"
+      },
+      {
+        "f": "08.jpg",
+        "alt": "Piscina del conjunto"
+      }
+    ],
+    "mapas": [],
+    "por_confirmar": "Si son 3 o 4 habitaciones (el texto dice alcoba principal en el primer piso y 3 habitaciones en el segundo, con \"baño privado en alcoba principal\" en el segundo); dirección o ubicación exacta del condominio; forma de pago y si es negociable; la foto de las escaleras con una persona sentada no se publicó; se difuminó la placa del carro en la fachada."
   }
 ]
