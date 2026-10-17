@@ -1869,5 +1869,141 @@
     ],
     "mapas": [],
     "por_confirmar": "Habitaciones: confirmado que son 3 (el texto menciona además una alcoba principal con baño en el primer piso); dirección o ubicación exacta del condominio; forma de pago y si es negociable; la foto de las escaleras con una persona sentada no se publicó; se difuminó la placa del carro en la fachada."
+  },
+  {
+    "codigo": 118,
+    "categoria": "casa",
+    "negocio": "Venta",
+    "titulo": "Casa campestre en condominio",
+    "tipo": "Casa campestre de 2 pisos en condominio",
+    "ubicacion_corta": "Condominio campestre",
+    "referencia": "Casa campestre en condominio con piscina, zona BBQ y salón de eventos",
+    "area_texto": "400 m² construidos",
+    "precio_texto": "$1.350.000.000",
+    "precio_nota": "Negociable · Lote de 1.150 m²",
+    "separacion": "",
+    "financiacion": "",
+    "chips": [
+      "Lote 1.150 m²",
+      "400 m² construidos",
+      "2 pisos",
+      "4 habitaciones"
+    ],
+    "resumen": "Casa de 2 pisos y 4 habitaciones con balcones, parqueadero cubierto y zona de estudio, en condominio con piscinas, zona BBQ y salón de eventos.",
+    "descripcion": [
+      "Casa campestre en condominio, en un lote de 1.150 m² con 400 m² construidos distribuidos en 2 amplios pisos.",
+      "En el primer piso tiene cocina integral tipo americano con balcón, zona de lavado y patio, una habitación amplia con balcón, clóset y baño completo con ducha, sala y comedor amplios con balcón, baño social amplio y parqueadero cubierto. En el segundo piso hay 3 alcobas amplias, todas con balcón, baño privado con ducha y clóset, y una zona de estudio o sala de estar íntima.",
+      "El condominio está urbanizado al 100%, con todos los servicios, vías completamente pavimentadas, piscina para adultos y niños, zona BBQ, salón de eventos y parqueaderos para visitantes."
+    ],
+    "incluye_titulo": "Distribución de la casa",
+    "incluye": [
+      "Primer piso: cocina integral tipo americano con balcón",
+      "Primer piso: zona de lavado y patio",
+      "Primer piso: 1 habitación amplia con balcón, clóset y baño completo con ducha",
+      "Primer piso: sala y comedor amplios con balcón",
+      "Primer piso: baño social amplio y parqueadero cubierto",
+      "Segundo piso: 3 alcobas amplias, todas con balcón, baño privado con ducha y clóset",
+      "Segundo piso: zona de estudio o sala de estar íntima"
+    ],
+    "servicios_titulo": "Amenidades del condominio",
+    "servicios": [
+      "Piscina para adultos y piscina para niños",
+      "Zona BBQ",
+      "Salón de eventos",
+      "Parqueaderos para visitantes",
+      "Vías completamente pavimentadas",
+      "Condominio urbanizado al 100%, con todos los servicios"
+    ],
+    "condiciones": [
+      "Precio: $1.350 millones",
+      "Precio negociable"
+    ],
+    "ubicacion_puntos": [],
+    "datos_extra": [
+      {
+        "t": "Lote",
+        "v": "1.150 m²",
+        "x": "400 m² construidos"
+      },
+      {
+        "t": "Habitaciones",
+        "v": "4",
+        "x": "1 en el primer piso y 3 en el segundo"
+      }
+    ],
+    "documentos": "",
+    "estado": "Disponible",
+    "fecha": "2026-10-17",
+    "whatsapp_texto": "Hola, me interesa el inmueble 118 (casa campestre en condominio)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/118/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Sala y comedor, vista desde el segundo piso"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Entrada, escalera y sala-comedor"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Cocina integral tipo americano"
+      },
+      {
+        "f": "04.jpg",
+        "alt": "Cocina con isla y nevera"
+      },
+      {
+        "f": "05.jpg",
+        "alt": "Habitación principal"
+      },
+      {
+        "f": "06.jpg",
+        "alt": "Habitación con balcón"
+      },
+      {
+        "f": "07.jpg",
+        "alt": "Habitación con balcón y clóset"
+      },
+      {
+        "f": "08.jpg",
+        "alt": "Habitación con clóset y balcón"
+      },
+      {
+        "f": "09.jpg",
+        "alt": "Habitación con televisor"
+      },
+      {
+        "f": "10.jpg",
+        "alt": "Baño con ducha"
+      },
+      {
+        "f": "11.jpg",
+        "alt": "Baño privado de la habitación"
+      },
+      {
+        "f": "12.jpg",
+        "alt": "Clóset y baño"
+      },
+      {
+        "f": "13.jpg",
+        "alt": "Zona de estudio o sala de estar"
+      },
+      {
+        "f": "14.jpg",
+        "alt": "Parqueadero cubierto"
+      },
+      {
+        "f": "15.jpg",
+        "alt": "Fachada y balcones"
+      },
+      {
+        "f": "16.jpg",
+        "alt": "Escalera exterior"
+      }
+    ],
+    "mapas": [],
+    "por_confirmar": "Ubicación (ciudad, vereda y nombre del condominio): el texto no la dice; escrituras y documentos; forma de pago; administración. Se difuminó la placa del carro del parqueadero."
   }
 ]
