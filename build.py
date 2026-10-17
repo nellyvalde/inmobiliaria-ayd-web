@@ -203,7 +203,7 @@ def detalle(it, partes):
     listas = ''.join([
         lista(it.get('servicios_titulo', 'Servicios'), it.get('servicios')),
         lista('Tipologías y precios', it.get('tipologias')),
-        lista('Incluye', it.get('incluye')),
+        lista(it.get('incluye_titulo', 'Incluye'), it.get('incluye')),
         lista('Razones para elegirnos', it.get('razones')),
         lista('Condiciones', it.get('condiciones')),
         lista('Ubicación', it.get('ubicacion_puntos')),
