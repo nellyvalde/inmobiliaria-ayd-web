@@ -1703,12 +1703,12 @@
     "foto_portada": "assets/inmuebles/116/cover.jpg",
     "fotos": [
       {
-        "f": "02.jpg",
-        "alt": "Plano del apartamento de 3 habitaciones (ilustrativo)"
-      },
-      {
         "f": "03.jpg",
         "alt": "Torres y vía de acceso (imagen ilustrativa)"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Plano del apartamento de 3 habitaciones (ilustrativo)"
       },
       {
         "f": "01.jpg",
