@@ -962,5 +962,136 @@
       "linea": "3 habitaciones · 69,66 m² · $277 millones · Entrega en 36 meses"
     },
     "por_confirmar": "Área: se publica 69,66 m² (construida, según el catálogo); el plano muestra 59,57 m² privada; qué torre y piso son; incluye parqueadero o no; separación (el catálogo dice desde $500.000, la ruleta $1.000.000); promociones de la ruleta del video (juego de baño, gastos notariales, descuentos): no se publicaron; nombre de la constructora y autorización para ofrecerlo; el catálogo es ilustrativo y \"no constituye oferta comercial\"."
+  },
+  {
+    "codigo": 111,
+    "categoria": "apartamento",
+    "negocio": "Venta",
+    "titulo": "Torres de Pamplonita · Apartamentos de 2 habitaciones",
+    "tipo": "Apartamento de 2 habitaciones (proyecto)",
+    "ubicacion_corta": "Pamplonita · Fusagasugá · Cundinamarca",
+    "referencia": "Pamplonita, Fusagasugá, sobre la vía principal Fusagasugá–Sibaté, a 5 minutos del parque principal",
+    "area_texto": "54,5 m²",
+    "precio_texto": "$217.455.000",
+    "precio_nota": "Cuota inicial del 30%",
+    "separacion": "",
+    "financiacion": "Cuota inicial: 1 cuota de $15.000.000 y 35 cuotas mensuales de $1.450.000; el 70% restante a la entrega",
+    "chips": [
+      "54,5 m²",
+      "2 habitaciones",
+      "2 baños",
+      "Cocina y ropas"
+    ],
+    "resumen": "Apartamento amplio de 2 habitaciones y 2 baños, con excelente distribución. Entrega en 36 meses.",
+    "descripcion": [
+      "Apartamentos de 2 habitaciones en Torres de Pamplonita, en Pamplonita, Fusagasugá, sobre la vía principal Fusagasugá–Sibaté y a 5 minutos del parque principal. Tienen un área de 54,5 m², son bastante amplios y cuentan con una excelente distribución de espacios.",
+      "El proyecto es de 8 torres y se desarrolla por etapas. Tiene ascensor, amplias zonas verdes y parqueaderos, con zonas comunes como recepción y lobby, parque infantil y salón social.",
+      "La entrega del apartamento es en 36 meses. Las imágenes y los planos son ilustrativos y pueden variar en el desarrollo técnico del proyecto."
+    ],
+    "incluye_titulo": "El apartamento incluye",
+    "incluye": [
+      "Sala comedor",
+      "Cocina",
+      "Cuarto de ropas",
+      "1 habitación sencilla",
+      "1 baño social",
+      "1 habitación principal con baño privado"
+    ],
+    "servicios_titulo": "Proyecto y zonas comunes",
+    "servicios": [
+      "Proyecto de 8 torres, con desarrollo por etapas",
+      "Ascensor",
+      "Amplias zonas verdes",
+      "Parqueaderos",
+      "Recepción y lobby",
+      "Parque infantil",
+      "Salón social"
+    ],
+    "condiciones": [
+      "Valor del apartamento: $217.455.000",
+      "Cuota inicial: 30% del valor del apartamento",
+      "1 cuota inicial de $15.000.000 y 35 cuotas mensuales de $1.450.000",
+      "El 70% restante al momento de la entrega, con recursos propios, crédito hipotecario o subsidios de vivienda",
+      "Entrega del apartamento: en 36 meses"
+    ],
+    "ubicacion_puntos": [
+      "Zonal alta de Fusagasugá, vía principal",
+      "A 5 minutos del parque principal",
+      "Accesos por Sibaté",
+      "Cerca de universidades, colegios, centros comerciales y vías principales"
+    ],
+    "datos_extra": [
+      {
+        "t": "Entrega",
+        "v": "En 36 meses",
+        "x": "Entrega del apartamento"
+      },
+      {
+        "t": "Cuota inicial",
+        "v": "30%",
+        "x": "$15.000.000 + 35 cuotas de $1.450.000"
+      },
+      {
+        "t": "Distribución",
+        "v": "2 hab. · 2 baños",
+        "x": "Sala comedor, cocina y ropas"
+      }
+    ],
+    "documentos": "",
+    "estado": "Disponible",
+    "fecha": "2026-10-17",
+    "whatsapp_texto": "Hola, me interesa el inmueble 111 (Torres de Pamplonita, apartamento de 2 habitaciones)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/111/cover.jpg",
+    "fotos": [
+      {
+        "f": "02.jpg",
+        "alt": "Torres de Pamplonita (imagen ilustrativa)"
+      },
+      {
+        "f": "01.jpg",
+        "alt": "Ejemplo de distribución de apartamento de 2 habitaciones (ilustrativo)"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Torres y vía de acceso (imagen ilustrativa)"
+      },
+      {
+        "f": "04.jpg",
+        "alt": "Recepción y lobby (imagen ilustrativa)"
+      },
+      {
+        "f": "05.jpg",
+        "alt": "Parque infantil (imagen ilustrativa)"
+      },
+      {
+        "f": "09.jpg",
+        "alt": "Salón social (imagen ilustrativa)"
+      },
+      {
+        "f": "10.jpg",
+        "alt": "Ascensor (imagen ilustrativa)"
+      },
+      {
+        "f": "06.jpg",
+        "alt": "Centro de Fusagasugá"
+      },
+      {
+        "f": "07.jpg",
+        "alt": "Vista aérea del sector"
+      },
+      {
+        "f": "08.jpg",
+        "alt": "Vista aérea del sector"
+      }
+    ],
+    "mapas": [
+      {
+        "f": "mapa.jpg",
+        "texto": "Ubicación del proyecto sobre la vía principal Fusagasugá–Sibaté (ilustrativo).",
+        "aspect": "object-contain max-h-[520px]"
+      }
+    ],
+    "por_confirmar": "Área: el texto dice 54,5 m² y el catálogo da para 2 habitaciones 52,54 / 57,68 / 59,50 / 63,47 m² construidos (según torre y piso); qué plano corresponde (el plano publicado es un ejemplo de 2 habitaciones); el texto no menciona balcón y los planos sí; la cuota inicial: $15.000.000 + 35 × $1.450.000 = $65.750.000 y el 30% de $217.455.000 es $65.236.500; incluye parqueadero o no; separación; el video de YouTube que mencionaste no se publicó (solo el link)."
   }
 ]
