@@ -838,20 +838,20 @@
     "tipo": "Apartamento de 3 habitaciones (proyecto)",
     "ubicacion_corta": "Pamplonita · Fusagasugá · Cundinamarca",
     "referencia": "Pamplonita, Fusagasugá, sobre la vía principal Fusagasugá–Sibaté, a 5 minutos del parque principal",
-    "area_texto": "69,5 m²",
+    "area_texto": "69,66 m²",
     "precio_texto": "$277.000.000",
     "precio_nota": "Cuota inicial del 30%",
     "separacion": "",
     "financiacion": "Cuota inicial: 1 cuota de $20.000.000 y 35 cuotas mensuales de $1.800.000; el 70% restante a la entrega",
     "chips": [
-      "69,5 m²",
+      "69,66 m²",
       "3 habitaciones",
       "2 baños",
       "Balcón"
     ],
     "resumen": "Apartamento amplio de 3 habitaciones, 2 baños y balcón, con excelente distribución. Entrega en 36 meses.",
     "descripcion": [
-      "Apartamentos de 3 habitaciones en Torres de Pamplonita, en Pamplonita, Fusagasugá, sobre la vía principal Fusagasugá–Sibaté y a 5 minutos del parque principal. Tienen un área de 69,5 m², son bastante amplios y cuentan con una excelente distribución de espacios.",
+      "Apartamentos de 3 habitaciones en Torres de Pamplonita, en Pamplonita, Fusagasugá, sobre la vía principal Fusagasugá–Sibaté y a 5 minutos del parque principal. Tienen un área de 69,66 m², son bastante amplios y cuentan con una excelente distribución de espacios.",
       "El proyecto es de 8 torres y se desarrolla por etapas. Tiene ascensor, amplias zonas verdes y parqueaderos, con zonas comunes como recepción y lobby, parque infantil y salón social.",
       "La entrega del apartamento es en 36 meses. Las imágenes son ilustrativas y pueden variar en el desarrollo técnico del proyecto."
     ],
@@ -959,8 +959,8 @@
       "fin": 15,
       "lugar": "Pamplonita · Fusagasugá",
       "titulo": "Torres de Pamplonita · Apartamentos",
-      "linea": "3 habitaciones · 69,5 m² · $277 millones · Entrega en 36 meses"
+      "linea": "3 habitaciones · 69,66 m² · $277 millones · Entrega en 36 meses"
     },
-    "por_confirmar": "Área: el texto dice 69,5 m² y los planos del catálogo dicen 59,57 m² privada / 69,66 m² construida (torre y piso); qué torre y piso son; incluye parqueadero o no; separación (el catálogo dice desde $500.000, la ruleta $1.000.000); promociones de la ruleta del video (juego de baño, gastos notariales, descuentos): no se publicaron; nombre de la constructora y autorización para ofrecerlo; el catálogo es ilustrativo y \"no constituye oferta comercial\"."
+    "por_confirmar": "Área: se publica 69,66 m² (construida, según el catálogo); el plano muestra 59,57 m² privada; qué torre y piso son; incluye parqueadero o no; separación (el catálogo dice desde $500.000, la ruleta $1.000.000); promociones de la ruleta del video (juego de baño, gastos notariales, descuentos): no se publicaron; nombre de la constructora y autorización para ofrecerlo; el catálogo es ilustrativo y \"no constituye oferta comercial\"."
   }
 ]
