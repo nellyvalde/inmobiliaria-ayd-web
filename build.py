@@ -237,6 +237,17 @@ def detalle(it, partes):
     titulo_pag = f'Cód. {cod} · {it["titulo"]} | Inmobiliaria A&amp;D'
 
     head = head.replace(head[head.index('<title>'):head.index('</title>') + 8], f'<title>{titulo_pag}</title>')
+    import re
+    og_titulo = f"Cód. {cod} · {it['titulo']} | Inmobiliaria A&amp;D"
+    og_desc = e(it['precio_texto'] + ' · ' + it['resumen'])
+    portada = it.get('foto_portada', '')
+    head = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{og_desc}">', head)
+    head = re.sub(r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="https://inmobiliariaayd.online/inmueble/{cod}.html">', head)
+    head = re.sub(r'<meta property="og:title" content="[^"]*">', f'<meta property="og:title" content="{og_titulo}">', head)
+    head = re.sub(r'<meta property="og:description" content="[^"]*">', f'<meta property="og:description" content="{og_desc}">', head)
+    if portada:
+        head = re.sub(r'<meta property="og:image" content="[^"]*">', f'<meta property="og:image" content="https://inmobiliariaayd.online/{portada}">', head)
+        head = re.sub(r'\s*<meta property="og:image:(width|height)" content="[^"]*">', '', head)
     return f'''{head}
 </head>
 <body class="antialiased">
