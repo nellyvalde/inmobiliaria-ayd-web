@@ -212,9 +212,65 @@
     "estado": "Por confirmar",
     "fecha": "2026-09-26",
     "whatsapp_texto": "Hola, me interesa el inmueble 103 (lote en Silvania)",
-    "detalle": false,
-    "ph": "ph3",
-    "por_confirmar": "Formas de pago, separación, gastos de escrituración, cercanía de energía y acueducto."
+    "detalle": true,
+    "por_confirmar": "Formas de pago, separación y gastos de escrituración; qué tan cerca están la energía y el acueducto; ubicación exacta o mapa; qué es la construcción de lata que se ve en el video 2.",
+    "descripcion": [
+      "Lote campestre de 1.295 m² en El Retiro, Silvania, a 15 minutos del centro de Silvania, en una zona tranquila y de gran valorización. Ideal para tu casa de campo o finca.",
+      "Tiene carretera de ingreso hasta el mismo lote, con acceso fácil y directo, y energía y acueducto cerca del predio. Cuenta con árboles frutales listos para cosechar: naranja, limón, guayaba, banano, plátano, aguacate y breva.",
+      "Los documentos están al día y está listo para escriturar."
+    ],
+    "servicios_titulo": "Lo que tiene el lote",
+    "ubicacion_puntos": [
+      "El Retiro, Silvania",
+      "A 15 minutos del centro de Silvania",
+      "Zona tranquila y de gran valorización"
+    ],
+    "condiciones": [
+      "Precio: $150.000.000",
+      "Precio negociable",
+      "Documentos al día, listo para escriturar"
+    ],
+    "datos_extra": [
+      {
+        "t": "Ubicación",
+        "v": "Silvania",
+        "x": "El Retiro · A 15 min del centro"
+      },
+      {
+        "t": "Documentos",
+        "v": "Al día",
+        "x": "Listo para escriturar"
+      }
+    ],
+    "foto_portada": "assets/inmuebles/103/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Terreno con árboles de banano"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Terreno y árboles frutales"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Vista del lote"
+      },
+      {
+        "f": "04.jpg",
+        "alt": "Terreno del lote"
+      },
+      {
+        "f": "05.jpg",
+        "alt": "Vista de la zona"
+      }
+    ],
+    "mapas": [],
+    "videos": [
+      "video.mp4",
+      "video2.mp4",
+      "video3.mp4"
+    ]
   },
   {
     "codigo": 104,
