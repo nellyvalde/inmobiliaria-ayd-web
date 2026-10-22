@@ -2249,5 +2249,70 @@
       "video3.mp4"
     ],
     "por_confirmar": "Áreas y número de habitaciones de cada tipo; si el parqueadero es solo de los VIS o también de los VIP; cuál de las fotos es de VIP y cuál de VIS (hay apartamentos terminados y en obra gris); separación y cuota inicial; fecha de entrega; ubicación exacta o mapa; autorización de la constructora para ofrecerlo (las fotos traen el logo \"Arrayanes de Peñalisa\")."
+  },
+  {
+    "codigo": 121,
+    "categoria": "lote",
+    "negocio": "Venta",
+    "titulo": "Lote en Sector Villamayorga, Fusagasugá",
+    "tipo": "Lote urbano",
+    "ubicacion_corta": "Villamayorga · Fusagasugá",
+    "referencia": "Sector Villamayorga, Fusagasugá, al lado del Edificio JC",
+    "area_texto": "102 m²",
+    "precio_texto": "$170.000.000",
+    "precio_nota": "Negociable · 6 m de frente × 17 m de fondo",
+    "separacion": "",
+    "financiacion": "",
+    "chips": [
+      "102 m²",
+      "6 m × 17 m",
+      "2 apartamentos",
+      "Negociable"
+    ],
+    "resumen": "Lote de 102 m² (6 m de frente por 17 m de fondo) en Villamayorga, donde se pueden construir 2 apartamentos independientes.",
+    "descripcion": [
+      "Lote en venta en el sector Villamayorga, en Fusagasugá, al lado del Edificio JC. Mide 6 m de frente por 17 m de fondo, para un área total de 102 m².",
+      "Se pueden construir 2 apartamentos independientes. Ideal para construir tu hogar y, además, generar ingresos."
+    ],
+    "servicios": [],
+    "condiciones": [
+      "Precio: $170 millones",
+      "Precio negociable"
+    ],
+    "ubicacion_puntos": [
+      "Sector Villamayorga, Fusagasugá",
+      "Al lado del Edificio JC"
+    ],
+    "datos_extra": [
+      {
+        "t": "Dimensiones",
+        "v": "6 m × 17 m",
+        "x": "Frente × fondo"
+      },
+      {
+        "t": "Posibilidad",
+        "v": "2 apartamentos",
+        "x": "Independientes"
+      }
+    ],
+    "incluye": [],
+    "documentos": "",
+    "estado": "Disponible",
+    "fecha": "2026-10-22",
+    "whatsapp_texto": "Hola, me interesa el inmueble 121 (lote en Villamayorga, Fusagasugá)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/121/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Lote entre dos construcciones"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Frente del lote"
+      }
+    ],
+    "mapas": [],
+    "por_confirmar": "Servicios públicos, escrituras y documentos; forma de pago; ubicación exacta o mapa; si la norma y la licencia permiten construir 2 apartamentos independientes."
   }
 ]
