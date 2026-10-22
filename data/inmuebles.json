@@ -2128,5 +2128,126 @@
     ],
     "mapas": [],
     "por_confirmar": "Servicios públicos, escrituras y documentos; forma de pago; ubicación exacta o mapa; el terreno tiene pendiente (se ve en las fotos). En la foto 04 se recortó el borde derecho donde aparecían personas."
+  },
+  {
+    "codigo": 120,
+    "categoria": "apartamento",
+    "negocio": "Venta",
+    "titulo": "Arrayanes de Peñalisa · Apartamentos en Ricaurte",
+    "tipo": "Apartamentos VIP y VIS (proyecto)",
+    "ubicacion_corta": "Ricaurte · Cundinamarca",
+    "referencia": "Proyecto de vivienda en Ricaurte, Cundinamarca",
+    "area_texto": "Apartamentos VIP y VIS",
+    "precio_texto": "Desde $140.926.500",
+    "precio_nota": "Apartamentos VIP · VIS desde $200.441.050",
+    "separacion": "",
+    "financiacion": "Subsidios de cajas de compensación y crédito hipotecario, según requisitos",
+    "chips": [
+      "Apartamentos VIP",
+      "Apartamentos VIS",
+      "Con parqueadero",
+      "Acepta subsidios"
+    ],
+    "resumen": "Proyecto de vivienda en Ricaurte con apartamentos VIP desde $140.926.500 y VIS desde $200.441.050. Recibe subsidios y crédito hipotecario.",
+    "descripcion": [
+      "Arrayanes Peñalisa es un proyecto de vivienda en Ricaurte, Cundinamarca, ideal para quienes sueñan con tener vivienda propia o buscan invertir en una zona con gran atractivo turístico.",
+      "Hay opciones para diferentes presupuestos: apartamentos VIP desde $140.926.500 y apartamentos VIS desde $200.441.050, con parqueadero.",
+      "Se reciben subsidios de cajas de compensación familiar, según los requisitos y condiciones de cada entidad, y hay posibilidad de financiación mediante crédito hipotecario, sujeto a aprobación bancaria. Hay alternativas para quienes buscan su primera vivienda o quieren invertir en Ricaurte.",
+      "Las fotos muestran apartamentos del proyecto, algunos terminados y otros en obra gris, y pueden variar según el apartamento."
+    ],
+    "tipologias": [
+      "Apartamentos VIP: desde $140.926.500",
+      "Apartamentos VIS: desde $200.441.050, con parqueadero"
+    ],
+    "incluye": [],
+    "servicios": [],
+    "condiciones": [
+      "Se reciben subsidios de cajas de compensación familiar, según requisitos y condiciones de cada entidad",
+      "Posibilidad de financiación mediante crédito hipotecario, sujeto a aprobación bancaria",
+      "Alternativas para primera vivienda o para invertir en Ricaurte"
+    ],
+    "ubicacion_puntos": [
+      "Ricaurte, Cundinamarca",
+      "Zona con gran atractivo turístico"
+    ],
+    "datos_extra": [
+      {
+        "t": "Ubicación",
+        "v": "Ricaurte",
+        "x": "Cundinamarca"
+      },
+      {
+        "t": "Subsidios",
+        "v": "Sí",
+        "x": "Cajas de compensación, según requisitos"
+      }
+    ],
+    "documentos": "",
+    "estado": "Disponible",
+    "fecha": "2026-10-22",
+    "whatsapp_texto": "Hola, ARRAYANES. Me interesa el inmueble 120 (Arrayanes de Peñalisa, Ricaurte)",
+    "detalle": true,
+    "foto_portada": "assets/inmuebles/120/cover.jpg",
+    "fotos": [
+      {
+        "f": "01.jpg",
+        "alt": "Balcón con vista a la piscina y a las torres"
+      },
+      {
+        "f": "02.jpg",
+        "alt": "Torres y zonas comunes"
+      },
+      {
+        "f": "03.jpg",
+        "alt": "Sala-comedor con balcón"
+      },
+      {
+        "f": "04.jpg",
+        "alt": "Cocina con barra"
+      },
+      {
+        "f": "05.jpg",
+        "alt": "Cocina con estufa y mesón"
+      },
+      {
+        "f": "06.jpg",
+        "alt": "Estufa y lavaplatos"
+      },
+      {
+        "f": "07.jpg",
+        "alt": "Habitación con clóset"
+      },
+      {
+        "f": "08.jpg",
+        "alt": "Baño con ducha"
+      },
+      {
+        "f": "09.jpg",
+        "alt": "Baño con lavamanos y ducha"
+      },
+      {
+        "f": "10.jpg",
+        "alt": "Sala con ventanal y balcón (en obra gris)"
+      },
+      {
+        "f": "11.jpg",
+        "alt": "Habitación (en obra gris)"
+      },
+      {
+        "f": "12.jpg",
+        "alt": "Baño (en obra gris)"
+      },
+      {
+        "f": "13.jpg",
+        "alt": "Baño (en obra gris)"
+      }
+    ],
+    "mapas": [],
+    "videos": [
+      "video.mp4",
+      "video2.mp4",
+      "video3.mp4"
+    ],
+    "por_confirmar": "Áreas y número de habitaciones de cada tipo; si el parqueadero es solo de los VIS o también de los VIP; cuál de las fotos es de VIP y cuál de VIS (hay apartamentos terminados y en obra gris); separación y cuota inicial; fecha de entrega; ubicación exacta o mapa; autorización de la constructora para ofrecerlo (las fotos traen el logo \"Arrayanes de Peñalisa\")."
   }
 ]
