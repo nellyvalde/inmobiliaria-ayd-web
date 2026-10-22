@@ -385,6 +385,36 @@ def excel(items, ruta):
         for c in row:
             c.alignment = Alignment(wrap_text=True, vertical='top')
     ws.freeze_panes = 'E2'
+
+    # Hoja de preguntas pendientes para Deisy (una fila por pregunta)
+    wq = wb.create_sheet('Preguntas para Deisy')
+    wq.append(['Código', 'Inmueble', 'Pregunta o dato por confirmar', 'Respuesta de Deisy', 'Resuelto'])
+    generales = [
+        'Nombre definitivo de la inmobiliaria (cuando quede registrada en Cámara de Comercio) y si tiene logo propio',
+        'Foto de Deisy o del equipo para la sección "Quiénes somos"',
+        'Autorización de las constructoras para ofrecer sus proyectos (Torres de Pamplonita, Arrayanes de Peñalisa, Santo Domingo, Acqua Viva, La Colina, Rincón del Palmar, Santorini, Sky 360)',
+        'Si los servicios de la página están bien: arriendos, venta, construcción y remodelaciones, fincas y lotes, trámite de licencias y persianas y cortinas',
+    ]
+    for q in generales:
+        wq.append(['General', 'Toda la página', q, '', ''])
+    for it in items:
+        pc = it.get('por_confirmar', '')
+        partes = [x.strip() for x in pc.replace('. ', '; ').split(';') if x.strip()]
+        for q in partes:
+            wq.append([it['codigo'], it['titulo'], q.rstrip('.'), '', ''])
+    for c in wq[1]:
+        c.font = Font(bold=True, color='FFFFFF')
+        c.fill = head_fill
+        c.alignment = Alignment(wrap_text=True, vertical='center')
+    for k, w in enumerate([10, 40, 90, 45, 10]):
+        wq.column_dimensions[chr(65 + k)].width = w
+    amarillo = PatternFill('solid', fgColor='FFF2CC')
+    for row in wq.iter_rows(min_row=2):
+        for c in row:
+            c.alignment = Alignment(wrap_text=True, vertical='top')
+        row[3].fill = amarillo
+    wq.freeze_panes = 'A2'
+    wq.auto_filter.ref = f'A1:E{wq.max_row}'
     wb.save(ruta)
 
 
