@@ -411,6 +411,7 @@ def excel(items, ruta):
         'Foto de Deisy o del equipo para la sección "Quiénes somos"',
         'Autorización de las constructoras para ofrecer sus proyectos (Torres de Pamplonita, Arrayanes de Peñalisa, Santo Domingo, Acqua Viva, La Colina, Rincón del Palmar, Santorini, Sky 360)',
         'Autorización de LQN y VehiCredi para nombrarlos en la página, y si las condiciones del servicio de acompañamiento en financiación están correctas',
+        'Fotos de casas prefabricadas ya construidas (y de los otros servicios) para ponerlas en la página; y si los aliados que construyen están de acuerdo con que se mencione el servicio',
         'Si los servicios de la página están bien: arriendos, venta, construcción y remodelaciones, fincas y lotes, trámite de licencias y persianas y cortinas',
     ]
     for q in generales:
