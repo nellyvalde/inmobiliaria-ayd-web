@@ -352,6 +352,23 @@ show(0);
 
 
 # ---------- Excel ----------
+def _dividir(texto):
+    """Divide el texto de pendientes en preguntas sueltas, sin cortar lo que va entre paréntesis."""
+    partes, actual, prof = [], '', 0
+    for k, ch in enumerate(texto):
+        if ch in '([':
+            prof += 1
+        elif ch in ')]':
+            prof = max(0, prof - 1)
+        if prof == 0 and (ch == ';' or (ch == '.' and texto[k + 1:k + 2] == ' ')):
+            partes.append(actual)
+            actual = ''
+        else:
+            actual += ch
+    partes.append(actual)
+    return [p.strip() for p in partes if p.strip()]
+
+
 def excel(items, ruta):
     from openpyxl import Workbook
     from openpyxl.styles import Alignment, Font, PatternFill
@@ -399,7 +416,7 @@ def excel(items, ruta):
         wq.append(['General', 'Toda la página', q, '', ''])
     for it in items:
         pc = it.get('por_confirmar', '')
-        partes = [x.strip() for x in pc.replace('. ', '; ').split(';') if x.strip()]
+        partes = _dividir(pc)
         for q in partes:
             wq.append([it['codigo'], it['titulo'], q.rstrip('.'), '', ''])
     for c in wq[1]:
