@@ -37,8 +37,9 @@
     stopTimer();
     const start = +s.dataset.start || 0;
     const end = +s.dataset.end || 0;
-    const seconds = (end ? end - start : 15) + 4; // seguro por si el video no avanza
-    timer = setTimeout(next, seconds * 1000);
+    const seconds = (end ? end - start : 3) + 2; // seguro por si el video no avanza
+    const mio = token;
+    timer = setTimeout(() => { if (mio === token) next(); }, seconds * 1000);
   }
 
   function next() { if (slides.length > 1) go(cur + 1); else restart(slides[cur]); }
@@ -50,7 +51,10 @@
     armTimer(s);
   }
 
+  let token = 0;
+
   function go(i) {
+    const mi = ++token;
     stopTimer();
     video(slides[cur]).pause();
     slides[cur].classList.remove('is-active');
@@ -63,8 +67,8 @@
     const end = +s.dataset.end || 0;
     const seek = () => { try { v.currentTime = start; } catch (e) { /* aún sin metadatos */ } };
     if (v.readyState > 0) seek(); else v.addEventListener('loadedmetadata', seek, { once: true });
-    v.ontimeupdate = () => { if (end && v.currentTime >= end) next(); };
-    v.onended = next;
+    v.ontimeupdate = () => { if (mi === token && end && v.currentTime >= end) next(); };
+    v.onended = () => { if (mi === token) next(); };
     if (!paused && visible) { v.play().catch(() => {}); armTimer(s); }
     if (slides.length > 1) load(slides[(cur + 1) % slides.length], 'metadata'); // adelanta solo los metadatos
   }

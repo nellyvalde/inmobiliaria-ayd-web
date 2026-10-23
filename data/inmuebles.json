@@ -89,7 +89,7 @@
     "portada": {
       "video": "hero.mp4",
       "inicio": 0,
-      "fin": 15,
+      "fin": 3,
       "lugar": "A 3 min del parque principal · Carmen de Apicalá",
       "titulo": "La Colina · Lotes urbanos",
       "linea": "Desde 72 m² · Desde $39 millones · Separa con $1.000.000"
@@ -179,7 +179,7 @@
     "portada": {
       "video": "hero.mp4",
       "inicio": 0,
-      "fin": 15,
+      "fin": 3,
       "lugar": "A 20 min de El Carmen de Apicalá",
       "titulo": "Acqua Viva · Lotes campestres",
       "linea": "Desde 1.000 m² · Desde $100 millones · Separa con $1.000.000"
@@ -489,7 +489,7 @@
     "portada": {
       "video": "hero.mp4",
       "inicio": 0,
-      "fin": 15,
+      "fin": 3,
       "lugar": "A 3 min del parque principal · Carmen de Apicalá",
       "titulo": "Rincón del Palmar · Urbanización",
       "linea": "Desde 72 m² · Desde $39 millones · Zona comercial (imagen ilustrativa)"
@@ -584,7 +584,7 @@
     "portada": {
       "video": "hero.mp4",
       "inicio": 0,
-      "fin": 15,
+      "fin": 3,
       "lugar": "A 3 min del parque principal · Carmen de Apicalá",
       "titulo": "Santorini · Lotes campestres",
       "linea": "Desde 1.000 m² · Desde $78 millones · Separa con $1.000.000"
@@ -773,7 +773,7 @@
     "portada": {
       "video": "hero.mp4",
       "inicio": 0,
-      "fin": 15,
+      "fin": 3,
       "lugar": "Carmen de Apicalá · Tolima",
       "titulo": "Sky 360 · Apartamentos",
       "linea": "Apartaestudios desde 56 m² · Desde $99 millones · Separa con $2.000.000"
@@ -879,7 +879,7 @@
     "portada": {
       "video": "hero.mp4",
       "inicio": 0,
-      "fin": 15,
+      "fin": 3,
       "lugar": "A 5 min de Carmen de Apicalá · Vía El Paso",
       "titulo": "Santo Domingo · Urbanización",
       "linea": "Desde 72 m² · Desde $45 millones · Separa con $1.000.000"
@@ -1012,7 +1012,7 @@
     "portada": {
       "video": "hero.mp4",
       "inicio": 0,
-      "fin": 15,
+      "fin": 3,
       "lugar": "Pamplonita · Fusagasugá",
       "titulo": "Torres de Pamplonita · Apartamentos",
       "linea": "3 habitaciones · 69,66 m² · $277 millones · Entrega en 36 meses"
@@ -2248,7 +2248,15 @@
       "video2.mp4",
       "video3.mp4"
     ],
-    "por_confirmar": "Áreas y número de habitaciones de cada tipo; si el parqueadero es solo de los VIS o también de los VIP; cuál de las fotos es de VIP y cuál de VIS (hay apartamentos terminados y en obra gris); separación y cuota inicial; fecha de entrega; ubicación exacta o mapa; autorización de la constructora para ofrecerlo (las fotos traen el logo \"Arrayanes de Peñalisa\")."
+    "por_confirmar": "Áreas y número de habitaciones de cada tipo; si el parqueadero es solo de los VIS o también de los VIP; cuál de las fotos es de VIP y cuál de VIS (hay apartamentos terminados y en obra gris); separación y cuota inicial; fecha de entrega; ubicación exacta o mapa; autorización de la constructora para ofrecerlo (las fotos traen el logo \"Arrayanes de Peñalisa\").",
+    "portada": {
+      "video": "hero.mp4",
+      "inicio": 0,
+      "fin": 3,
+      "lugar": "Ricaurte · Cundinamarca",
+      "titulo": "Arrayanes de Peñalisa · Apartamentos",
+      "linea": "VIP desde $140 millones · VIS desde $200 millones · Acepta subsidios"
+    }
   },
   {
     "codigo": 121,
