@@ -1,5 +1,6 @@
 .git
 build.py
 data
+supabase
 *.xlsx
 .gitattributes
