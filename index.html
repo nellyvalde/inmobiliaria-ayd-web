@@ -612,7 +612,9 @@ tailwind.config = {
         <p class="mt-4 text-tinta/75">Nos encargamos de coordinar y gestionar todo el proceso con nuestros aliados especializados. La aprobación de planos, los permisos y los plazos dependen de la alcaldía o entidad competente y del equipo ejecutor.</p>
       </div>
     </div>
-    <!-- GALERIA-PREFABRICADAS: aquí van las fotos de casas construidas cuando las tengamos -->
+    <h3 class="mt-12 font-display font-bold text-xl text-vino">Modelos de referencia</h3>
+    <p class="mt-1 text-sm text-tinta/60">Imágenes ilustrativas de modelos de casas prefabricadas y un ejemplo de distribución. El diseño final se define en la visita técnica según tu terreno y tu presupuesto.</p>
+    <div class="mt-5 grid grid-cols-2 lg:grid-cols-3 gap-4"><button type="button" data-zoom="assets/servicios/prefabricadas/01.jpg" data-alt="Casa prefabricada de un piso con corredor (imagen de referencia)" class="rounded-2xl overflow-hidden border border-black/10 bg-black/5 aspect-[4/3]"><img src="assets/servicios/prefabricadas/01.jpg" alt="Casa prefabricada de un piso con corredor (imagen de referencia)" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-300"></button><button type="button" data-zoom="assets/servicios/prefabricadas/02.jpg" data-alt="Casa prefabricada con techo de teja y corredor (imagen de referencia)" class="rounded-2xl overflow-hidden border border-black/10 bg-black/5 aspect-[4/3]"><img src="assets/servicios/prefabricadas/02.jpg" alt="Casa prefabricada con techo de teja y corredor (imagen de referencia)" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-300"></button><button type="button" data-zoom="assets/servicios/prefabricadas/03.jpg" data-alt="Casa prefabricada de dos pisos con balcón (imagen de referencia)" class="rounded-2xl overflow-hidden border border-black/10 bg-black/5 aspect-[4/3]"><img src="assets/servicios/prefabricadas/03.jpg" alt="Casa prefabricada de dos pisos con balcón (imagen de referencia)" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-300"></button><button type="button" data-zoom="assets/servicios/prefabricadas/04.jpg" data-alt="Casa campestre de dos pisos (imagen de referencia)" class="rounded-2xl overflow-hidden border border-black/10 bg-black/5 aspect-[4/3]"><img src="assets/servicios/prefabricadas/04.jpg" alt="Casa campestre de dos pisos (imagen de referencia)" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition duration-300"></button><button type="button" data-zoom="assets/servicios/prefabricadas/plano.jpg" data-alt="Ejemplo de distribución: 8 m de frente por 9 m de fondo (ilustrativo)" class="rounded-2xl overflow-hidden border border-black/10 bg-white"><img src="assets/servicios/prefabricadas/plano.jpg" alt="Ejemplo de distribución: 8 m de frente por 9 m de fondo" loading="lazy" class="w-full h-full object-contain"></button></div>
     <p class="mt-8 text-tinta/75 max-w-3xl">Contáctanos para agendar tu visita técnica y recibir tu cotización sin compromiso.</p>
     <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20agendar%20una%20visita%20t%C3%A9cnica%20para%20una%20casa%20prefabricada" class="inline-block mt-6 rounded-lg bg-rojo text-white font-semibold px-7 py-3.5 hover:bg-vino transition">Agenda tu visita técnica</a>
   </div>
@@ -717,6 +719,10 @@ tailwind.config = {
 
 <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" aria-label="WhatsApp" class="fixed bottom-5 right-5 z-50 rounded-full bg-[#25D366] text-white font-semibold px-5 py-3 shadow-lg hover:brightness-95 transition">WhatsApp</a>
 
+<div id="lbs" class="hidden fixed inset-0 z-[60] bg-black/90 items-center justify-center p-4">
+  <button type="button" id="lbs-x" class="absolute top-4 right-5 text-white text-4xl leading-none" aria-label="Cerrar">&times;</button>
+  <img id="lbs-img" src="" alt="" class="max-h-[90vh] max-w-full object-contain">
+</div>
 <script src="config.js"></script>
 <script src="app.js" defer></script>
 <script src="hero.js" defer></script>

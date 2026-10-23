@@ -1,6 +1,19 @@
 // Página principal: filtros y lectura de inmuebles desde Supabase.
 // Las fichas 101-121 son estáticas; desde el panel se pueden ocultar o marcar como vendidas.
 // Los inmuebles nuevos creados en el panel se agregan aquí como tarjetas.
+// Zoom de las fotos de servicios (galería de casas prefabricadas)
+(function () {
+  const lb = document.getElementById('lbs'), im = document.getElementById('lbs-img');
+  if (!lb) return;
+  const cerrar = () => { lb.classList.add('hidden'); lb.classList.remove('flex'); };
+  document.addEventListener('click', ev => {
+    const b = ev.target.closest('[data-zoom]');
+    if (b) { im.src = b.dataset.zoom; im.alt = b.dataset.alt || ''; lb.classList.remove('hidden'); lb.classList.add('flex'); }
+    else if (ev.target === lb || ev.target.id === 'lbs-x') cerrar();
+  });
+  document.addEventListener('keydown', ev => { if (ev.key === 'Escape') cerrar(); });
+})();
+
 (function () {
   const grid = document.getElementById('grid');
   const tabsBox = document.getElementById('tabs');
