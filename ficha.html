@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inmueble | Inmobiliaria A&amp;D</title>
+<meta name="description" content="Ficha de inmueble de Inmobiliaria A&amp;D">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: { extend: {
+    fontFamily: { display: ['"Plus Jakarta Sans"','sans-serif'], sans: ['Inter','sans-serif'] },
+    colors: { vino:'#8b0f1f', rojo:'#c8102e', cielo:'#fdecee', tinta:'#26171a', suave:'#fff6f6' }
+  } }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family:'Inter',sans-serif; color:#26171a; background:#fff; }
+  .ph1 { background: linear-gradient(135deg,#fde3e5 0%,#f0a3ab 100%); }
+  .ph2 { background: linear-gradient(135deg,#fff0f1 0%,#f3bcc2 100%); }
+  .ph3 { background: linear-gradient(135deg,#f6dfe1 0%,#e59aa3 100%); }
+  .tab-on { background:#8b0f1f; color:#fff; }
+  .hslide { opacity:0; pointer-events:none; transition: opacity .7s ease; }
+  .hslide.is-active { opacity:1; pointer-events:auto; }
+  .card { transition: box-shadow .2s, transform .2s; }
+  .card:hover { box-shadow: 0 14px 30px -14px rgba(139,15,31,.35); transform: translateY(-2px); }
+</style>
+
+</head>
+<body class="antialiased">
+
+<!-- Franja superior -->
+<div class="bg-vino text-white text-sm">
+  <div class="max-w-6xl mx-auto px-5 h-10 flex items-center justify-between">
+    <span class="hidden md:inline text-white/85">Lunes a viernes 8:00 a.m. – 6:00 p.m. · Sábados 8:00 a.m. – 1:00 p.m.</span>
+    <div class="flex items-center gap-5 ml-auto">
+      <a href="https://wa.me/573023487290" class="hover:underline">WhatsApp 302 348 7290</a>
+    </div>
+  </div>
+</div>
+
+<!-- Encabezado -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-black/5">
+  <div class="max-w-6xl mx-auto px-5 h-20 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <img src="logo.svg" alt="Inmobiliaria A&amp;D" class="w-12 h-12">
+      <span class="font-display font-bold text-vino leading-tight text-lg uppercase tracking-wide">Inmobiliaria<br><span class="text-sm font-bold text-rojo tracking-widest">A&amp;D</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-tinta/80">
+      <a href="#inmuebles" class="hover:text-rojo">Inmuebles</a>
+      <a href="#servicios" class="hover:text-rojo">Servicios</a>
+      <a href="#pago" class="hover:text-rojo">Financiación</a>
+      <a href="#nosotros" class="hover:text-rojo">Nosotros</a>
+      <a href="#contacto" class="hover:text-rojo">Contacto</a>
+    </nav>
+    <a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" class="rounded-lg bg-rojo text-white text-sm font-semibold px-5 py-2.5 hover:bg-vino transition">Escríbenos</a>
+  </div>
+</header>
+
+
+<main id="ficha" class="max-w-6xl mx-auto px-5 py-10"><p class="py-24 text-center text-tinta/60">Cargando inmueble…</p></main>
+
+<footer class="bg-tinta text-white/70">
+  <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row justify-between gap-3 text-sm">
+    <p>Inmobiliaria A&amp;D · Colombia · Tel. <a href="tel:+573023487290" class="hover:text-white hover:underline">302 348 7290</a> · <a href="tel:+573016484500" class="hover:text-white hover:underline">301 648 4500</a> · <a href="tel:+573222559802" class="hover:text-white hover:underline">322 255 9802</a></p>
+    <p>© 2026 Inmobiliaria A&amp;D. Precios y disponibilidad sujetos a confirmación.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/573023487290?text=Hola%2C%20quiero%20informaci%C3%B3n" aria-label="WhatsApp" class="fixed bottom-5 right-5 z-50 rounded-full bg-[#25D366] text-white font-semibold px-5 py-3 shadow-lg hover:brightness-95 transition">WhatsApp</a>
+
+
+<div id="lb" class="hidden fixed inset-0 z-[60] bg-black/90 items-center justify-center p-4">
+  <button type="button" id="lbclose" class="absolute top-4 right-5 text-white text-4xl leading-none" aria-label="Cerrar">&times;</button>
+  <button type="button" id="lbprev" class="absolute left-3 top-1/2 text-white text-5xl leading-none px-3" aria-label="Anterior">&#8249;</button>
+  <img id="lbimg" src="" alt="" class="max-h-[90vh] max-w-full object-contain">
+  <button type="button" id="lbnext" class="absolute right-3 top-1/2 text-white text-5xl leading-none px-3" aria-label="Siguiente">&#8250;</button>
+</div>
+<script src="config.js"></script>
+<script src="ficha.js"></script>
+</body>
+</html>

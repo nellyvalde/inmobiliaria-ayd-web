@@ -1,0 +1,212 @@
+[
+ {
+  "codigo": 101,
+  "titulo": "La Colina · Lotes urbanos",
+  "categoria": "proyecto",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "Desde $39.000.000",
+  "precio_nota": "Separa con $1.000.000",
+  "ubicacion_corta": "Carmen de Apicalá · Tolima"
+ },
+ {
+  "codigo": 102,
+  "titulo": "Acqua Viva · Lotes campestres",
+  "categoria": "proyecto",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "Desde $100.000.000",
+  "precio_nota": "Separa con $1.000.000",
+  "ubicacion_corta": "A 20 min de El Carmen de Apicalá · Tolima"
+ },
+ {
+  "codigo": 103,
+  "titulo": "Lote campestre en Silvania",
+  "categoria": "lote",
+  "negocio": "Venta",
+  "estado": "Por confirmar",
+  "precio_texto": "$150.000.000",
+  "precio_nota": "Negociable",
+  "ubicacion_corta": "Silvania · El Retiro"
+ },
+ {
+  "codigo": 104,
+  "titulo": "Lote de 16.000 m² con casa",
+  "categoria": "lote",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$1.200.000.000",
+  "precio_nota": "Negociable",
+  "ubicacion_corta": "Zona de expansión urbana · A 15 min de Girardot"
+ },
+ {
+  "codigo": 105,
+  "titulo": "Rincón del Palmar · Urbanización",
+  "categoria": "proyecto",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "Desde $39.000.000",
+  "precio_nota": "Separa con $1.000.000",
+  "ubicacion_corta": "Carmen de Apicalá · Tolima"
+ },
+ {
+  "codigo": 106,
+  "titulo": "Santorini · Lotes campestres",
+  "categoria": "proyecto",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "Desde $78.000.000",
+  "precio_nota": "Separa con $1.000.000",
+  "ubicacion_corta": "Carmen de Apicalá · Tolima"
+ },
+ {
+  "codigo": 107,
+  "titulo": "Lote en Vereda La Despensa, San Bernardo",
+  "categoria": "lote",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$95.000.000",
+  "precio_nota": "Negociable",
+  "ubicacion_corta": "Vereda La Despensa · San Bernardo · Cundinamarca"
+ },
+ {
+  "codigo": 108,
+  "titulo": "Sky 360 · Apartamentos",
+  "categoria": "apartamento",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "Desde $99.000.000",
+  "precio_nota": "Apartaestudios · Separa con $2.000.000",
+  "ubicacion_corta": "Carmen de Apicalá · Tolima"
+ },
+ {
+  "codigo": 109,
+  "titulo": "Santo Domingo · Urbanización",
+  "categoria": "proyecto",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "Desde $45.000.000",
+  "precio_nota": "Separa con $1.000.000",
+  "ubicacion_corta": "Carmen de Apicalá · Vía El Paso · Tolima"
+ },
+ {
+  "codigo": 110,
+  "titulo": "Torres de Pamplonita · Apartamentos de 3 habitaciones",
+  "categoria": "apartamento",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$277.000.000",
+  "precio_nota": "Cuota inicial del 30%",
+  "ubicacion_corta": "Pamplonita · Fusagasugá · Cundinamarca"
+ },
+ {
+  "codigo": 111,
+  "titulo": "Torres de Pamplonita · Apartamentos de 2 habitaciones",
+  "categoria": "apartamento",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$217.455.000",
+  "precio_nota": "Cuota inicial del 30%",
+  "ubicacion_corta": "Pamplonita · Fusagasugá · Cundinamarca"
+ },
+ {
+  "codigo": 112,
+  "titulo": "Torres de Pamplonita · Apartamentos de 2 habitaciones",
+  "categoria": "apartamento",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$240.143.200",
+  "precio_nota": "Cuota inicial del 30%",
+  "ubicacion_corta": "Pamplonita · Fusagasugá · Cundinamarca"
+ },
+ {
+  "codigo": 113,
+  "titulo": "Torres de Pamplonita · Apartaestudios de 1 habitación",
+  "categoria": "apartamento",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$130.672.500",
+  "precio_nota": "Cuota inicial del 30%",
+  "ubicacion_corta": "Pamplonita · Fusagasugá · Cundinamarca"
+ },
+ {
+  "codigo": 114,
+  "titulo": "Torres de Pamplonita · Apartaestudios de 1 habitación",
+  "categoria": "apartamento",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$153.026.500",
+  "precio_nota": "Cuota inicial del 30%",
+  "ubicacion_corta": "Pamplonita · Fusagasugá · Cundinamarca"
+ },
+ {
+  "codigo": 115,
+  "titulo": "Torres de Pamplonita · Apartamentos de 2 habitaciones",
+  "categoria": "apartamento",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$241.275.300",
+  "precio_nota": "Cuota inicial del 30%",
+  "ubicacion_corta": "Pamplonita · Fusagasugá · Cundinamarca"
+ },
+ {
+  "codigo": 116,
+  "titulo": "Torres de Pamplonita · Apartamentos de 3 habitaciones",
+  "categoria": "apartamento",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$297.574.200",
+  "precio_nota": "Cuota inicial del 30%",
+  "ubicacion_corta": "Pamplonita · Fusagasugá · Cundinamarca"
+ },
+ {
+  "codigo": 117,
+  "titulo": "Casa en Condominio Parque Central, Girardot",
+  "categoria": "casa",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$260.000.000",
+  "precio_nota": "Lote de 140 m² · Estrato 4",
+  "ubicacion_corta": "Girardot · Cundinamarca"
+ },
+ {
+  "codigo": 118,
+  "titulo": "Casa campestre en condominio",
+  "categoria": "casa",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$1.350.000.000",
+  "precio_nota": "Negociable · Lote de 1.150 m²",
+  "ubicacion_corta": "Condominio campestre"
+ },
+ {
+  "codigo": 119,
+  "titulo": "Lote en Barrio Mandalay, Fusagasugá",
+  "categoria": "lote",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$295.000.000",
+  "precio_nota": "Negociable",
+  "ubicacion_corta": "Barrio Mandalay · Fusagasugá"
+ },
+ {
+  "codigo": 120,
+  "titulo": "Arrayanes de Peñalisa · Apartamentos en Ricaurte",
+  "categoria": "apartamento",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "Desde $140.926.500",
+  "precio_nota": "Apartamentos VIP · VIS desde $200.441.050",
+  "ubicacion_corta": "Ricaurte · Cundinamarca"
+ },
+ {
+  "codigo": 121,
+  "titulo": "Lote en Sector Villamayorga, Fusagasugá",
+  "categoria": "lote",
+  "negocio": "Venta",
+  "estado": "Disponible",
+  "precio_texto": "$170.000.000",
+  "precio_nota": "Negociable · 6 m de frente × 17 m de fondo",
+  "ubicacion_corta": "Villamayorga · Fusagasugá"
+ }
+]

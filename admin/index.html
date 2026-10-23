@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel · Inmobiliaria A&amp;D</title>
+<link rel="icon" href="../logo.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { display: ['"Plus Jakarta Sans"','sans-serif'], sans: ['Inter','sans-serif'] },
+  colors: { vino:'#8b0f1f', rojo:'#c8102e', cielo:'#fdecee', tinta:'#26171a', suave:'#fff6f6' } } } }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1/dist/umd/supabase.js"></script>
+<script src="../config.js"></script>
+<style>
+  body { font-family:'Inter',sans-serif; color:#26171a; background:#fff6f6; }
+  .campo { width:100%; border:1px solid rgba(0,0,0,.15); border-radius:.6rem; padding:.6rem .8rem; background:#fff; font-size:.95rem; }
+  .campo:focus { outline:2px solid #c8102e; outline-offset:0; }
+  label.et { display:block; font-size:.8rem; font-weight:600; color:#8b0f1f; margin-bottom:.25rem; }
+  .ayuda { font-size:.75rem; color:rgba(38,23,26,.6); margin-top:.2rem; }
+  .btn { border-radius:.6rem; padding:.55rem 1rem; font-weight:600; font-size:.9rem; }
+  .btn-rojo { background:#c8102e; color:#fff; } .btn-rojo:hover { background:#8b0f1f; }
+  .btn-borde { border:1px solid #c8102e; color:#c8102e; background:#fff; } .btn-borde:hover { background:#fdecee; }
+  .btn-gris { border:1px solid rgba(0,0,0,.2); color:#26171a; background:#fff; } .btn-gris:hover { background:#f3f3f3; }
+</style>
+</head>
+<body>
+
+<header class="bg-vino text-white">
+  <div class="max-w-5xl mx-auto px-5 h-14 flex items-center justify-between">
+    <div class="flex items-center gap-3"><img src="../logo.svg" alt="" class="w-8 h-8"><span class="font-display font-bold">Panel de inmuebles · A&amp;D</span></div>
+    <div id="barra" class="hidden items-center gap-3 text-sm">
+      <span id="quien" class="hidden sm:inline text-white/80"></span>
+      <button id="btn-clave" class="underline text-white/90">Cambiar contraseña</button>
+      <button id="btn-salir" class="underline text-white/90">Salir</button>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-5 py-8">
+
+  <!-- Ingreso -->
+  <section id="vista-login" class="hidden max-w-md mx-auto bg-white rounded-2xl border border-black/10 p-8 mt-8">
+    <h1 class="font-display font-extrabold text-2xl text-vino">Ingresar</h1>
+    <p class="text-sm text-tinta/65 mt-1">Panel privado para publicar y editar los inmuebles de la página.</p>
+    <form id="form-login" class="mt-6 space-y-4">
+      <div><label class="et" for="l-correo">Correo</label><input id="l-correo" type="email" autocomplete="username" required class="campo"></div>
+      <div><label class="et" for="l-clave">Contraseña</label><input id="l-clave" type="password" autocomplete="current-password" required class="campo"></div>
+      <p id="l-error" class="text-sm text-rojo hidden"></p>
+      <button class="btn btn-rojo w-full" type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <!-- Lista -->
+  <section id="vista-lista" class="hidden">
+    <div class="flex flex-wrap items-center justify-between gap-3">
+      <div><h1 class="font-display font-extrabold text-2xl text-vino">Inmuebles</h1><p id="resumen" class="text-sm text-tinta/65"></p></div>
+      <div class="flex flex-wrap gap-2">
+        <button id="btn-csv" class="btn btn-gris">Descargar Excel (CSV)</button>
+        <button id="btn-nuevo" class="btn btn-rojo">+ Nuevo inmueble</button>
+      </div>
+    </div>
+    <div id="aviso-importar" class="hidden mt-5 rounded-xl bg-white border border-rojo/30 p-4 text-sm">
+      Hay inmuebles ya publicados en la página que todavía no están en el panel.
+      <button id="btn-importar" class="btn btn-borde ml-2 mt-2 sm:mt-0">Traerlos al panel</button>
+    </div>
+    <div id="lista" class="mt-6 space-y-3"></div>
+  </section>
+
+  <!-- Formulario -->
+  <section id="vista-form" class="hidden">
+    <button id="btn-volver" class="text-sm text-rojo underline">&larr; Volver a la lista</button>
+    <h1 id="f-titulo-pagina" class="mt-2 font-display font-extrabold text-2xl text-vino">Nuevo inmueble</h1>
+    <p class="text-sm text-tinta/65">Los campos con * son obligatorios. El código se asigna solo.</p>
+
+    <form id="form" class="mt-6 space-y-8">
+      <div class="bg-white rounded-2xl border border-black/10 p-6 grid sm:grid-cols-2 gap-4">
+        <div><label class="et">Código</label><input id="f-codigo" class="campo bg-gray-100" readonly></div>
+        <div><label class="et" for="f-estado">Estado</label>
+          <select id="f-estado" class="campo"><option>Disponible</option><option>Por confirmar</option><option>Reservado</option><option>Vendido</option></select></div>
+        <div><label class="et" for="f-categoria">Tipo de inmueble *</label>
+          <select id="f-categoria" class="campo"><option value="lote">Lote</option><option value="casa">Casa</option><option value="apartamento">Apartamento</option><option value="finca">Finca</option><option value="proyecto">Proyecto o urbanización</option></select></div>
+        <div><label class="et" for="f-negocio">Negocio *</label>
+          <select id="f-negocio" class="campo"><option>Venta</option><option>Arriendo</option></select></div>
+        <div class="sm:col-span-2"><label class="et" for="f-titulo">Título *</label><input id="f-titulo" class="campo" placeholder="Ej: Casa en Condominio Parque Central, Girardot"></div>
+        <div><label class="et" for="f-ubic">Ubicación corta *</label><input id="f-ubic" class="campo" placeholder="Ej: Girardot · Cundinamarca"><p class="ayuda">Sale pequeña, arriba del título, en la tarjeta.</p></div>
+        <div><label class="et" for="f-ref">Dirección o referencia</label><input id="f-ref" class="campo" placeholder="Ej: A 5 minutos del Puente Girardot–Ricaurte"></div>
+        <div><label class="et" for="f-precio">Precio *</label><input id="f-precio" class="campo" placeholder="Ej: $260.000.000"><p class="ayuda">Escríbelo como quieres que se vea, con puntos y el signo $.</p></div>
+        <div><label class="et" for="f-nota">Nota del precio</label><input id="f-nota" class="campo" placeholder="Ej: Negociable"></div>
+        <div><label class="et" for="f-area">Área</label><input id="f-area" class="campo" placeholder="Ej: 280 m² construidos"></div>
+        <div><label class="et" for="f-chips">Datos destacados</label><input id="f-chips" class="campo" placeholder="Ej: 3 habitaciones, 2 baños, Balcón"><p class="ayuda">Separados por coma. Máximo 4. Salen en la tarjeta.</p></div>
+        <div class="sm:col-span-2 flex items-center gap-2"><input type="checkbox" id="f-publicado" class="w-4 h-4" checked><label for="f-publicado" class="text-sm">Mostrar este inmueble en la página</label></div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-black/10 p-6 space-y-4">
+        <h2 class="font-display font-bold text-lg text-vino">Textos</h2>
+        <div><label class="et" for="f-resumen">Resumen corto</label><textarea id="f-resumen" rows="2" class="campo" placeholder="1 o 2 frases para la tarjeta"></textarea></div>
+        <div><label class="et" for="f-desc">Descripción</label><textarea id="f-desc" rows="6" class="campo" placeholder="Describe el inmueble. Deja una línea en blanco para separar párrafos."></textarea></div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div><label class="et" for="f-serv-t">Título de la lista de características</label><input id="f-serv-t" class="campo" value="Características"></div>
+          <div></div>
+          <div><label class="et" for="f-serv">Características (una por línea)</label><textarea id="f-serv" rows="6" class="campo" placeholder="Piscina&#10;Zona BBQ&#10;Parqueadero"></textarea></div>
+          <div><label class="et" for="f-cond">Condiciones de pago (una por línea)</label><textarea id="f-cond" rows="6" class="campo" placeholder="Precio negociable&#10;Escrituras en regla"></textarea></div>
+          <div class="sm:col-span-2"><label class="et" for="f-ubicl">Ubicación y cercanías (una por línea)</label><textarea id="f-ubicl" rows="4" class="campo" placeholder="A 5 minutos del centro&#10;Cerca de vías principales"></textarea></div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-black/10 p-6">
+        <h2 class="font-display font-bold text-lg text-vino">Fotos</h2>
+        <p class="ayuda">La primera foto es la portada. Usa las flechas para ordenarlas. Se reducen solas para que la página cargue rápido.</p>
+        <input id="f-fotos" type="file" accept="image/*" multiple class="mt-3 text-sm">
+        <div id="fotos" class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3"></div>
+      </div>
+
+      <div class="bg-white rounded-2xl border border-black/10 p-6">
+        <h2 class="font-display font-bold text-lg text-vino">Videos</h2>
+        <p class="ayuda">Formato MP4. Máximo 50 MB cada uno; mejor si pesan menos de 15 MB para que carguen rápido en el celular.</p>
+        <input id="f-videos" type="file" accept="video/mp4,video/*" multiple class="mt-3 text-sm">
+        <div id="videos" class="mt-4 space-y-2"></div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3">
+        <button id="btn-guardar" type="submit" class="btn btn-rojo">Guardar y publicar</button>
+        <button id="btn-cancelar" type="button" class="btn btn-gris">Cancelar</button>
+        <span id="estado-guardado" class="text-sm text-tinta/70"></span>
+      </div>
+    </form>
+  </section>
+</main>
+
+<div id="toast" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 bg-tinta text-white text-sm px-5 py-3 rounded-xl shadow-lg z-50"></div>
+
+<script>
+(function () {
+  const C = window.AYD_SUPABASE;
+  const sb = window.supabase.createClient(C.url, C.key);
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const CAT = { proyecto: 'Proyecto', lote: 'Lote', casa: 'Casa', apartamento: 'Apartamento', finca: 'Finca' };
+  let filas = [];
+  let edicion = null;          // { codigo, fotos:[], videos:[], aBorrar:[], nuevo:bool }
+
+  function toast(msg, ms) {
+    const t = $('toast'); t.textContent = msg; t.classList.remove('hidden');
+    clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.add('hidden'), ms || 3500);
+  }
+  function ver(v) {
+    ['vista-login', 'vista-lista', 'vista-form'].forEach(x => $(x).classList.toggle('hidden', x !== v));
+    $('barra').classList.toggle('hidden', v === 'vista-login');
+    $('barra').classList.toggle('flex', v !== 'vista-login');
+    window.scrollTo(0, 0);
+  }
+
+  // ---------- Acceso ----------
+  $('form-login').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    $('l-error').classList.add('hidden');
+    const { error } = await sb.auth.signInWithPassword({ email: $('l-correo').value.trim(), password: $('l-clave').value });
+    if (error) { $('l-error').textContent = 'Correo o contraseña incorrectos.'; $('l-error').classList.remove('hidden'); return; }
+    await iniciar();
+  });
+  $('btn-salir').addEventListener('click', async () => { await sb.auth.signOut(); ver('vista-login'); });
+  $('btn-clave').addEventListener('click', async () => {
+    const n = prompt('Escribe tu nueva contraseña (mínimo 8 caracteres):');
+    if (!n) return;
+    if (n.length < 8) { toast('La contraseña debe tener al menos 8 caracteres.'); return; }
+    const { error } = await sb.auth.updateUser({ password: n });
+    toast(error ? 'No se pudo cambiar: ' + error.message : 'Contraseña cambiada.');
+  });
+
+  async function iniciar() {
+    const { data } = await sb.auth.getSession();
+    if (!data.session) { ver('vista-login'); return; }
+    $('quien').textContent = data.session.user.email;
+    const { data: adm } = await sb.rpc('es_admin');
+    if (!adm) { await sb.auth.signOut(); $('l-error').textContent = 'Este correo no tiene permiso para usar el panel.'; $('l-error').classList.remove('hidden'); ver('vista-login'); return; }
+    await cargar();
+    ver('vista-lista');
+  }
+
+  // ---------- Lista ----------
+  async function cargar() {
+    const { data, error } = await sb.from('inmuebles').select('codigo,publicado,estado,titulo,categoria,negocio,origen,datos').order('codigo', { ascending: false });
+    if (error) { toast('No se pudo cargar: ' + error.message, 6000); return; }
+    filas = data || [];
+    pintarLista();
+    revisarImportar();
+  }
+  function pintarLista() {
+    const pub = filas.filter(f => f.publicado).length;
+    $('resumen').textContent = filas.length + ' inmuebles · ' + pub + ' visibles en la página';
+    $('lista').innerHTML = filas.map(f => {
+      const d = f.datos || {};
+      const miniatura = d.fotos && d.fotos[0] ? '<img src="' + esc(d.fotos[0].url) + '" class="w-20 h-16 object-cover rounded-lg">' : '<div class="w-20 h-16 rounded-lg bg-cielo grid place-items-center text-xs text-vino">' + (f.origen === 'estatico' ? 'En la página' : 'Sin foto') + '</div>';
+      const colorEstado = f.estado === 'Vendido' ? 'bg-gray-800 text-white' : (f.estado === 'Reservado' ? 'bg-amber-500 text-white' : 'bg-cielo text-vino');
+      return '<div class="bg-white rounded-2xl border border-black/10 p-4 flex flex-wrap items-center gap-4' + (f.publicado ? '' : ' opacity-60') + '">' + miniatura +
+        '<div class="flex-1 min-w-[200px]"><div class="flex flex-wrap gap-2 text-xs font-semibold"><span class="bg-vino text-white px-2 py-0.5 rounded">Cód. ' + esc(f.codigo) + '</span>' +
+        '<span class="px-2 py-0.5 rounded ' + colorEstado + '">' + esc(f.estado) + '</span>' +
+        (f.publicado ? '' : '<span class="bg-gray-200 px-2 py-0.5 rounded">Oculto</span>') + '</div>' +
+        '<p class="font-semibold mt-1">' + esc(f.titulo) + '</p><p class="text-sm text-tinta/65">' + esc(d.precio_texto || '') + '</p></div>' +
+        '<div class="flex flex-wrap gap-2">' +
+        (f.origen === 'panel' ? '<button class="btn btn-borde" data-a="editar" data-c="' + f.codigo + '">Editar</button>' : '') +
+        '<select class="campo !w-auto" data-a="estado" data-c="' + f.codigo + '">' + ['Disponible', 'Por confirmar', 'Reservado', 'Vendido'].map(e => '<option' + (e === f.estado ? ' selected' : '') + '>' + e + '</option>').join('') + '</select>' +
+        '<button class="btn btn-gris" data-a="visible" data-c="' + f.codigo + '">' + (f.publicado ? 'Ocultar' : 'Mostrar') + '</button>' +
+        (f.origen === 'panel' ? '<button class="btn btn-gris" data-a="borrar" data-c="' + f.codigo + '">Eliminar</button>' : '') +
+        '</div></div>';
+    }).join('') || '<p class="text-tinta/65">Todavía no hay inmuebles aquí.</p>';
+  }
+  $('lista').addEventListener('click', async ev => {
+    const b = ev.target.closest('button'); if (!b) return;
+    const cod = +b.dataset.c, f = filas.find(x => x.codigo === cod); if (!f) return;
+    if (b.dataset.a === 'editar') abrirForm(f);
+    if (b.dataset.a === 'visible') {
+      const { error } = await sb.from('inmuebles').update({ publicado: !f.publicado }).eq('codigo', cod);
+      if (error) return toast('Error: ' + error.message, 6000);
+      toast(f.publicado ? 'Ocultado de la página.' : 'Ahora se ve en la página.'); await cargar();
+    }
+    if (b.dataset.a === 'borrar') {
+      if (!confirm('¿Eliminar el inmueble ' + cod + ' para siempre? No se puede deshacer.')) return;
+      const rutas = [...((f.datos && f.datos.fotos) || []), ...((f.datos && f.datos.videos) || [])].map(x => x.path).filter(Boolean);
+      if (rutas.length) await sb.storage.from('inmuebles').remove(rutas);
+      const { error } = await sb.from('inmuebles').delete().eq('codigo', cod);
+      if (error) return toast('Error: ' + error.message, 6000);
+      toast('Inmueble eliminado.'); await cargar();
+    }
+  });
+  $('lista').addEventListener('change', async ev => {
+    const s = ev.target.closest('select'); if (!s || s.dataset.a !== 'estado') return;
+    const { error } = await sb.from('inmuebles').update({ estado: s.value }).eq('codigo', +s.dataset.c);
+    if (error) return toast('Error: ' + error.message, 6000);
+    toast('Estado actualizado a ' + s.value + '.'); await cargar();
+  });
+
+  // ---------- Importar los inmuebles que ya están en la página ----------
+  async function revisarImportar() {
+    try {
+      const r = await fetch('../inmuebles-publicos.json?_=' + Date.now()); if (!r.ok) return;
+      const base = await r.json();
+      const ya = new Set(filas.map(f => f.codigo));
+      $('aviso-importar').classList.toggle('hidden', !base.some(b => !ya.has(b.codigo)));
+    } catch (e) { /* sin archivo, nada que importar */ }
+  }
+  $('btn-importar').addEventListener('click', async () => {
+    const r = await fetch('../inmuebles-publicos.json?_=' + Date.now()); const base = await r.json();
+    const ya = new Set(filas.map(f => f.codigo));
+    const nuevos = base.filter(b => !ya.has(b.codigo)).map(b => ({
+      codigo: b.codigo, publicado: true, estado: b.estado || 'Disponible', titulo: b.titulo, categoria: b.categoria, negocio: b.negocio, origen: 'estatico',
+      datos: { precio_texto: b.precio_texto, precio_nota: b.precio_nota, ubicacion_corta: b.ubicacion_corta }
+    }));
+    const { error } = await sb.from('inmuebles').upsert(nuevos, { onConflict: 'codigo', ignoreDuplicates: true });
+    if (error) return toast('Error: ' + error.message, 6000);
+    toast(nuevos.length + ' inmuebles traídos al panel.'); await cargar();
+  });
+
+  // ---------- Descargar CSV ----------
+  $('btn-csv').addEventListener('click', () => {
+    const cab = ['Código', 'Estado', 'Visible', 'Tipo', 'Negocio', 'Título', 'Ubicación', 'Precio', 'Nota precio', 'Área', 'Descripción', 'Características', 'Condiciones', 'Fotos', 'Videos'];
+    const cel = v => '"' + String(v == null ? '' : v).replace(/"/g, '""').replace(/\r?\n/g, ' ') + '"';
+    const filasCsv = filas.slice().sort((a, b) => a.codigo - b.codigo).map(f => {
+      const d = f.datos || {};
+      return [f.codigo, f.estado, f.publicado ? 'Sí' : 'No', CAT[f.categoria] || f.categoria, f.negocio, f.titulo, d.ubicacion_corta, d.precio_texto, d.precio_nota, d.area_texto,
+        (d.descripcion || []).join(' '), (d.servicios || []).join('; '), (d.condiciones || []).join('; '), (d.fotos || []).length, (d.videos || []).length].map(cel).join(',');
+    });
+    const csv = '﻿' + cab.map(cel).join(',') + '\n' + filasCsv.join('\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    a.download = 'inmuebles-AyD.csv'; a.click();
+  });
+
+  // ---------- Formulario ----------
+  const lineas = t => t.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
+  function siguienteCodigo() { return Math.max(121, ...filas.map(f => f.codigo)) + 1; }
+
+  function abrirForm(f) {
+    const d = f ? (f.datos || {}) : {};
+    edicion = { codigo: f ? f.codigo : siguienteCodigo(), nuevo: !f, fotos: (d.fotos || []).slice(), videos: (d.videos || []).slice(), aBorrar: [] };
+    $('f-titulo-pagina').textContent = f ? 'Editar inmueble ' + f.codigo : 'Nuevo inmueble';
+    $('f-codigo').value = edicion.codigo;
+    $('f-estado').value = f ? f.estado : 'Disponible';
+    $('f-categoria').value = f ? f.categoria : 'lote';
+    $('f-negocio').value = f ? f.negocio : 'Venta';
+    $('f-titulo').value = f ? f.titulo : '';
+    $('f-ubic').value = d.ubicacion_corta || '';
+    $('f-ref').value = d.referencia || '';
+    $('f-precio').value = d.precio_texto || '';
+    $('f-nota').value = d.precio_nota || '';
+    $('f-area').value = d.area_texto || '';
+    $('f-chips').value = (d.chips || []).join(', ');
+    $('f-publicado').checked = f ? f.publicado : true;
+    $('f-resumen').value = d.resumen || '';
+    $('f-desc').value = (d.descripcion || []).join('\n\n');
+    $('f-serv-t').value = d.servicios_titulo || 'Características';
+    $('f-serv').value = (d.servicios || []).join('\n');
+    $('f-cond').value = (d.condiciones || []).join('\n');
+    $('f-ubicl').value = (d.ubicacion_puntos || []).join('\n');
+    $('f-fotos').value = ''; $('f-videos').value = '';
+    $('estado-guardado').textContent = '';
+    pintarMedios();
+    ver('vista-form');
+  }
+  $('btn-nuevo').addEventListener('click', () => abrirForm(null));
+  $('btn-volver').addEventListener('click', () => ver('vista-lista'));
+  $('btn-cancelar').addEventListener('click', () => ver('vista-lista'));
+
+  function pintarMedios() {
+    $('fotos').innerHTML = edicion.fotos.map((f, k) =>
+      '<div class="rounded-xl border border-black/10 overflow-hidden bg-white"><img src="' + esc(f.url) + '" class="w-full aspect-[4/3] object-cover">' +
+      '<div class="flex items-center justify-between p-2 text-xs"><span>' + (k === 0 ? '<b class="text-rojo">Portada</b>' : (k + 1)) + '</span><span class="flex gap-1">' +
+      '<button type="button" class="px-2 py-1 border rounded" data-m="izq" data-k="' + k + '">&larr;</button>' +
+      '<button type="button" class="px-2 py-1 border rounded" data-m="der" data-k="' + k + '">&rarr;</button>' +
+      '<button type="button" class="px-2 py-1 border rounded text-rojo" data-m="quitar" data-k="' + k + '">Quitar</button></span></div></div>').join('');
+    $('videos').innerHTML = edicion.videos.map((v, k) =>
+      '<div class="flex items-center gap-3 bg-suave rounded-xl p-3 text-sm"><span class="flex-1 truncate">Video ' + (k + 1) + '</span><a href="' + esc(v.url) + '" target="_blank" class="underline text-rojo">Ver</a>' +
+      '<button type="button" class="px-2 py-1 border rounded text-rojo" data-v="quitar" data-k="' + k + '">Quitar</button></div>').join('');
+  }
+  $('fotos').addEventListener('click', ev => {
+    const b = ev.target.closest('button'); if (!b) return; const k = +b.dataset.k, a = edicion.fotos;
+    if (b.dataset.m === 'izq' && k > 0) [a[k - 1], a[k]] = [a[k], a[k - 1]];
+    if (b.dataset.m === 'der' && k < a.length - 1) [a[k + 1], a[k]] = [a[k], a[k + 1]];
+    if (b.dataset.m === 'quitar') { const [x] = a.splice(k, 1); if (x.path) edicion.aBorrar.push(x.path); }
+    pintarMedios();
+  });
+  $('videos').addEventListener('click', ev => {
+    const b = ev.target.closest('button'); if (!b) return;
+    const [x] = edicion.videos.splice(+b.dataset.k, 1); if (x.path) edicion.aBorrar.push(x.path);
+    pintarMedios();
+  });
+
+  async function comprimir(file, max, q) {
+    let bmp;
+    try { bmp = await createImageBitmap(file, { imageOrientation: 'from-image' }); }
+    catch (e) { bmp = await new Promise((ok, no) => { const i = new Image(); i.onload = () => ok(i); i.onerror = no; i.src = URL.createObjectURL(file); }); }
+    const w0 = bmp.width || bmp.naturalWidth, h0 = bmp.height || bmp.naturalHeight, s = Math.min(1, max / Math.max(w0, h0));
+    const cv = document.createElement('canvas'); cv.width = Math.round(w0 * s); cv.height = Math.round(h0 * s);
+    cv.getContext('2d').drawImage(bmp, 0, 0, cv.width, cv.height);
+    return new Promise(res => cv.toBlob(res, 'image/jpeg', q));
+  }
+  const rnd = () => Math.random().toString(36).slice(2, 8);
+  const urlPublica = ruta => sb.storage.from('inmuebles').getPublicUrl(ruta).data.publicUrl;
+
+  $('f-fotos').addEventListener('change', async ev => {
+    const archivos = [...ev.target.files]; if (!archivos.length) return;
+    let n = 0;
+    for (const f of archivos) {
+      $('estado-guardado').textContent = 'Subiendo foto ' + (++n) + ' de ' + archivos.length + '…';
+      try {
+        const blob = await comprimir(f, 1600, 0.82);
+        const ruta = edicion.codigo + '/' + Date.now() + '-' + rnd() + '.jpg';
+        const { error } = await sb.storage.from('inmuebles').upload(ruta, blob, { contentType: 'image/jpeg', cacheControl: '31536000' });
+        if (error) throw error;
+        edicion.fotos.push({ path: ruta, url: urlPublica(ruta), alt: $('f-titulo').value.trim() });
+      } catch (e) { toast('No se pudo subir una foto: ' + (e.message || e), 6000); }
+    }
+    $('estado-guardado').textContent = ''; ev.target.value = ''; pintarMedios();
+  });
+  $('f-videos').addEventListener('change', async ev => {
+    const archivos = [...ev.target.files]; if (!archivos.length) return;
+    let n = 0;
+    for (const f of archivos) {
+      if (f.size > 50 * 1024 * 1024) { toast('"' + f.name + '" pesa más de 50 MB. Comprímelo antes de subirlo.', 7000); continue; }
+      $('estado-guardado').textContent = 'Subiendo video ' + (++n) + ' de ' + archivos.length + '… (puede tardar)';
+      try {
+        const ruta = edicion.codigo + '/' + Date.now() + '-' + rnd() + '.mp4';
+        const { error } = await sb.storage.from('inmuebles').upload(ruta, f, { contentType: 'video/mp4', cacheControl: '31536000' });
+        if (error) throw error;
+        edicion.videos.push({ path: ruta, url: urlPublica(ruta) });
+      } catch (e) { toast('No se pudo subir un video: ' + (e.message || e), 6000); }
+    }
+    $('estado-guardado').textContent = ''; ev.target.value = ''; pintarMedios();
+  });
+
+  $('form').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const titulo = $('f-titulo').value.trim(), ubic = $('f-ubic').value.trim(), precio = $('f-precio').value.trim();
+    if (!titulo || !ubic || !precio) return toast('Faltan campos obligatorios: título, ubicación corta y precio.', 5000);
+    const desc = $('f-desc').value.split(/\n\s*\n/).map(x => x.trim()).filter(Boolean);
+    const datos = {
+      tipo: CAT[$('f-categoria').value], ubicacion_corta: ubic, referencia: $('f-ref').value.trim(), area_texto: $('f-area').value.trim(),
+      precio_texto: precio, precio_nota: $('f-nota').value.trim(),
+      chips: $('f-chips').value.split(',').map(x => x.trim()).filter(Boolean).slice(0, 4),
+      resumen: $('f-resumen').value.trim(), descripcion: desc,
+      servicios_titulo: $('f-serv-t').value.trim() || 'Características', servicios: lineas($('f-serv').value),
+      condiciones: lineas($('f-cond').value), ubicacion_puntos: lineas($('f-ubicl').value),
+      fotos: edicion.fotos.map(f => ({ path: f.path, url: f.url, alt: f.alt || titulo })), videos: edicion.videos.map(v => ({ path: v.path, url: v.url })),
+      whatsapp_texto: 'Hola, me interesa el inmueble ' + edicion.codigo + ' (' + titulo + ')'
+    };
+    $('btn-guardar').disabled = true; $('estado-guardado').textContent = 'Guardando…';
+    const fila = { codigo: edicion.codigo, publicado: $('f-publicado').checked, estado: $('f-estado').value, titulo, categoria: $('f-categoria').value, negocio: $('f-negocio').value, origen: 'panel', datos };
+    const { error } = await sb.from('inmuebles').upsert(fila, { onConflict: 'codigo' });
+    $('btn-guardar').disabled = false;
+    if (error) { $('estado-guardado').textContent = ''; return toast('No se pudo guardar: ' + error.message, 7000); }
+    if (edicion.aBorrar.length) await sb.storage.from('inmuebles').remove(edicion.aBorrar);
+    toast('Guardado. Ya se ve en la página.'); $('estado-guardado').textContent = '';
+    await cargar(); ver('vista-lista');
+  });
+
+  sb.auth.onAuthStateChange((ev) => { if (ev === 'SIGNED_OUT') ver('vista-login'); });
+  iniciar();
+})();
+</script>
+</body>
+</html>

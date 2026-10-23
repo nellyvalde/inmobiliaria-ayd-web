@@ -76,7 +76,7 @@ def tarjeta(it):
         href = f'inmueble/{cod}.html'
     else:
         href = wa(it['whatsapp_texto'])
-    return f'''    <article data-t="{e(it['categoria'])}" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
+    return f'''    <article data-t="{e(it['categoria'])}" data-cod="{cod}" class="card bg-white rounded-2xl overflow-hidden border border-black/10 flex flex-col">
       {media}{badges}
       <div class="p-6 flex flex-col flex-1">
         <p class="text-xs font-semibold text-rojo uppercase">{e(it['ubicacion_corta'])}</p>
@@ -143,7 +143,7 @@ def partes_del_sitio():
     chrome_fin = s.index('<!-- Portada -->')
     top = s[chrome_ini:chrome_fin]
     foot_ini = s.index('<footer')
-    foot_fin = s.index('<script>', foot_ini)
+    foot_fin = s.index('<script', foot_ini)
     foot = s[foot_ini:foot_fin]
     # rutas relativas desde /inmueble/
     top = top.replace('href="#', 'href="../index.html#').replace('src="logo.svg"', 'src="../logo.svg"')
@@ -437,12 +437,56 @@ def excel(items, ruta):
     wb.save(ruta)
 
 
+def ficha_dinamica():
+    """Página ficha.html: muestra los inmuebles creados desde el panel (se leen de Supabase)."""
+    s = leer('index.html')
+    head = s[:s.index('</head>')]
+    i = s.index('<!-- Franja superior -->'); j = s.index('<!-- Portada -->')
+    top = s[i:j]
+    k = s.index('<footer'); l = s.index('<script', k)
+    foot = s[k:l]
+    head = head.replace(head[head.index('<title>'):head.index('</title>') + 8], '<title>Inmueble | Inmobiliaria A&amp;D</title>')
+    import re
+    head = re.sub(r'\s*<meta property="og:[^>]*>', '', head)
+    head = re.sub(r'\s*<meta name="twitter:[^>]*>', '', head)
+    head = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="Ficha de inmueble de Inmobiliaria A&amp;D">', head)
+    html_ = f'''{head}
+</head>
+<body class="antialiased">
+
+{top}
+<main id="ficha" class="max-w-6xl mx-auto px-5 py-10"><p class="py-24 text-center text-tinta/60">Cargando inmueble…</p></main>
+
+{foot}
+<div id="lb" class="hidden fixed inset-0 z-[60] bg-black/90 items-center justify-center p-4">
+  <button type="button" id="lbclose" class="absolute top-4 right-5 text-white text-4xl leading-none" aria-label="Cerrar">&times;</button>
+  <button type="button" id="lbprev" class="absolute left-3 top-1/2 text-white text-5xl leading-none px-3" aria-label="Anterior">&#8249;</button>
+  <img id="lbimg" src="" alt="" class="max-h-[90vh] max-w-full object-contain">
+  <button type="button" id="lbnext" class="absolute right-3 top-1/2 text-white text-5xl leading-none px-3" aria-label="Siguiente">&#8250;</button>
+</div>
+<script src="config.js"></script>
+<script src="ficha.js"></script>
+</body>
+</html>
+'''
+    escribir('ficha.html', html_)
+
+
+def publicos(items):
+    """Lista mínima de los inmuebles estáticos, para que el panel los traiga y permita ocultarlos o marcarlos como vendidos."""
+    out = [{'codigo': i['codigo'], 'titulo': i['titulo'], 'categoria': i['categoria'], 'negocio': i['negocio'], 'estado': i.get('estado', 'Disponible'),
+            'precio_texto': i['precio_texto'], 'precio_nota': i.get('precio_nota', ''), 'ubicacion_corta': i['ubicacion_corta']} for i in items]
+    escribir('inmuebles-publicos.json', json.dumps(out, ensure_ascii=False, indent=1))
+
+
 if __name__ == '__main__':
     with open(os.path.join(ROOT, 'data', 'inmuebles.json'), encoding='utf-8') as f:
         items = json.load(f)
     codigos = [i['codigo'] for i in items]
     assert len(codigos) == len(set(codigos)), 'Código repetido'
     inicio(items)
+    ficha_dinamica()
+    publicos(items)
     partes = partes_del_sitio()
     for it in items:
         if it.get('detalle'):
